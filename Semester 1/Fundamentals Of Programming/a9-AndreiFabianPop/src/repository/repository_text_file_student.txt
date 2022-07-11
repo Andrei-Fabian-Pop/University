@@ -1,2 +1,0 @@
-Student,2,Mikey
-Student,3,Bob

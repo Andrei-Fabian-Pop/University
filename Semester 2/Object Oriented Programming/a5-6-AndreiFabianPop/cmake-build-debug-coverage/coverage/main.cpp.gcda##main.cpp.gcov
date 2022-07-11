@@ -1,0 +1,583 @@
+        -:    0:Source:/tmp/tmp.aGTKLkgnJ8/src/main.cpp
+        -:    0:Graph:/tmp/tmp.aGTKLkgnJ8/cmake-build-debug-coverage/CMakeFiles/a5_6_AndreiFabianPop.dir/src/main.cpp.gcno
+        -:    0:Data:/tmp/tmp.aGTKLkgnJ8/cmake-build-debug-coverage/CMakeFiles/a5_6_AndreiFabianPop.dir/src/main.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by andre on 19/03/2022.
+        -:    3://
+        -:    4:
+        -:    5:#include "UI/UI.h"
+        -:    6:#include "DynamicVector/DynamicVector.h"
+        -:    7:#include "Tests/Tests.h"
+        -:    8:
+function _Z14add_10_entriesR7Service called 1 returned 100% blocks executed 42%
+        1:    9:void add_10_entries(Service& service) {
+        1:    9-block  0
+        1:   10:    service.add("Title1", "Presenter1", 11, 11, 0, "www.link1.com");
+        1:   10-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   10-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   10-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   10-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   10-block  4
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    %%%%%:   10-block  5
+call   21 never executed
+    %%%%%:   10-block  6
+    %%%%%:   10-block  7
+call   22 never executed
+    %%%%%:   10-block  8
+    %%%%%:   10-block  9
+call   23 never executed
+    %%%%%:   10-block 10
+    %%%%%:   10-block 11
+call   24 never executed
+    %%%%%:   10-block 12
+    %%%%%:   10-block 13
+call   25 never executed
+    %%%%%:   10-block 14
+    %%%%%:   10-block 15
+call   26 never executed
+    %%%%%:   10-block 16
+call   27 never executed
+        1:   11:    service.add("Title2", "Presenter2", 12, 12, 0, "www.link2.com");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   11-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   11-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   11-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   11-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    %%%%%:   11-block  4
+call   21 never executed
+    %%%%%:   11-block  5
+    %%%%%:   11-block  6
+call   22 never executed
+    %%%%%:   11-block  7
+    %%%%%:   11-block  8
+call   23 never executed
+    %%%%%:   11-block  9
+    %%%%%:   11-block 10
+call   24 never executed
+    %%%%%:   11-block 11
+    %%%%%:   11-block 12
+call   25 never executed
+    %%%%%:   11-block 13
+    %%%%%:   11-block 14
+call   26 never executed
+    %%%%%:   11-block 15
+call   27 never executed
+        1:   12:    service.add("Title3", "Presenter3", 13, 13, 0, "www.link3.com");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   12-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   12-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   12-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   12-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    %%%%%:   12-block  4
+call   21 never executed
+    %%%%%:   12-block  5
+    %%%%%:   12-block  6
+call   22 never executed
+    %%%%%:   12-block  7
+    %%%%%:   12-block  8
+call   23 never executed
+    %%%%%:   12-block  9
+    %%%%%:   12-block 10
+call   24 never executed
+    %%%%%:   12-block 11
+    %%%%%:   12-block 12
+call   25 never executed
+    %%%%%:   12-block 13
+    %%%%%:   12-block 14
+call   26 never executed
+    %%%%%:   12-block 15
+call   27 never executed
+        1:   13:    service.add("Title4", "Presenter4", 14, 14, 0, "www.link4.com");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   13-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   13-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   13-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   13-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    %%%%%:   13-block  4
+call   21 never executed
+    %%%%%:   13-block  5
+    %%%%%:   13-block  6
+call   22 never executed
+    %%%%%:   13-block  7
+    %%%%%:   13-block  8
+call   23 never executed
+    %%%%%:   13-block  9
+    %%%%%:   13-block 10
+call   24 never executed
+    %%%%%:   13-block 11
+    %%%%%:   13-block 12
+call   25 never executed
+    %%%%%:   13-block 13
+    %%%%%:   13-block 14
+call   26 never executed
+    %%%%%:   13-block 15
+call   27 never executed
+        1:   14:    service.add("Title5", "Presenter5", 15, 15, 0, "www.link5.com");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   14-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   14-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   14-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   14-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    %%%%%:   14-block  4
+call   21 never executed
+    %%%%%:   14-block  5
+    %%%%%:   14-block  6
+call   22 never executed
+    %%%%%:   14-block  7
+    %%%%%:   14-block  8
+call   23 never executed
+    %%%%%:   14-block  9
+    %%%%%:   14-block 10
+call   24 never executed
+    %%%%%:   14-block 11
+    %%%%%:   14-block 12
+call   25 never executed
+    %%%%%:   14-block 13
+    %%%%%:   14-block 14
+call   26 never executed
+    %%%%%:   14-block 15
+call   27 never executed
+        1:   15:    service.add("Title6", "Presenter6", 16, 16, 0, "www.link6.com");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   15-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   15-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   15-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   15-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    %%%%%:   15-block  4
+call   21 never executed
+    %%%%%:   15-block  5
+    %%%%%:   15-block  6
+call   22 never executed
+    %%%%%:   15-block  7
+    %%%%%:   15-block  8
+call   23 never executed
+    %%%%%:   15-block  9
+    %%%%%:   15-block 10
+call   24 never executed
+    %%%%%:   15-block 11
+    %%%%%:   15-block 12
+call   25 never executed
+    %%%%%:   15-block 13
+    %%%%%:   15-block 14
+call   26 never executed
+    %%%%%:   15-block 15
+call   27 never executed
+        1:   16:    service.add("Title7", "Presenter7", 17, 17, 0, "www.link7.com");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   16-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   16-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   16-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   16-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    %%%%%:   16-block  4
+call   21 never executed
+    %%%%%:   16-block  5
+    %%%%%:   16-block  6
+call   22 never executed
+    %%%%%:   16-block  7
+    %%%%%:   16-block  8
+call   23 never executed
+    %%%%%:   16-block  9
+    %%%%%:   16-block 10
+call   24 never executed
+    %%%%%:   16-block 11
+    %%%%%:   16-block 12
+call   25 never executed
+    %%%%%:   16-block 13
+    %%%%%:   16-block 14
+call   26 never executed
+    %%%%%:   16-block 15
+call   27 never executed
+        1:   17:    service.add("Title8", "Presenter8", 18, 18, 0, "www.link8.com");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   17-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   17-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   17-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   17-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    %%%%%:   17-block  4
+call   21 never executed
+    %%%%%:   17-block  5
+    %%%%%:   17-block  6
+call   22 never executed
+    %%%%%:   17-block  7
+    %%%%%:   17-block  8
+call   23 never executed
+    %%%%%:   17-block  9
+    %%%%%:   17-block 10
+call   24 never executed
+    %%%%%:   17-block 11
+    %%%%%:   17-block 12
+call   25 never executed
+    %%%%%:   17-block 13
+    %%%%%:   17-block 14
+call   26 never executed
+    %%%%%:   17-block 15
+call   27 never executed
+        1:   18:    service.add("Title9", "Presenter9", 19, 19, 0, "www.link9.com");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   18-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   18-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   18-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   18-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    %%%%%:   18-block  4
+call   21 never executed
+    %%%%%:   18-block  5
+    %%%%%:   18-block  6
+call   22 never executed
+    %%%%%:   18-block  7
+    %%%%%:   18-block  8
+call   23 never executed
+    %%%%%:   18-block  9
+    %%%%%:   18-block 10
+call   24 never executed
+    %%%%%:   18-block 11
+    %%%%%:   18-block 12
+call   25 never executed
+    %%%%%:   18-block 13
+    %%%%%:   18-block 14
+call   26 never executed
+    %%%%%:   18-block 15
+call   27 never executed
+        1:   19:    service.add("Title10", "Presenter10", 20, 20, 0, "www.link10.com");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   19-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   19-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   19-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   19-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    %%%%%:   19-block  4
+call   21 never executed
+    %%%%%:   19-block  5
+    %%%%%:   19-block  6
+call   22 never executed
+    %%%%%:   19-block  7
+    %%%%%:   19-block  8
+call   23 never executed
+    %%%%%:   19-block  9
+    %%%%%:   19-block 10
+call   24 never executed
+    %%%%%:   19-block 11
+    %%%%%:   19-block 12
+call   25 never executed
+    %%%%%:   19-block 13
+    %%%%%:   19-block 14
+call   26 never executed
+        1:   20:}
+        -:   21:
+function main called 1 returned 100% blocks executed 56%
+        1:   22:int main() {
+        1:   22-block  0
+        1:   23:    Tests::testDomain();
+        1:   23-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   24:    Tests::testDynamicVector();
+        1:   24-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   25:    Tests::testService();
+        1:   25-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   26:
+        2:   27:    DynamicVector<Tutorial> mainDatabase(5);
+        1:   27-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+call    3 returned 1
+        1:   27-block  1
+    %%%%%:   27-block  2
+call    4 never executed
+        2:   28:    Service service(mainDatabase);
+        1:   28-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   28-block  1
+call    3 returned 1
+    %%%%%:   28-block  2
+call    4 never executed
+        1:   29:    add_10_entries(service);
+        1:   29-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   30:
+        1:   31:    std::cout << "Enter the mode you want(1. Administrator, 2. Client):\n";
+        1:   31-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   32:    int user_command = UI::get_user_input();
+        1:   32-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   33:    if (user_command == 1) {
+        1:   33-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        -:   34:        // Admin mode start
+    #####:   35:        Admin admin(service);
+    $$$$$:   35-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:   35-block  1
+call    3 never executed
+    %%%%%:   35-block  2
+call    4 never executed
+    %%%%%:   35-block  3
+    #####:   36:        admin.start();
+    $$$$$:   36-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   37:
+        1:   38:    } else if (user_command == 2) {
+        1:   38-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        -:   39:        // Client mode start
+        2:   40:        Client client(service);
+        1:   40-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   40-block  1
+call    3 returned 1
+    %%%%%:   40-block  2
+call    4 never executed
+    %%%%%:   40-block  3
+        1:   41:        client.start();
+        1:   41-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   42:    } else {
+    #####:   43:        std::cout << "Invalid command. Program terminating.\n";
+    $$$$$:   43-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   44:    }
+        -:   45:
+        1:   46:    return 0;
+function _GLOBAL__sub_I__Z14add_10_entriesR7Service called 1 returned 100% blocks executed 100%
+function _Z41__static_initialization_and_destruction_0ii called 1 returned 100% blocks executed 100%
+        4:   47:}
+        1:   47-block  0
+        1:   47-block  1
+call    0 returned 1
+        1:   47-block  2
+        1:   47-block  3
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:   47-block  4
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0

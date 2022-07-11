@@ -1,0 +1,2 @@
+Price: 10004 | Doors: 2 | Engine type: electric| Fuel: gasoline | Price: 3000.000000 | Autonomy 400
+Price: 10001.5 | Doors: 2 | Engine type: turbo| Fuel: diesel | Price: 3000.000000

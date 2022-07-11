@@ -1,0 +1,5 @@
+/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/andrew/Downloads/clion-2022.1/bin/ninja/linux/ninja -G Ninja -S /home/andrew/GitHub/t3-AndreiFabianPop -B /home/andrew/GitHub/t3-AndreiFabianPop/cmake-build-debug
+-- Could NOT find XKB (missing: XKB_LIBRARY XKB_INCLUDE_DIR) (Required is at least version "0.5.0")
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/andrew/GitHub/t3-AndreiFabianPop/cmake-build-debug

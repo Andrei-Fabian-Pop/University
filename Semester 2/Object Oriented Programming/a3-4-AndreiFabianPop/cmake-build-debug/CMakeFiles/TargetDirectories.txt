@@ -1,0 +1,3 @@
+C:/Users/andre/OneDrive/Documents/GitHub/a3-4-AndreiFabianPop/cmake-build-debug/CMakeFiles/a3_4_AndreiFabianPop.dir
+C:/Users/andre/OneDrive/Documents/GitHub/a3-4-AndreiFabianPop/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/andre/OneDrive/Documents/GitHub/a3-4-AndreiFabianPop/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,246 @@
+{
+	"BUILD_DIR" : "/home/andrew/GitHub/a8-9-AndreiFabianPop/cmake-build-debug/a8_9_AndreiFabianPop_autogen",
+	"CMAKE_BINARY_DIR" : "/home/andrew/GitHub/a8-9-AndreiFabianPop/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/andrew/GitHub/a8-9-AndreiFabianPop/cmake-build-debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/andrew/GitHub/a8-9-AndreiFabianPop",
+	"CMAKE_EXECUTABLE" : "/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/andrew/GitHub/a8-9-AndreiFabianPop/CMakeLists.txt",
+		"/home/andrew/GitHub/a8-9-AndreiFabianPop/cmake-build-debug/CMakeFiles/3.22.3/CMakeSystem.cmake",
+		"/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake",
+		"/home/andrew/GitHub/a8-9-AndreiFabianPop/cmake-build-debug/CMakeFiles/3.22.3/CMakeCCompiler.cmake",
+		"/home/andrew/GitHub/a8-9-AndreiFabianPop/cmake-build-debug/CMakeFiles/3.22.3/CMakeCXXCompiler.cmake",
+		"/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake",
+		"/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake",
+		"/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake",
+		"/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake",
+		"/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake",
+		"/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake",
+		"/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake",
+		"/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake",
+		"/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake",
+		"/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
+		"/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake",
+		"/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake",
+		"/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake",
+		"/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXInformation.cmake",
+		"/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake",
+		"/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake",
+		"/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake",
+		"/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake",
+		"/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake",
+		"/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreMacros.cmake",
+		"/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseArguments.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfig.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSKmsEglDeviceIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSKmsGbmIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QLibInputPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
+		"/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseArguments.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/andrew/GitHub/a8-9-AndreiFabianPop",
+	"DEP_FILE" : "/home/andrew/GitHub/a8-9-AndreiFabianPop/cmake-build-debug/a8_9_AndreiFabianPop_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "a8_9_AndreiFabianPop_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"/home/andrew/GitHub/a8-9-AndreiFabianPop/src/Domain/Tutorial.h",
+			"MU",
+			"WIAYRQU7FO/moc_Tutorial.cpp",
+			null
+		],
+		[
+			"/home/andrew/GitHub/a8-9-AndreiFabianPop/src/ExceptionsAndValidators/Exception.h",
+			"MU",
+			"OLZRXXK4W2/moc_Exception.cpp",
+			null
+		],
+		[
+			"/home/andrew/GitHub/a8-9-AndreiFabianPop/src/ExceptionsAndValidators/Validator.h",
+			"MU",
+			"OLZRXXK4W2/moc_Validator.cpp",
+			null
+		],
+		[
+			"/home/andrew/GitHub/a8-9-AndreiFabianPop/src/GUI/GUI.h",
+			"MU",
+			"RDKJSLABA2/moc_GUI.cpp",
+			null
+		],
+		[
+			"/home/andrew/GitHub/a8-9-AndreiFabianPop/src/Repository/CSV_WatchList.h",
+			"MU",
+			"NUUEGJZ23L/moc_CSV_WatchList.cpp",
+			null
+		],
+		[
+			"/home/andrew/GitHub/a8-9-AndreiFabianPop/src/Repository/HTML_WatchList.h",
+			"MU",
+			"NUUEGJZ23L/moc_HTML_WatchList.cpp",
+			null
+		],
+		[
+			"/home/andrew/GitHub/a8-9-AndreiFabianPop/src/Repository/Repository.h",
+			"MU",
+			"NUUEGJZ23L/moc_Repository.cpp",
+			null
+		],
+		[
+			"/home/andrew/GitHub/a8-9-AndreiFabianPop/src/Repository/WatchList.h",
+			"MU",
+			"NUUEGJZ23L/moc_WatchList.cpp",
+			null
+		],
+		[
+			"/home/andrew/GitHub/a8-9-AndreiFabianPop/src/Service/Service.h",
+			"MU",
+			"WPGHVKM5IL/moc_Service.cpp",
+			null
+		],
+		[
+			"/home/andrew/GitHub/a8-9-AndreiFabianPop/src/Tests/Tests.h",
+			"MU",
+			"MPPLZUG2XZ/moc_Tests.cpp",
+			null
+		],
+		[
+			"/home/andrew/GitHub/a8-9-AndreiFabianPop/src/UI/UI.h",
+			"MU",
+			"WAYUIA5GRM/moc_UI.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/andrew/GitHub/a8-9-AndreiFabianPop/cmake-build-debug/a8_9_AndreiFabianPop_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/andrew/GitHub/a8-9-AndreiFabianPop/cmake-build-debug/a8_9_AndreiFabianPop_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/usr/include/x86_64-linux-gnu/qt5",
+		"/usr/include/x86_64-linux-gnu/qt5/QtCore",
+		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
+		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
+		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
+		"/usr/include/c++/11",
+		"/usr/include/x86_64-linux-gnu/c++/11",
+		"/usr/include/c++/11/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/11/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu",
+		"/usr/include"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-dM",
+		"-E",
+		"-c",
+		"/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/andrew/GitHub/a8-9-AndreiFabianPop/cmake-build-debug/a8_9_AndreiFabianPop_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/home/andrew/GitHub/a8-9-AndreiFabianPop/cmake-build-debug/CMakeFiles/a8_9_AndreiFabianPop_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
+	"QT_UIC_EXECUTABLE" : "/usr/lib/qt5/bin/uic",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 15,
+	"SETTINGS_FILE" : "/home/andrew/GitHub/a8-9-AndreiFabianPop/cmake-build-debug/CMakeFiles/a8_9_AndreiFabianPop_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/andrew/GitHub/a8-9-AndreiFabianPop/src/Domain/Tutorial.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/andrew/GitHub/a8-9-AndreiFabianPop/src/ExceptionsAndValidators/Exception.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/andrew/GitHub/a8-9-AndreiFabianPop/src/ExceptionsAndValidators/Validator.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/andrew/GitHub/a8-9-AndreiFabianPop/src/GUI/GUI.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/andrew/GitHub/a8-9-AndreiFabianPop/src/Repository/CSV_WatchList.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/andrew/GitHub/a8-9-AndreiFabianPop/src/Repository/HTML_WatchList.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/andrew/GitHub/a8-9-AndreiFabianPop/src/Service/Service.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/andrew/GitHub/a8-9-AndreiFabianPop/src/Tests/Tests.cpp",
+			"MU",
+			null
+		],
+		[ "/home/andrew/GitHub/a8-9-AndreiFabianPop/src/UI/UI.cpp", "MU", null ],
+		[ "/home/andrew/GitHub/a8-9-AndreiFabianPop/src/main.cpp", "MU", null ]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

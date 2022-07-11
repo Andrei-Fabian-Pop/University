@@ -1,0 +1,6 @@
+1,1,ion,txt1,11
+2,1,ion,txt2,28
+3,2,andreea,txt3,8
+4,2,alex,good_luck,5
+5,2,alex,good_luck2,4
+6,2,alex,good_luck,5

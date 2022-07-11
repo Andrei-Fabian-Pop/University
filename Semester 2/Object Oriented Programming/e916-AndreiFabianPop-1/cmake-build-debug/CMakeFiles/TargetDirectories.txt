@@ -1,0 +1,5 @@
+/home/andrew/GitHub/e916-AndreiFabianPop-1/cmake-build-debug/CMakeFiles/e916_AndreiFabianPop_1.dir
+/home/andrew/GitHub/e916-AndreiFabianPop-1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/andrew/GitHub/e916-AndreiFabianPop-1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/andrew/GitHub/e916-AndreiFabianPop-1/cmake-build-debug/CMakeFiles/e916_AndreiFabianPop_1_autogen_timestamp_deps.dir
+/home/andrew/GitHub/e916-AndreiFabianPop-1/cmake-build-debug/CMakeFiles/e916_AndreiFabianPop_1_autogen.dir

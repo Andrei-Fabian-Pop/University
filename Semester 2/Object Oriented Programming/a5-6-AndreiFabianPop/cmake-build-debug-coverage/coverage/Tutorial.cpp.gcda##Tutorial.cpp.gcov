@@ -1,0 +1,208 @@
+        -:    0:Source:/tmp/tmp.aGTKLkgnJ8/src/Domain/Tutorial.cpp
+        -:    0:Graph:/tmp/tmp.aGTKLkgnJ8/cmake-build-debug-coverage/CMakeFiles/a5_6_AndreiFabianPop.dir/src/Domain/Tutorial.cpp.gcno
+        -:    0:Data:/tmp/tmp.aGTKLkgnJ8/cmake-build-debug-coverage/CMakeFiles/a5_6_AndreiFabianPop.dir/src/Domain/Tutorial.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by andre on 19/03/2022.
+        -:    3://
+        -:    4:
+        -:    5:#include "Tutorial.h"
+        -:    6:
+        -:    7:#include <utility>
+        -:    8:
+        -:    9:
+function _ZN8TutorialC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_jjjS5_ called 19 returned 100% blocks executed 100%
+       19:   10:Tutorial::Tutorial(std::string title, std::string presenter, unsigned int duration_minutes, unsigned int duration_seconds,
+       19:   10-block  0
+       19:   11:                   unsigned int likes, std::string link) {
+       19:   11-block  0
+call    0 returned 19
+call    1 returned 19
+call    2 returned 19
+       19:   12:    this->title = std::move(title);
+call    0 returned 19
+call    1 returned 19
+       19:   13:    this->presenter = std::move(presenter);
+call    0 returned 19
+call    1 returned 19
+       19:   14:    this->link = std::move(link);
+call    0 returned 19
+call    1 returned 19
+        -:   15:
+       19:   16:    this->duration_minutes = duration_minutes;
+       19:   17:    this->duration_seconds = duration_seconds;
+       19:   18:    this->likes = likes;
+       19:   19:}
+        -:   20:
+function _ZN8TutorialC2Ev called 127 returned 100% blocks executed 62%
+      254:   21:Tutorial::Tutorial() {
+      127:   21-block  0
+      127:   21-block  1
+call    0 returned 127
+call    1 returned 127
+call    2 returned 127
+    %%%%%:   21-block  2
+call    3 never executed
+    %%%%%:   21-block  3
+call    4 never executed
+    %%%%%:   21-block  4
+call    5 never executed
+      127:   22:    this->title = "";
+call    0 returned 127
+branch  1 taken 127 (fallthrough)
+branch  2 taken 0 (throw)
+      127:   23:    this->presenter = "";
+      127:   23-block  0
+call    0 returned 127
+branch  1 taken 127 (fallthrough)
+branch  2 taken 0 (throw)
+      127:   24:    this->link = "";
+      127:   24-block  0
+call    0 returned 127
+branch  1 taken 127 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   25:
+      127:   26:    this->duration_minutes = 0;
+      127:   27:    this->duration_seconds = 0;
+      127:   28:    this->likes = 0;
+      127:   29:}
+      127:   29-block  0
+        -:   30:
+function _ZNK8Tutorial9get_titleB5cxx11Ev called 120 returned 100% blocks executed 100%
+      120:   31:std::string Tutorial::get_title() const {
+      120:   31-block  0
+      120:   32:    return this->title;
+      120:   32-block  0
+call    0 returned 120
+        -:   33:}
+        -:   34:
+function _ZN8Tutorial9set_titleENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 2 returned 100% blocks executed 100%
+        2:   35:void Tutorial::set_title(std::string new_title) {
+        2:   35-block  0
+        2:   36:    this->title = std::move(new_title);
+        2:   36-block  0
+call    0 returned 2
+call    1 returned 2
+        2:   37:}
+        -:   38:
+function _ZNK8Tutorial13get_presenterB5cxx11Ev called 7 returned 100% blocks executed 100%
+        7:   39:std::string Tutorial::get_presenter() const {
+        7:   39-block  0
+        7:   40:    return this->presenter;
+        7:   40-block  0
+call    0 returned 7
+        -:   41:}
+        -:   42:
+function _ZN8Tutorial13set_presenterENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 2 returned 100% blocks executed 100%
+        2:   43:void Tutorial::set_presenter(std::string new_presenter) {
+        2:   43-block  0
+        2:   44:    this->presenter = std::move(new_presenter);
+        2:   44-block  0
+call    0 returned 2
+call    1 returned 2
+        2:   45:}
+        -:   46:
+function _ZNK8Tutorial20get_duration_minutesEv called 2 returned 100% blocks executed 100%
+        2:   47:unsigned int Tutorial::get_duration_minutes() const {
+        2:   47-block  0
+        2:   48:    return this->duration_minutes;
+        2:   48-block  0
+        -:   49:}
+        -:   50:
+function _ZN8Tutorial20set_duration_minutesEj called 2 returned 100% blocks executed 100%
+        2:   51:void Tutorial::set_duration_minutes(unsigned int minutes) {
+        2:   51-block  0
+        2:   52:    this->duration_minutes = minutes;
+        2:   53:}
+        -:   54:
+function _ZNK8Tutorial20get_duration_secondsEv called 2 returned 100% blocks executed 100%
+        2:   55:unsigned int Tutorial::get_duration_seconds() const {
+        2:   55-block  0
+        2:   56:    return this->duration_seconds;
+        2:   56-block  0
+        -:   57:}
+        -:   58:
+function _ZN8Tutorial20set_duration_secondsEj called 2 returned 100% blocks executed 100%
+        2:   59:void Tutorial::set_duration_seconds(unsigned int seconds) {
+        2:   59-block  0
+        2:   60:    this->duration_seconds = seconds;
+        2:   61:}
+        -:   62:
+function _ZNK8Tutorial9get_likesEv called 3 returned 100% blocks executed 100%
+        3:   63:unsigned int Tutorial::get_likes() const {
+        3:   63-block  0
+        3:   64:    return this->likes;
+        3:   64-block  0
+        -:   65:}
+        -:   66:
+function _ZN8Tutorial9set_likesEj called 2 returned 100% blocks executed 100%
+        2:   67:void Tutorial::set_likes(unsigned int new_likes) {
+        2:   67-block  0
+        2:   68:    this->likes = new_likes;
+        2:   69:}
+        -:   70:
+function _ZNK8Tutorial8get_linkB5cxx11Ev called 7 returned 100% blocks executed 100%
+        7:   71:std::string Tutorial::get_link() const {
+        7:   71-block  0
+        7:   72:    return this->link;
+        7:   72-block  0
+call    0 returned 7
+        -:   73:}
+        -:   74:
+function _ZN8Tutorial8set_linkENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 2 returned 100% blocks executed 100%
+        2:   75:void Tutorial::set_link(std::string new_link) {
+        2:   75-block  0
+        2:   76:    this->link = std::move(new_link);
+        2:   76-block  0
+call    0 returned 2
+call    1 returned 2
+        2:   77:}
+        -:   78:
+        -:   79:Tutorial::~Tutorial() = default;
+        -:   80:
+function _ZN8TutorialC2ERKS_ called 1 returned 100% blocks executed 62%
+        2:   81:Tutorial::Tutorial(const Tutorial &t) {
+        1:   81-block  0
+        1:   81-block  1
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+    %%%%%:   81-block  2
+call    3 never executed
+    %%%%%:   81-block  3
+call    4 never executed
+    %%%%%:   81-block  4
+call    5 never executed
+        1:   82:    this->title = t.title;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   83:    this->presenter = t.presenter;
+        1:   83-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   84:    this->link = t.link;
+        1:   84-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   85:
+        1:   86:    this->duration_minutes = t.duration_minutes;
+        1:   87:    this->duration_seconds = t.duration_seconds;
+        1:   88:    this->likes = t.likes;
+function _GLOBAL__sub_I__ZN8TutorialC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_jjjS5_ called 1 returned 100% blocks executed 100%
+function _Z41__static_initialization_and_destruction_0ii called 1 returned 100% blocks executed 100%
+        5:   89:}
+        1:   89-block  0
+        1:   89-block  1
+call    0 returned 1
+        1:   89-block  2
+        1:   89-block  3
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:   89-block  4
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0
+        1:   89-block  5

@@ -1,0 +1,26 @@
+# ninja log v5
+169	1771	1652533725847348343	CMakeFiles/a8_9_AndreiFabianPop.dir/src/main.cpp.o	f440b59f8ff1b383
+166	3069	1652125744316095317	CMakeFiles/a8_9_AndreiFabianPop.dir/src/ExceptionsAndValidators/Validator.cpp.o	4ec156116eee6051
+289	610	1651920087139517520	CMakeFiles/a8_9_AndreiFabianPop.dir/src/ExceptionsAndValidators/Exception.cpp.o	6face211c9b802ac
+152	1622	1652533251091349419	CMakeFiles/a8_9_AndreiFabianPop.dir/src/UI/UI.cpp.o	189e1abd59dd6b31
+152	1025	1652533250495349421	CMakeFiles/a8_9_AndreiFabianPop.dir/src/Repository/HTML_WatchList.cpp.o	95be46aa9c8342a2
+15	651	1652533294451349321	CMakeFiles/a8_9_AndreiFabianPop.dir/src/Service/Service.cpp.o	81560c48f15813bd
+3810	4422	6722457486889727	a8_9_AndreiFabianPop.exe	5498c8a17646eb44
+1	10	1652535358603344643	a8_9_AndreiFabianPop_autogen/timestamp	13ae990e98f67715
+1	10	1652535358603344643	a8_9_AndreiFabianPop_autogen/mocs_compilation.cpp	13ae990e98f67715
+152	922	1652533250383349421	CMakeFiles/a8_9_AndreiFabianPop.dir/src/Repository/CSV_WatchList.cpp.o	b2ddeffdb5ec498a
+1676	2125	1652535360715344639	a8_9_AndreiFabianPop	15fd37b8e2d9115e
+169	1720	1652533725795348344	CMakeFiles/a8_9_AndreiFabianPop.dir/a8_9_AndreiFabianPop_autogen/mocs_compilation.cpp.o	cd1b0d1dc7a353e4
+1	10	1652535358603344643	/home/andrew/GitHub/a8-9-AndreiFabianPop/cmake-build-debug/a8_9_AndreiFabianPop_autogen/mocs_compilation.cpp	13ae990e98f67715
+286	331	1651920086859517520	CMakeFiles/a8_9_AndreiFabianPop.dir/src/Tests/Tests.cpp.o	78eab7a872ce401b
+11	1676	1652535360271344640	CMakeFiles/a8_9_AndreiFabianPop.dir/src/GUI/GUI.cpp.o	6868a0de97d80c89
+166	930	1652125742180095281	CMakeFiles/a8_9_AndreiFabianPop.dir/src/Domain/Tutorial.cpp.o	1188f65500fd1da1
+1	10	1652535358603344643	/home/andrew/GitHub/a8-9-AndreiFabianPop/cmake-build-debug/a8_9_AndreiFabianPop_autogen/timestamp	13ae990e98f67715
+2	200	1652963399806042965	a8_9_AndreiFabianPop_autogen/timestamp	13ae990e98f67715
+2	200	1652963399806042965	a8_9_AndreiFabianPop_autogen/mocs_compilation.cpp	13ae990e98f67715
+2	200	1652963399806042965	/home/andrew/GitHub/a8-9-AndreiFabianPop/cmake-build-debug/a8_9_AndreiFabianPop_autogen/timestamp	13ae990e98f67715
+2	200	1652963399806042965	/home/andrew/GitHub/a8-9-AndreiFabianPop/cmake-build-debug/a8_9_AndreiFabianPop_autogen/mocs_compilation.cpp	13ae990e98f67715
+201	2087	1652963401694053431	CMakeFiles/a8_9_AndreiFabianPop.dir/a8_9_AndreiFabianPop_autogen/mocs_compilation.cpp.o	cd1b0d1dc7a353e4
+201	2170	1652963401778053896	CMakeFiles/a8_9_AndreiFabianPop.dir/src/main.cpp.o	f440b59f8ff1b383
+201	2273	1652963401882054473	CMakeFiles/a8_9_AndreiFabianPop.dir/src/GUI/GUI.cpp.o	6868a0de97d80c89
+2273	2736	1652963402342057023	a8_9_AndreiFabianPop	15fd37b8e2d9115e

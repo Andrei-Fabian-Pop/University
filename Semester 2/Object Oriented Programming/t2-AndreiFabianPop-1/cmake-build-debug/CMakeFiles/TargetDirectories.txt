@@ -1,0 +1,3 @@
+/home/andrew/GitHub/t2-AndreiFabianPop-1/cmake-build-debug/CMakeFiles/t2_AndreiFabianPop_1.dir
+/home/andrew/GitHub/t2-AndreiFabianPop-1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/andrew/GitHub/t2-AndreiFabianPop-1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

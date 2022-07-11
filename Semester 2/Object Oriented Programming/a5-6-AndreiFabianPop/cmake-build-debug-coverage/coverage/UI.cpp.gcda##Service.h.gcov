@@ -1,0 +1,37 @@
+        -:    0:Source:/tmp/tmp.aGTKLkgnJ8/src/Service/Service.h
+        -:    0:Graph:/tmp/tmp.aGTKLkgnJ8/cmake-build-debug-coverage/CMakeFiles/a5_6_AndreiFabianPop.dir/src/UI/UI.cpp.gcno
+        -:    0:Data:/tmp/tmp.aGTKLkgnJ8/cmake-build-debug-coverage/CMakeFiles/a5_6_AndreiFabianPop.dir/src/UI/UI.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by andre on 19/03/2022.
+        -:    3://
+        -:    4:
+        -:    5:#pragma once
+        -:    6:#include "../DynamicVector/DynamicVector.h"
+        -:    7:#include "../Domain/Tutorial.h"
+        -:    8:
+function _ZN7ServiceaSERKS_ called 1 returned 100% blocks executed 100%
+        2:    9:class Service {
+        1:    9-block  0
+        1:    9-block  1
+call    0 returned 1
+call    1 returned 1
+        -:   10:    private:
+        -:   11:        DynamicVector<Tutorial> mainDatabase;
+        -:   12:        DynamicVector<Tutorial> watchList;
+        -:   13:    public:
+        -:   14:        explicit Service(const DynamicVector<Tutorial>& dynamicVector);
+        -:   15:        ~Service();
+        -:   16:
+        -:   17:        int add(std::string title, std::string presenter, int duration_minutes, int duration_seconds, int likes, std::string link);
+        -:   18:        int remove(int index);
+        -:   19:        int update(int index, int field_index, std::string string_field, int int_field);
+        -:   20:        DynamicVector<Tutorial> get_all() const;
+        -:   21:        bool valid_index(int index) const;
+        -:   22:
+        -:   23:        DynamicVector<Tutorial> get_by_presenter(const std::string& presenter);
+        -:   24:        DynamicVector<Tutorial> get_watchList() const;
+        -:   25:        int add_to_playlist(const Tutorial& tutorial);
+        -:   26:        int remove_from_playlist(int index);
+        -:   27:};

@@ -1,0 +1,561 @@
+        -:    0:Source:/tmp/tmp.aGTKLkgnJ8/src/DynamicVector/DynamicVector.h
+        -:    0:Graph:/tmp/tmp.aGTKLkgnJ8/cmake-build-debug-coverage/CMakeFiles/a5_6_AndreiFabianPop.dir/src/Service/Service.cpp.gcno
+        -:    0:Data:/tmp/tmp.aGTKLkgnJ8/cmake-build-debug-coverage/CMakeFiles/a5_6_AndreiFabianPop.dir/src/Service/Service.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by andre on 19/03/2022.
+        -:    3://
+        -:    4:#pragma once
+        -:    5:
+        -:    6:#include "../Domain/Tutorial.h"
+        -:    7:#include <cstring>
+        -:    8:
+        -:    9:template <typename TElement>
+        -:   10:class DynamicVector
+        -:   11:{
+        -:   12:private:
+        -:   13:    TElement* elems;
+        -:   14:    int size{};
+        -:   15:    int capacity{};
+        -:   16:
+        -:   17:public:
+        -:   18:    // default constructor for a DynamicVector
+        -:   19:    explicit  DynamicVector();
+        -:   20:    explicit DynamicVector(int capacity);
+        -:   21:
+        -:   22:    // copy constructor for a DynamicVector
+        -:   23:    DynamicVector(const DynamicVector& v);
+        -:   24:    ~DynamicVector();
+        -:   25:
+        -:   26:    // assignment operator for a DynamicVector
+        -:   27:    DynamicVector& operator=(const DynamicVector& v);
+        -:   28:
+        -:   29:    // Adds an element to the current DynamicVector.
+        -:   30:    int add(const TElement& e);
+        -:   31:
+        -:   32:    // Removes the element from the specified index
+        -:   33:    void remove(int index);
+        -:   34:
+        -:   35:    // Returns the index of the element with the specified values, returns -1 if it is not found
+        -:   36:    int get_index(const std::string&  title, const std::string&  presenter, const std::string&  link);
+        -:   37:
+        -:   38:    bool valid(const Tutorial& e) const;
+        -:   39:    // Checks if e is not already in the array, returns false if it is, true if it is not
+        -:   40:
+        -:   41:    bool valid_index(int index) const;
+        -:   42:    // Checks if there is an entry at the index 'index'
+        -:   43:
+        -:   44:    /*
+        -:   45:    Overloading the subscript operator
+        -:   46:    Input: pos - a valid position within the vector.
+        -:   47:    Output: a reference to the element o position pos.
+        -:   48:    */
+        -:   49:    TElement& operator[](int pos);
+        -:   50:
+        -:   51:    void operator+(const TElement& e);
+        -:   52:
+        -:   53:    int getSize() const;
+        -:   54:
+        -:   55:private:
+        -:   56:    // Resizes the current DynamicVector, multiplying its capacity by a given factor (real number).
+        -:   57:    void resize(int size);
+        -:   58:};
+        -:   59:
+        -:   60:template<typename TElement>
+function _ZN13DynamicVectorI8TutorialEC2Ei called 0 returned 0% blocks executed 0%
+    #####:   61:DynamicVector<TElement>::DynamicVector(int capacity) {
+    $$$$$:   61-block  0
+    #####:   62:    this->size = 0;
+    #####:   63:    this->capacity = capacity;
+    #####:   64:    this->elems = new TElement[capacity];
+    $$$$$:   64-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:   64-block  1
+    $$$$$:   64-block  2
+    $$$$$:   64-block  3
+call    2 never executed
+    $$$$$:   64-block  4
+branch  3 never executed
+branch  4 never executed
+    $$$$$:   64-block  5
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    $$$$$:   64-block  6
+    %%%%%:   64-block  7
+    %%%%%:   64-block  8
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   64-block  9
+call   10 never executed
+    %%%%%:   64-block 10
+    %%%%%:   64-block 11
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   64-block 12
+    %%%%%:   64-block 13
+    %%%%%:   64-block 14
+call   13 never executed
+    #####:   65:}
+    $$$$$:   65-block  0
+    %%%%%:   65-block  1
+branch  0 never executed
+branch  1 never executed
+        -:   66:
+        -:   67:template<typename TElement>
+function _ZN13DynamicVectorI8TutorialEC2ERKS1_ called 14 returned 100% blocks executed 57%
+       14:   68:DynamicVector<TElement>::DynamicVector(const DynamicVector& v)
+       14:   68-block  0
+        -:   69:{
+       14:   70:    this->size = v.size;
+       14:   71:    this->capacity = v.capacity;
+       36:   72:    this->elems = new TElement[this->capacity];
+       14:   72-block  0
+branch  0 taken 14 (fallthrough)
+branch  1 taken 0
+       14:   72-block  1
+    $$$$$:   72-block  2
+       14:   72-block  3
+call    2 returned 14
+       36:   72-block  4
+branch  3 taken 22 (fallthrough)
+branch  4 taken 14
+       22:   72-block  5
+call    5 returned 22
+branch  6 taken 22 (fallthrough)
+branch  7 taken 0 (throw)
+       22:   72-block  6
+    %%%%%:   72-block  7
+    %%%%%:   72-block  8
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   72-block  9
+call   10 never executed
+    %%%%%:   72-block 10
+    %%%%%:   72-block 11
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   72-block 12
+    %%%%%:   72-block 13
+    %%%%%:   72-block 14
+call   13 never executed
+       31:   73:    for (int i = 0; i < this->size; i++)
+       14:   73-block  0
+       31:   73-block  1
+branch  0 taken 17 (fallthrough)
+branch  1 taken 14
+       17:   74:        this->elems[i] = v.elems[i];
+       17:   74-block  0
+call    0 returned 17
+       14:   75:}
+       14:   75-block  0
+    %%%%%:   75-block  1
+branch  0 never executed
+branch  1 never executed
+        -:   76:
+        -:   77:template<typename TElement>
+function _ZN13DynamicVectorI8TutorialED2Ev called 0 returned 0% blocks executed 0%
+    #####:   78:DynamicVector<TElement>::~DynamicVector() {
+    $$$$$:   78-block  0
+    #####:   79:    delete[] this->elems;
+    $$$$$:   79-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:   79-block  1
+    $$$$$:   79-block  2
+branch  2 never executed
+branch  3 never executed
+    $$$$$:   79-block  3
+call    4 never executed
+    $$$$$:   79-block  4
+call    5 never executed
+    #####:   80:}
+        -:   81:
+        -:   82:template<typename TElement>
+function _ZN13DynamicVectorI8TutorialEaSERKS1_ called 0 returned 0% blocks executed 0%
+    #####:   83:DynamicVector<TElement>& DynamicVector<TElement>::operator=(const DynamicVector& v)
+    $$$$$:   83-block  0
+        -:   84:{
+    #####:   85:    if (this == &v)
+    $$$$$:   85-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   86:        return *this;
+    $$$$$:   86-block  0
+        -:   87:
+    #####:   88:    this->size = v.size;
+    #####:   89:    this->capacity = v.capacity;
+        -:   90:
+    #####:   91:    delete[] this->elems;
+    $$$$$:   91-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:   91-block  1
+    $$$$$:   91-block  2
+branch  2 never executed
+branch  3 never executed
+    $$$$$:   91-block  3
+call    4 never executed
+    $$$$$:   91-block  4
+call    5 never executed
+    #####:   92:    this->elems = new TElement[this->capacity];
+    $$$$$:   92-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:   92-block  1
+    $$$$$:   92-block  2
+    $$$$$:   92-block  3
+call    2 never executed
+    $$$$$:   92-block  4
+branch  3 never executed
+branch  4 never executed
+    $$$$$:   92-block  5
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    $$$$$:   92-block  6
+    %%%%%:   92-block  7
+    %%%%%:   92-block  8
+branch  8 never executed
+branch  9 never executed
+    %%%%%:   92-block  9
+call   10 never executed
+    %%%%%:   92-block 10
+    %%%%%:   92-block 11
+branch 11 never executed
+branch 12 never executed
+    %%%%%:   92-block 12
+    %%%%%:   92-block 13
+    %%%%%:   92-block 14
+call   13 never executed
+    #####:   93:    for (int i = 0; i < this->size; i++)
+    $$$$$:   93-block  0
+    $$$$$:   93-block  1
+branch  0 never executed
+branch  1 never executed
+    #####:   94:        this->elems[i] = v.elems[i];
+    $$$$$:   94-block  0
+call    0 never executed
+        -:   95:
+    #####:   96:    return *this;
+    $$$$$:   96-block  0
+    $$$$$:   96-block  1
+    %%%%%:   96-block  2
+branch  0 never executed
+branch  1 never executed
+        -:   97:}
+        -:   98:
+        -:   99:template<typename TElement>
+function _ZN13DynamicVectorI8TutorialE3addERKS0_ called 18 returned 100% blocks executed 100%
+       18:  100:int DynamicVector<TElement>::add(const TElement& e)
+       18:  100-block  0
+        -:  101:{
+       18:  102:    if (valid(e)) {
+       18:  102-block  0
+call    0 returned 18
+branch  1 taken 17 (fallthrough)
+branch  2 taken 1
+       17:  103:        if (this->size == this->capacity)
+       17:  103-block  0
+branch  0 taken 10 (fallthrough)
+branch  1 taken 7
+       10:  104:            this->resize(this->size + 1);
+       10:  104-block  0
+call    0 returned 10
+       17:  105:        this->elems[this->size] = e;
+       17:  105-block  0
+call    0 returned 17
+       17:  106:        this->size++;
+        -:  107:
+       17:  108:        return 1;
+        -:  109:    } else {
+        1:  110:        return 0;
+        1:  110-block  0
+        -:  111:    }
+        -:  112:}
+        -:  113:
+        -:  114:template<typename TElement>
+function _ZN13DynamicVectorI8TutorialE6resizeEi called 10 returned 100% blocks executed 64%
+       10:  115:void DynamicVector<TElement>::resize(int new_size)
+       10:  115-block  0
+        -:  116:{
+       10:  117:    this->capacity = new_size;
+        -:  118:
+       59:  119:    auto* els = new TElement[this->capacity];
+       10:  119-block  0
+branch  0 taken 10 (fallthrough)
+branch  1 taken 0
+       10:  119-block  1
+    $$$$$:  119-block  2
+       10:  119-block  3
+call    2 returned 10
+       59:  119-block  4
+branch  3 taken 49 (fallthrough)
+branch  4 taken 10
+       49:  119-block  5
+call    5 returned 49
+branch  6 taken 49 (fallthrough)
+branch  7 taken 0 (throw)
+       49:  119-block  6
+    %%%%%:  119-block  7
+    %%%%%:  119-block  8
+branch  8 never executed
+branch  9 never executed
+    %%%%%:  119-block  9
+call   10 never executed
+    %%%%%:  119-block 10
+    %%%%%:  119-block 11
+branch 11 never executed
+branch 12 never executed
+    %%%%%:  119-block 12
+    %%%%%:  119-block 13
+    %%%%%:  119-block 14
+call   13 never executed
+       49:  120:    for (int i = 0; i < this->size; i++)
+       10:  120-block  0
+       49:  120-block  1
+branch  0 taken 39 (fallthrough)
+branch  1 taken 10
+       39:  121:        els[i] = this->elems[i];
+       39:  121-block  0
+call    0 returned 39
+        -:  122:
+       49:  123:    delete[] this->elems;
+       10:  123-block  0
+branch  0 taken 10 (fallthrough)
+branch  1 taken 0
+       10:  123-block  1
+       49:  123-block  2
+branch  2 taken 39 (fallthrough)
+branch  3 taken 10
+       39:  123-block  3
+call    4 returned 39
+       10:  123-block  4
+call    5 returned 10
+       10:  124:    this->elems = els;
+       10:  125:}
+       10:  125-block  0
+    %%%%%:  125-block  1
+branch  0 never executed
+branch  1 never executed
+        -:  126:template<typename TElement>
+function _ZN13DynamicVectorI8TutorialEixEi called 0 returned 0% blocks executed 0%
+    #####:  127:TElement & DynamicVector<TElement>::operator[](int pos)
+    $$$$$:  127-block  0
+        -:  128:{
+    #####:  129:    return this->elems[pos];
+    $$$$$:  129-block  0
+        -:  130:}
+        -:  131:
+        -:  132:template<typename TElement>
+function _ZNK13DynamicVectorI8TutorialE7getSizeEv called 0 returned 0% blocks executed 0%
+    #####:  133:int DynamicVector<TElement>::getSize() const
+    $$$$$:  133-block  0
+        -:  134:{
+    #####:  135:    return this->size;
+    $$$$$:  135-block  0
+        -:  136:}
+        -:  137:
+        -:  138:template<typename TElement>
+function _ZN13DynamicVectorI8TutorialE6removeEi called 2 returned 100% blocks executed 100%
+        2:  139:void DynamicVector<TElement>::remove(int index) {
+        2:  139-block  0
+        3:  140:    for (int i = index; i < this->size - 1; ++i) {
+        2:  140-block  0
+        3:  140-block  1
+branch  0 taken 1 (fallthrough)
+branch  1 taken 2
+        1:  141:        this->elems[i] = this->elems[i+1];
+        1:  141-block  0
+call    0 returned 1
+        -:  142:    }
+        2:  143:    --this->size;
+        2:  144:}
+        -:  145:
+        -:  146:template<typename TElement>
+        -:  147:int DynamicVector<TElement>::get_index(const std::string& title, const std::string& presenter, const std::string& link) {
+        -:  148:    for (int i = 0; i < this->size; ++i) {
+        -:  149:        if (this->elems[i].get_title() == title &&
+        -:  150:            this->elems[i].get_presenter() == presenter &&
+        -:  151:            this->elems[i].get_link() == link) {
+        -:  152:            return i;
+        -:  153:        }
+        -:  154:    }
+        -:  155:
+        -:  156:    return -1;
+        -:  157:}
+        -:  158:
+        -:  159:template<typename TElement>
+function _ZN13DynamicVectorI8TutorialEC2Ev called 5 returned 100% blocks executed 100%
+        5:  160:DynamicVector<TElement>::DynamicVector() {
+        5:  160-block  0
+        5:  161:    this->elems = new TElement [0];
+        5:  161-block  0
+call    0 returned 5
+        5:  162:    this->size = 0;
+        5:  163:    this->capacity = 0;
+        5:  164:}
+        -:  165:
+        -:  166:template<typename TElement>
+function _ZNK13DynamicVectorI8TutorialE5validERKS0_ called 19 returned 100% blocks executed 60%
+       19:  167:bool DynamicVector<TElement>::valid(const Tutorial& e) const {
+       19:  167-block  0
+       71:  168:    for (int i = 0; i < this->size; ++i) {
+       19:  168-block  0
+       71:  168-block  1
+branch  0 taken 54 (fallthrough)
+branch  1 taken 17
+       52:  168-block  2
+      110:  169:        if (this->elems[i].get_title() == e.get_title() &&
+       54:  169-block  0
+call    0 returned 54
+branch  1 taken 54 (fallthrough)
+branch  2 taken 0 (throw)
+       54:  169-block  1
+call    3 returned 54
+branch  4 taken 54 (fallthrough)
+branch  5 taken 0 (throw)
+       54:  169-block  2
+call    6 returned 54
+branch  7 taken 2 (fallthrough)
+branch  8 taken 0
+       54:  169-block  3
+branch  9 taken 54 (fallthrough)
+branch 10 taken 0
+       54:  169-block  4
+call   11 returned 54
+       54:  169-block  5
+branch 12 taken 54 (fallthrough)
+branch 13 taken 0
+       54:  169-block  6
+call   14 returned 54
+       54:  169-block  7
+branch 15 taken 2 (fallthrough)
+branch 16 taken 52
+    %%%%%:  169-block  8
+branch 17 never executed
+branch 18 never executed
+    %%%%%:  169-block  9
+call   19 never executed
+    %%%%%:  169-block 10
+    %%%%%:  169-block 11
+    %%%%%:  169-block 12
+branch 20 never executed
+branch 21 never executed
+    %%%%%:  169-block 13
+call   22 never executed
+    %%%%%:  169-block 14
+      110:  170:            this->elems[i].get_presenter() == e.get_presenter() &&
+branch  0 taken 2 (fallthrough)
+branch  1 taken 52
+        2:  170-block  0
+call    2 returned 2
+branch  3 taken 2 (fallthrough)
+branch  4 taken 0 (throw)
+        2:  170-block  1
+call    5 returned 2
+branch  6 taken 2 (fallthrough)
+branch  7 taken 0 (throw)
+        2:  170-block  2
+call    8 returned 2
+branch  9 taken 2 (fallthrough)
+branch 10 taken 0
+        2:  170-block  3
+       52:  170-block  4
+       54:  170-block  5
+branch 11 taken 2 (fallthrough)
+branch 12 taken 52
+        2:  170-block  6
+call   13 returned 2
+       54:  170-block  7
+branch 14 taken 2 (fallthrough)
+branch 15 taken 52
+        2:  170-block  8
+call   16 returned 2
+    %%%%%:  170-block  9
+branch 17 never executed
+branch 18 never executed
+    %%%%%:  170-block 10
+call   19 never executed
+    %%%%%:  170-block 11
+    %%%%%:  170-block 12
+    %%%%%:  170-block 13
+branch 20 never executed
+branch 21 never executed
+    %%%%%:  170-block 14
+call   22 never executed
+    %%%%%:  170-block 15
+    %%%%%:  170-block 16
+       56:  171:            this->elems[i].get_link() == e.get_link()) {
+        2:  171-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:  171-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:  171-block  2
+call    6 returned 2
+       54:  171-block  3
+branch  7 taken 2 (fallthrough)
+branch  8 taken 52
+        2:  171-block  4
+call    9 returned 2
+       54:  171-block  5
+branch 10 taken 2 (fallthrough)
+branch 11 taken 52
+        2:  171-block  6
+call   12 returned 2
+    %%%%%:  171-block  7
+branch 13 never executed
+branch 14 never executed
+    %%%%%:  171-block  8
+call   15 never executed
+    %%%%%:  171-block  9
+    %%%%%:  171-block 10
+    %%%%%:  171-block 11
+branch 16 never executed
+branch 17 never executed
+    %%%%%:  171-block 12
+call   18 never executed
+    %%%%%:  171-block 13
+    %%%%%:  171-block 14
+        2:  172:            return false;
+        2:  172-block  0
+        -:  173:        }
+        -:  174:    }
+       19:  175:    return true;
+       17:  175-block  0
+       19:  175-block  1
+        -:  176:}
+        -:  177:
+        -:  178:template<typename TElement>
+function _ZNK13DynamicVectorI8TutorialE11valid_indexEi called 5 returned 100% blocks executed 100%
+        5:  179:bool DynamicVector<TElement>::valid_index(int index) const {
+        5:  179-block  0
+        5:  180:    if (index >= 0 && index < this->size) {
+        5:  180-block  0
+branch  0 taken 4 (fallthrough)
+branch  1 taken 1
+        4:  180-block  1
+branch  2 taken 3 (fallthrough)
+branch  3 taken 1
+        3:  181:        return true;
+        3:  181-block  0
+        -:  182:    }
+        2:  183:    return false;
+        2:  183-block  0
+        -:  184:}
+        -:  185:
+        -:  186:template<typename TElement>
+        -:  187:void DynamicVector<TElement>::operator+(const TElement& e) {
+        -:  188:    if (valid(e)) {
+        -:  189:        if (this->size == this->capacity)
+        -:  190:            this->resize(this->size + 1);
+        -:  191:        this->elems[this->size] = e;
+        -:  192:        this->size++;
+        -:  193:    }
+        -:  194:}

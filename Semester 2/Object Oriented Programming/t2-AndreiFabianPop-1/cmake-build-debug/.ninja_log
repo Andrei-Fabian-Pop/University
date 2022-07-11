@@ -1,0 +1,7 @@
+# ninja log v5
+1	427	1651756324187157214	CMakeFiles/t2_AndreiFabianPop_1.dir/Engine.cpp.o	7040401ae163df9d
+0	171	1651756543040152798	CMakeFiles/t2_AndreiFabianPop_1.dir/Car.cpp.o	2a8b026ae48f19b3
+0	263	1651758196944061567	CMakeFiles/t2_AndreiFabianPop_1.dir/main.cpp.o	f080a1fc070fd438
+0	388	1651756543256153781	CMakeFiles/t2_AndreiFabianPop_1.dir/Service.cpp.o	2be5c3e75d759573
+263	328	1651758197008064671	t2_AndreiFabianPop_1	cc8300c8730fc095
+0	339	1651756543208153563	CMakeFiles/t2_AndreiFabianPop_1.dir/UI.cpp.o	19c23502ad6fa5f1

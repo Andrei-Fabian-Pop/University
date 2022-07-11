@@ -1,0 +1,11 @@
+# ninja log v5
+1	8	1653569948002561899	t3_AndreiFabianPop_autogen/mocs_compilation.cpp	c079c437bef7b3eb
+1	8	1653569948002561899	t3_AndreiFabianPop_autogen/timestamp	c079c437bef7b3eb
+1	8	1653569948002561899	/home/andrew/GitHub/t3-AndreiFabianPop/cmake-build-debug/t3_AndreiFabianPop_autogen/timestamp	c079c437bef7b3eb
+10	1797	1653569809341471196	CMakeFiles/t3_AndreiFabianPop.dir/gui.cpp.o	d3da772a2efa5002
+165	1686	1653569119127814382	CMakeFiles/t3_AndreiFabianPop.dir/t3_AndreiFabianPop_autogen/mocs_compilation.cpp.o	75d2f49f9389844a
+542	936	1653569948926569139	t3_AndreiFabianPop	b277c24cd6f39824
+185	694	1653567313437480741	CMakeFiles/t3_AndreiFabianPop.dir/Document.cpp.o	b6b75241cb73ea37
+1	8	1653569948002561899	/home/andrew/GitHub/t3-AndreiFabianPop/cmake-build-debug/t3_AndreiFabianPop_autogen/mocs_compilation.cpp	c079c437bef7b3eb
+165	1875	1653569119319816044	CMakeFiles/t3_AndreiFabianPop.dir/main.cpp.o	e815a4918269a833
+9	542	1653569948534566068	CMakeFiles/t3_AndreiFabianPop.dir/Repository.cpp.o	cdcba797a5460af1

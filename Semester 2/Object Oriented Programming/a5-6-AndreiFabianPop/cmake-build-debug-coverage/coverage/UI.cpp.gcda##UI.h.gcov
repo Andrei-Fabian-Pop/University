@@ -1,0 +1,71 @@
+        -:    0:Source:/tmp/tmp.aGTKLkgnJ8/src/UI/UI.h
+        -:    0:Graph:/tmp/tmp.aGTKLkgnJ8/cmake-build-debug-coverage/CMakeFiles/a5_6_AndreiFabianPop.dir/src/UI/UI.cpp.gcno
+        -:    0:Data:/tmp/tmp.aGTKLkgnJ8/cmake-build-debug-coverage/CMakeFiles/a5_6_AndreiFabianPop.dir/src/UI/UI.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by andre on 19/03/2022.
+        -:    3://
+        -:    4:
+        -:    5:#pragma once
+        -:    6:#include "../Service/Service.h"
+        -:    7:#include <iostream>
+        -:    8:#include <exception>
+        -:    9://#include <windows.h>
+        -:   10://#include <shellapi.h>
+        -:   11:#include <utility>
+        -:   12:
+function _ZN2UID2Ev called 1 returned 100% blocks executed 100%
+        2:   13:class UI {
+        1:   13-block  0
+        1:   13-block  1
+call    0 returned 1
+        -:   14:    protected:
+        -:   15:        Service service;
+        -:   16:    public:
+        -:   17:        explicit UI(const Service& service);
+        -:   18:        ~UI();
+        -:   19:        static int get_user_input();
+        -:   20:};
+        -:   21:
+function _ZN5AdminD2Ev called 0 returned 0% blocks executed 0%
+    #####:   22:class Admin : public UI {
+    $$$$$:   22-block  0
+    $$$$$:   22-block  1
+call    0 never executed
+        -:   23:    private:
+        -:   24:        using UI::service;
+        -:   25:        const unsigned short MAX_OPTION = 4;
+        -:   26:    public:
+        -:   27:        explicit Admin(const Service &service);
+        -:   28:        ~Admin();
+        -:   29:
+        -:   30:        void start();
+        -:   31:        static void print_options();
+        -:   32:
+        -:   33:        void add();
+        -:   34:        void remove();
+        -:   35:        void update();
+        -:   36:        void print_all();
+        -:   37:};
+        -:   38:
+function _ZN6ClientD2Ev called 1 returned 100% blocks executed 100%
+        2:   39:class Client : public UI {
+        1:   39-block  0
+        1:   39-block  1
+call    0 returned 1
+        -:   40:    private:
+        -:   41:        using UI::service;
+        -:   42:        const unsigned short MAX_OPTION = 3;
+        -:   43:    public:
+        -:   44:        explicit Client(const Service &service);
+        -:   45:        ~Client();
+        -:   46:
+        -:   47:        void start();
+        -:   48:        static void print_options();
+        -:   49:
+        -:   50:        void print_by_presenter();
+        -:   51:        void delete_from_playlist();
+        -:   52:        void print_watchlist();
+        -:   53:        static void open_in_browser(const Tutorial& tutorial);
+        -:   54:};

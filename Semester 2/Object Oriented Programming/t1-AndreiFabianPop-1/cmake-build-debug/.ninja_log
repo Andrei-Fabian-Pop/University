@@ -1,0 +1,20 @@
+# ninja log v5
+216	1809	6710389101002981	CMakeFiles/t1_AndreiFabianPop_1.dir/src/Repository/Repository.cpp.obj	8f5cd403306b8759
+148	1822	6710389101167319	CMakeFiles/t1_AndreiFabianPop_1.dir/src/main.cpp.obj	2df633b103f88ce3
+2	1823	6710389101187302	CMakeFiles/t1_AndreiFabianPop_1.dir/src/domain/School.cpp.obj	6210d350eeedcbb
+292	1824	6710389101167319	CMakeFiles/t1_AndreiFabianPop_1.dir/src/Service/Service.cpp.obj	8654741399f28c12
+362	1826	6710389101212431	CMakeFiles/t1_AndreiFabianPop_1.dir/src/UI/UI.cpp.obj	8c63e3f8e0e48f37
+1827	2692	6710389109958825	t1_AndreiFabianPop_1.exe	d990e4e49969697a
+83	1476	6710398939118473	CMakeFiles/t1_AndreiFabianPop_1.dir/src/UI/UI.cpp.obj	8c63e3f8e0e48f37
+135	1478	6710398939118473	CMakeFiles/t1_AndreiFabianPop_1.dir/src/Service/Service.cpp.obj	8654741399f28c12
+3	1496	6710398939328586	CMakeFiles/t1_AndreiFabianPop_1.dir/src/main.cpp.obj	2df633b103f88ce3
+1497	2079	6710398944592069	t1_AndreiFabianPop_1.exe	d990e4e49969697a
+56	1696	6710399312066080	CMakeFiles/t1_AndreiFabianPop_1.dir/src/UI/UI.cpp.obj	8c63e3f8e0e48f37
+3	1700	6710399312055994	CMakeFiles/t1_AndreiFabianPop_1.dir/src/main.cpp.obj	2df633b103f88ce3
+1701	2003	6710399314729260	t1_AndreiFabianPop_1.exe	d990e4e49969697a
+4	1243	6710399969134838	CMakeFiles/t1_AndreiFabianPop_1.dir/src/Service/Service.cpp.obj	8654741399f28c12
+1245	1681	6710399972942230	t1_AndreiFabianPop_1.exe	d990e4e49969697a
+2	1008	6710400509955237	CMakeFiles/t1_AndreiFabianPop_1.dir/src/Service/Service.cpp.obj	8654741399f28c12
+1010	1477	6710400514176985	t1_AndreiFabianPop_1.exe	d990e4e49969697a
+4	1519	6710409588549976	CMakeFiles/t1_AndreiFabianPop_1.dir/src/Service/Service.cpp.obj	8654741399f28c12
+1520	1800	6710409590796089	t1_AndreiFabianPop_1.exe	d990e4e49969697a

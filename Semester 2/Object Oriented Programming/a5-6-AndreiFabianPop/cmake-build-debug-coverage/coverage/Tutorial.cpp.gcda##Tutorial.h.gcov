@@ -1,0 +1,54 @@
+        -:    0:Source:/tmp/tmp.aGTKLkgnJ8/src/Domain/Tutorial.h
+        -:    0:Graph:/tmp/tmp.aGTKLkgnJ8/cmake-build-debug-coverage/CMakeFiles/a5_6_AndreiFabianPop.dir/src/Domain/Tutorial.cpp.gcno
+        -:    0:Data:/tmp/tmp.aGTKLkgnJ8/cmake-build-debug-coverage/CMakeFiles/a5_6_AndreiFabianPop.dir/src/Domain/Tutorial.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by andre on 19/03/2022.
+        -:    3://
+        -:    4:
+        -:    5:#pragma once
+        -:    6:#pragma warning(disable:4996)
+        -:    7:#include <iostream>
+        -:    8:#include <cstring>
+        -:    9:
+function _ZN8TutorialD2Ev called 147 returned 100% blocks executed 100%
+      294:   10:class Tutorial {
+      147:   10-block  0
+      147:   10-block  1
+call    0 returned 147
+call    1 returned 147
+call    2 returned 147
+        -:   11:    private:
+        -:   12:        std::string title;
+        -:   13:        std::string presenter;
+        -:   14:        unsigned int duration_minutes;
+        -:   15:        unsigned int duration_seconds;
+        -:   16:        unsigned int likes;
+        -:   17:        std::string link;
+        -:   18:    public:
+        -:   19:        explicit Tutorial();
+        -:   20:        explicit Tutorial(std::string title, std::string presenter, unsigned int duration_minutes, unsigned int duration_seconds,
+        -:   21:                          unsigned int likes, std::string link);
+        -:   22:        ~Tutorial();
+        -:   23:
+        -:   24:        Tutorial(const Tutorial& t);
+        -:   25:
+        -:   26:        std::string get_title() const;
+        -:   27:        void set_title(std::string new_title);
+        -:   28:
+        -:   29:        std::string get_presenter() const;
+        -:   30:        void set_presenter(std::string new_presenter);
+        -:   31:
+        -:   32:        unsigned int get_duration_minutes() const;
+        -:   33:        void set_duration_minutes(unsigned int minutes);
+        -:   34:
+        -:   35:        unsigned int get_duration_seconds() const;
+        -:   36:        void set_duration_seconds(unsigned int seconds);
+        -:   37:
+        -:   38:        unsigned int get_likes() const;
+        -:   39:        void set_likes(unsigned int new_likes);
+        -:   40:
+        -:   41:        std::string get_link() const;
+        -:   42:        void set_link(std::string new_link);
+        -:   43:};

@@ -1,0 +1,1 @@
+Price: 10004 | Doors: 2 | Engine type: electric| Fuel: diesel | Price: 3000.000000 | Autonomy 400

@@ -1,0 +1,340 @@
+        -:    0:Source:/tmp/tmp.aGTKLkgnJ8/src/Service/Service.cpp
+        -:    0:Graph:/tmp/tmp.aGTKLkgnJ8/cmake-build-debug-coverage/CMakeFiles/a5_6_AndreiFabianPop.dir/src/Service/Service.cpp.gcno
+        -:    0:Data:/tmp/tmp.aGTKLkgnJ8/cmake-build-debug-coverage/CMakeFiles/a5_6_AndreiFabianPop.dir/src/Service/Service.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by andre on 19/03/2022.
+        -:    3://
+        -:    4:
+        -:    5:#include "Service.h"
+        -:    6:
+        -:    7:#include <utility>
+        -:    8:
+function _ZN7ServiceC2ERK13DynamicVectorI8TutorialE called 3 returned 100% blocks executed 57%
+        6:    9:Service::Service(const DynamicVector<Tutorial>& dynamicVector) : mainDatabase(dynamicVector) {
+        3:    9-block  0
+        3:    9-block  1
+call    0 returned 3
+call    1 returned 3
+branch  2 taken 3 (fallthrough)
+branch  3 taken 0 (throw)
+    %%%%%:    9-block  2
+call    4 never executed
+    %%%%%:    9-block  3
+call    5 never executed
+        3:   10:    this->mainDatabase = dynamicVector;
+        3:   10-block  0
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        3:   11:    this->watchList = DynamicVector<Tutorial>(5);
+        3:   11-block  0
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        3:   11-block  1
+call    3 returned 3
+branch  4 taken 3 (fallthrough)
+branch  5 taken 0 (throw)
+        3:   11-block  2
+call    6 returned 3
+    %%%%%:   11-block  3
+call    7 never executed
+    %%%%%:   11-block  4
+        3:   12:}
+        -:   13:
+function _ZN7Service3addENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_iiiS5_ called 16 returned 100% blocks executed 67%
+       16:   14:int Service::add(std::string title, std::string presenter, int duration_minutes, int duration_seconds, int likes, std::string link) {
+       16:   14-block  0
+       16:   15:    if (duration_minutes < 0) {
+       16:   15-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 15
+        1:   16:        return -1;
+        1:   16-block  0
+        -:   17:    }
+       15:   18:    if (duration_seconds < 0 || duration_seconds >= 60) {
+       15:   18-block  0
+branch  0 taken 15 (fallthrough)
+branch  1 taken 0
+       15:   18-block  1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 14
+        1:   19:        return -2;
+        1:   19-block  0
+        -:   20:    }
+       14:   21:    if (likes < 0) {
+       14:   21-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 13
+        1:   22:        return -3;
+        1:   22-block  0
+        -:   23:    }
+        -:   24:
+       29:   25:    Tutorial tutorial(std::move(title), std::move(presenter), duration_minutes, duration_seconds, likes, std::move(link));
+       13:   25-block  0
+call    0 returned 13
+call    1 returned 13
+call    2 returned 13
+call    3 returned 13
+call    4 returned 13
+call    5 returned 13
+call    6 returned 13
+branch  7 taken 13 (fallthrough)
+branch  8 taken 0 (throw)
+       13:   25-block  1
+call    9 returned 13
+call   10 returned 13
+call   11 returned 13
+       13:   25-block  2
+call   12 returned 13
+       16:   25-block  3
+       16:   25-block  4
+    %%%%%:   25-block  5
+call   13 never executed
+    %%%%%:   25-block  6
+    %%%%%:   25-block  7
+call   14 never executed
+    %%%%%:   25-block  8
+    %%%%%:   25-block  9
+call   15 never executed
+    %%%%%:   25-block 10
+    %%%%%:   25-block 11
+call   16 never executed
+       13:   26:    Tutorial *tutorial_p = &tutorial;
+        -:   27:
+       13:   28:    int result = this->mainDatabase.add(*tutorial_p);
+call    0 returned 13
+branch  1 taken 13 (fallthrough)
+branch  2 taken 0 (throw)
+       13:   29:    return result;
+        -:   30:}
+        -:   31:
+function _ZN7Service6removeEi called 2 returned 100% blocks executed 100%
+        2:   32:int Service::remove(int index) {
+        2:   32-block  0
+        2:   33:    if (!mainDatabase.valid_index(index)) {
+        2:   33-block  0
+call    0 returned 2
+branch  1 taken 1 (fallthrough)
+branch  2 taken 1
+        1:   34:        return 0;
+        1:   34-block  0
+        -:   35:    } else {
+        1:   36:        mainDatabase.remove(index);
+        1:   36-block  0
+call    0 returned 1
+        1:   37:        return 1;
+        -:   38:    }
+        -:   39:}
+        -:   40:
+function _ZNK7Service7get_allEv called 8 returned 100% blocks executed 100%
+        8:   41:DynamicVector<Tutorial> Service::get_all() const {
+        8:   41-block  0
+        8:   42:    return mainDatabase;
+        8:   42-block  0
+call    0 returned 8
+        -:   43:}
+        -:   44:
+function _ZN7Service6updateEiiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi called 6 returned 100% blocks executed 80%
+        6:   45:int Service::update(int index, int field_index, std::string string_field, int int_field) {
+        6:   45-block  0
+        6:   46:    if (field_index == 0) {
+        6:   46-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 5
+        1:   47:        mainDatabase[index].set_title(std::move(string_field));
+        1:   47-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   47-block  1
+call    6 returned 1
+    %%%%%:   47-block  2
+call    7 never executed
+    %%%%%:   47-block  3
+call    8 never executed
+        5:   48:    } else if (field_index == 1) {
+        5:   48-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 4
+        1:   49:        mainDatabase[index].set_presenter(std::move(string_field));
+        1:   49-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   49-block  1
+call    6 returned 1
+    %%%%%:   49-block  2
+call    7 never executed
+    %%%%%:   49-block  3
+call    8 never executed
+        4:   50:    } else if (field_index == 2) {
+        4:   50-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 3
+        1:   51:        mainDatabase[index].set_duration_minutes(int_field);
+        1:   51-block  0
+call    0 returned 1
+call    1 returned 1
+        3:   52:    } else if (field_index == 3) {
+        3:   52-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 2
+        1:   53:        mainDatabase[index].set_duration_seconds(int_field);
+        1:   53-block  0
+call    0 returned 1
+call    1 returned 1
+        2:   54:    } else if (field_index == 4) {
+        2:   54-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 1
+        1:   55:        mainDatabase[index].set_likes(int_field);
+        1:   55-block  0
+call    0 returned 1
+call    1 returned 1
+        1:   56:    } else if (field_index == 5) {
+        1:   56-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   57:        mainDatabase[index].set_link(string_field);
+        1:   57-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+        1:   57-block  1
+call    5 returned 1
+    %%%%%:   57-block  2
+call    6 never executed
+        -:   58:    }
+        -:   59:
+        6:   60:    return 1;
+        6:   60-block  0
+        6:   60-block  1
+        -:   61:}
+        -:   62:
+function _ZNK7Service11valid_indexEi called 1 returned 100% blocks executed 100%
+        1:   63:bool Service::valid_index(int index) const {
+        1:   63-block  0
+        1:   64:    return mainDatabase.valid_index(index);
+        1:   64-block  0
+call    0 returned 1
+        -:   65:}
+        -:   66:
+function _ZN7Service16get_by_presenterERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   67:DynamicVector<Tutorial> Service::get_by_presenter(const std::string& presenter) {
+    $$$$$:   67-block  0
+    #####:   68:    if (presenter.empty()) {
+    $$$$$:   68-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   69:        return this->mainDatabase;
+    $$$$$:   69-block  0
+call    0 never executed
+        -:   70:    } else {
+    #####:   71:        DynamicVector<Tutorial> presenterTutorials;
+    $$$$$:   71-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:   71-block  1
+call    3 never executed
+    $$$$$:   71-block  2
+    %%%%%:   71-block  3
+call    4 never executed
+    #####:   72:        for (int i = 0; i < this->mainDatabase.getSize(); ++i) {
+    $$$$$:   72-block  0
+    $$$$$:   72-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:   72-block  2
+    #####:   73:            if (this->mainDatabase[i].get_presenter() == presenter) {
+    $$$$$:   73-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    $$$$$:   73-block  1
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    #####:   74:                presenterTutorials.add(this->mainDatabase[i]);
+    $$$$$:   74-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    $$$$$:   74-block  1
+        -:   75:            }
+        -:   76:        }
+        -:   77:
+    #####:   78:        return presenterTutorials;
+    $$$$$:   78-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:   78-block  1
+        -:   79:    }
+        -:   80:}
+        -:   81:
+function _ZN7Service15add_to_playlistERK8Tutorial called 0 returned 0% blocks executed 0%
+    #####:   82:int Service::add_to_playlist(const Tutorial& tutorial) {
+    $$$$$:   82-block  0
+    #####:   83:    const Tutorial *tutorial_p = &tutorial;
+        -:   84:
+    #####:   85:    return this->watchList.add(*tutorial_p);
+    $$$$$:   85-block  0
+call    0 never executed
+        -:   86:}
+        -:   87:
+function _ZNK7Service13get_watchListEv called 0 returned 0% blocks executed 0%
+    #####:   88:DynamicVector<Tutorial> Service::get_watchList() const {
+    $$$$$:   88-block  0
+    #####:   89:    return this->watchList;
+    $$$$$:   89-block  0
+call    0 never executed
+        -:   90:}
+        -:   91:
+function _ZN7Service20remove_from_playlistEi called 0 returned 0% blocks executed 0%
+    #####:   92:int Service::remove_from_playlist(int index) {
+    $$$$$:   92-block  0
+    #####:   93:    if (!watchList.valid_index(index)) {
+    $$$$$:   93-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   94:        return 0;
+    $$$$$:   94-block  0
+        -:   95:    } else {
+    #####:   96:        watchList.remove(index);
+    $$$$$:   96-block  0
+call    0 never executed
+    #####:   97:        return 1;
+        -:   98:    }
+        -:   99:}
+        -:  100:
+function _GLOBAL__sub_I__ZN7ServiceC2ERK13DynamicVectorI8TutorialE called 1 returned 100% blocks executed 100%
+function _Z41__static_initialization_and_destruction_0ii called 1 returned 100% blocks executed 100%
+        4:  101:Service::~Service() = default;
+        1:  101-block  0
+        1:  101-block  1
+call    0 returned 1
+        1:  101-block  2
+        1:  101-block  3
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:  101-block  4
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0

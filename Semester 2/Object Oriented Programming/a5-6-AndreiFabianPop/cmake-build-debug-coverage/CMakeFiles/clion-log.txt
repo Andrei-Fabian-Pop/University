@@ -1,0 +1,4 @@
+Cannot generate into C:\Users\andre\OneDrive\Documents\GitHub\a5-6-AndreiFabianPop\cmake-build-debug-coverage
+It is already used for project \tmp\tmp.aGTKLkgnJ8
+
+Please either delete it manually or select another generation directory

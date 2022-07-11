@@ -1,0 +1,12 @@
+# ninja log v5
+114	585	6705355251585915	CMakeFiles/a5_6_AndreiFabianPop.dir/src/DynamicVector/DynamicVector.cpp.obj	bebfaae047fc1230
+3	2717	6715779102905434	CMakeFiles/a5_6_AndreiFabianPop.dir/src/Service/Service.cpp.obj	d1fdf413191b4639
+3930	4440	6715779119758806	a5_6_AndreiFabianPop.exe	55ec68bb2bcde010
+102	2731	6715779103108945	CMakeFiles/a5_6_AndreiFabianPop.dir/src/Tests/Tests.cpp.obj	c36d5720b0c19433
+53	3929	6715779115146446	CMakeFiles/a5_6_AndreiFabianPop.dir/src/UI/UI.cpp.obj	189f119b04cd4c58
+149	3454	6715779110397170	CMakeFiles/a5_6_AndreiFabianPop.dir/src/main.cpp.obj	852ff086043ef846
+341	1333	6705355259120142	CMakeFiles/a5_6_AndreiFabianPop.dir/src/Domain/Tutorial.cpp.obj	e8680ac93466ec30
+2	1089	6715780241568433	CMakeFiles/a5_6_AndreiFabianPop.dir/src/UI/UI.cpp.obj	189f119b04cd4c58
+1090	1297	6715780243349669	a5_6_AndreiFabianPop.exe	55ec68bb2bcde010
+3	2400	6715781178175737	CMakeFiles/a5_6_AndreiFabianPop.dir/src/UI/UI.cpp.obj	189f119b04cd4c58
+2401	2799	6715781181511220	a5_6_AndreiFabianPop.exe	55ec68bb2bcde010

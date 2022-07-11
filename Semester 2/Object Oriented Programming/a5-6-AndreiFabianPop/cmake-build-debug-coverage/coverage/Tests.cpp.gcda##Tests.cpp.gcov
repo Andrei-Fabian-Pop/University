@@ -1,0 +1,1383 @@
+        -:    0:Source:/tmp/tmp.aGTKLkgnJ8/src/Tests/Tests.cpp
+        -:    0:Graph:/tmp/tmp.aGTKLkgnJ8/cmake-build-debug-coverage/CMakeFiles/a5_6_AndreiFabianPop.dir/src/Tests/Tests.cpp.gcno
+        -:    0:Data:/tmp/tmp.aGTKLkgnJ8/cmake-build-debug-coverage/CMakeFiles/a5_6_AndreiFabianPop.dir/src/Tests/Tests.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by andre on 21/03/2022.
+        -:    3://
+        -:    4:
+        -:    5:#include "Tests.h"
+        -:    6:
+function _ZN5Tests10testDomainEv called 1 returned 100% blocks executed 63%
+        1:    7:void Tests::testDomain()
+        1:    7-block  0
+        -:    8:{
+        2:    9:    Tutorial tutorial;
+        1:    9-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+call    3 returned 1
+    %%%%%:    9-block  1
+call    4 never executed
+        -:   10:
+        1:   11:    assert(tutorial.get_title().empty());
+        1:   11-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   11-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    $$$$$:   11-block  2
+call    6 never executed
+        1:   11-block  3
+call    7 returned 1
+        1:   12:    assert(tutorial.get_likes() == 0);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   12-block  0
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    $$$$$:   12-block  1
+call    5 never executed
+        -:   13:
+        1:   14:    tutorial.set_title("Title");
+        1:   14-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   14-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   14-block  2
+call    7 returned 1
+call    8 returned 1
+    %%%%%:   14-block  3
+call    9 never executed
+    %%%%%:   14-block  4
+    %%%%%:   14-block  5
+call   10 never executed
+    %%%%%:   14-block  6
+        1:   15:    assert(tutorial.get_title() == "Title");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   15-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    $$$$$:   15-block  1
+call    6 never executed
+        1:   15-block  2
+call    7 returned 1
+        -:   16:
+        1:   17:    tutorial.set_presenter("Pres");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   17-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   17-block  1
+call    7 returned 1
+call    8 returned 1
+    %%%%%:   17-block  2
+call    9 never executed
+    %%%%%:   17-block  3
+    %%%%%:   17-block  4
+call   10 never executed
+    %%%%%:   17-block  5
+        1:   18:    assert(tutorial.get_presenter() == "Pres");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   18-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    $$$$$:   18-block  1
+call    6 never executed
+        1:   18-block  2
+call    7 returned 1
+        -:   19:
+        1:   20:    tutorial.set_duration_minutes(11);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   21:    assert(tutorial.get_duration_minutes() == 11);
+        1:   21-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   21-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    $$$$$:   21-block  2
+call    5 never executed
+        -:   22:
+        1:   23:    tutorial.set_duration_seconds(11);
+        1:   23-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   24:    assert(tutorial.get_duration_seconds() == 11);
+        1:   24-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   24-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    $$$$$:   24-block  2
+call    5 never executed
+        -:   25:
+        1:   26:    tutorial.set_likes(55);
+        1:   26-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   27:    assert(tutorial.get_likes() == 55);
+        1:   27-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   27-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    $$$$$:   27-block  2
+call    5 never executed
+        -:   28:
+        1:   29:    tutorial.set_link("link");
+        1:   29-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   29-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   29-block  2
+call    7 returned 1
+call    8 returned 1
+    %%%%%:   29-block  3
+call    9 never executed
+    %%%%%:   29-block  4
+    %%%%%:   29-block  5
+call   10 never executed
+    %%%%%:   29-block  6
+        1:   30:    assert(tutorial.get_link() == "link");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   30-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    $$$$$:   30-block  1
+call    6 never executed
+        1:   30-block  2
+call    7 returned 1
+        -:   31:
+        1:   32:    Tutorial tutorial1 = tutorial;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   32-block  0
+call    3 returned 1
+        1:   33:}
+        -:   34:
+function _ZN5Tests17testDynamicVectorEv called 1 returned 100% blocks executed 46%
+        1:   35:void Tests::testDynamicVector() {
+        1:   35-block  0
+        2:   36:    DynamicVector<Tutorial> dynamicVector;
+        1:   36-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+call    3 returned 1
+    %%%%%:   36-block  1
+call    4 never executed
+        2:   37:    DynamicVector<Tutorial> dynamicVector1(dynamicVector);
+        1:   37-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+call    3 returned 1
+    %%%%%:   37-block  1
+call    4 never executed
+        2:   38:    DynamicVector<Tutorial> dynamicVector2 = dynamicVector1;
+        1:   38-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+call    3 returned 1
+    %%%%%:   38-block  1
+call    4 never executed
+        1:   39:    dynamicVector = dynamicVector;
+        1:   39-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   40:
+        1:   41:    int res1 = dynamicVector1.add(Tutorial("title", "pres", 1, 1, 1, "www"));
+        1:   41-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   41-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   41-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   41-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   41-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   41-block  5
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+    %%%%%:   41-block  6
+call   25 never executed
+    %%%%%:   41-block  7
+    %%%%%:   41-block  8
+call   26 never executed
+    %%%%%:   41-block  9
+    %%%%%:   41-block 10
+call   27 never executed
+    %%%%%:   41-block 11
+    %%%%%:   41-block 12
+call   28 never executed
+    %%%%%:   41-block 13
+    %%%%%:   41-block 14
+call   29 never executed
+    %%%%%:   41-block 15
+    %%%%%:   41-block 16
+call   30 never executed
+    %%%%%:   41-block 17
+    %%%%%:   41-block 18
+call   31 never executed
+    %%%%%:   41-block 19
+        1:   42:    assert(res1 == 1);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    $$$$$:   42-block  0
+call    2 never executed
+        1:   43:    int res2 = dynamicVector1.add(Tutorial("title", "pres", 1, 1, 1, "www"));
+        1:   43-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   43-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   43-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   43-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   43-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   43-block  5
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+    %%%%%:   43-block  6
+call   25 never executed
+    %%%%%:   43-block  7
+    %%%%%:   43-block  8
+call   26 never executed
+    %%%%%:   43-block  9
+    %%%%%:   43-block 10
+call   27 never executed
+    %%%%%:   43-block 11
+    %%%%%:   43-block 12
+call   28 never executed
+    %%%%%:   43-block 13
+    %%%%%:   43-block 14
+call   29 never executed
+    %%%%%:   43-block 15
+    %%%%%:   43-block 16
+call   30 never executed
+    %%%%%:   43-block 17
+    %%%%%:   43-block 18
+call   31 never executed
+    %%%%%:   43-block 19
+        1:   44:    assert(res2 == 0);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    $$$$$:   44-block  0
+call    2 never executed
+        1:   45:    assert(dynamicVector1[0].get_title() == "title");
+        1:   45-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   45-block  1
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1
+    $$$$$:   45-block  2
+call    7 never executed
+        1:   45-block  3
+call    8 returned 1
+        -:   46:
+        1:   47:    assert(dynamicVector1.getSize() == 1);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    $$$$$:   47-block  0
+call    3 never executed
+        -:   48:
+        1:   49:    dynamicVector1.add(Tutorial("title2", "pres", 1, 1, 1, "www"));
+        1:   49-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   49-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   49-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   49-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   49-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   49-block  5
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+    %%%%%:   49-block  6
+call   25 never executed
+    %%%%%:   49-block  7
+    %%%%%:   49-block  8
+call   26 never executed
+    %%%%%:   49-block  9
+    %%%%%:   49-block 10
+call   27 never executed
+    %%%%%:   49-block 11
+    %%%%%:   49-block 12
+call   28 never executed
+    %%%%%:   49-block 13
+    %%%%%:   49-block 14
+call   29 never executed
+    %%%%%:   49-block 15
+    %%%%%:   49-block 16
+call   30 never executed
+    %%%%%:   49-block 17
+    %%%%%:   49-block 18
+call   31 never executed
+    %%%%%:   49-block 19
+        1:   50:    assert(dynamicVector1.getSize() == 2);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    $$$$$:   50-block  0
+call    3 never executed
+        -:   51:
+        1:   52:    dynamicVector1.remove(0);
+        1:   52-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   53:    assert(dynamicVector1.getSize() == 1);
+        1:   53-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    $$$$$:   53-block  1
+call    3 never executed
+        1:   54:    assert(dynamicVector1[0].get_title() == "title2");
+        1:   54-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   54-block  1
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1
+    $$$$$:   54-block  2
+call    7 never executed
+        1:   54-block  3
+call    8 returned 1
+        -:   55:
+        1:   56:    dynamicVector1.add(Tutorial("title", "pres", 1, 1, 1, "www"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   56-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   56-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   56-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   56-block  3
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   56-block  4
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+    %%%%%:   56-block  5
+call   25 never executed
+    %%%%%:   56-block  6
+    %%%%%:   56-block  7
+call   26 never executed
+    %%%%%:   56-block  8
+    %%%%%:   56-block  9
+call   27 never executed
+    %%%%%:   56-block 10
+    %%%%%:   56-block 11
+call   28 never executed
+    %%%%%:   56-block 12
+    %%%%%:   56-block 13
+call   29 never executed
+    %%%%%:   56-block 14
+    %%%%%:   56-block 15
+call   30 never executed
+    %%%%%:   56-block 16
+    %%%%%:   56-block 17
+call   31 never executed
+    %%%%%:   56-block 18
+        1:   57:    assert(dynamicVector1.get_index("title", "pres", "www") == 1);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   57-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   57-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   57-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   57-block  3
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    $$$$$:   57-block  4
+call   17 never executed
+        1:   57-block  5
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+    %%%%%:   57-block  6
+call   24 never executed
+    %%%%%:   57-block  7
+    %%%%%:   57-block  8
+call   25 never executed
+    %%%%%:   57-block  9
+    %%%%%:   57-block 10
+call   26 never executed
+    %%%%%:   57-block 11
+    %%%%%:   57-block 12
+call   27 never executed
+    %%%%%:   57-block 13
+    %%%%%:   57-block 14
+call   28 never executed
+    %%%%%:   57-block 15
+    %%%%%:   57-block 16
+call   29 never executed
+    %%%%%:   57-block 17
+        1:   58:    assert(dynamicVector1.get_index("element", "no", "existent") == -1);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   58-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   58-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   58-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   58-block  3
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    $$$$$:   58-block  4
+call   17 never executed
+        1:   58-block  5
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+    %%%%%:   58-block  6
+call   24 never executed
+    %%%%%:   58-block  7
+    %%%%%:   58-block  8
+call   25 never executed
+    %%%%%:   58-block  9
+    %%%%%:   58-block 10
+call   26 never executed
+    %%%%%:   58-block 11
+    %%%%%:   58-block 12
+call   27 never executed
+    %%%%%:   58-block 13
+    %%%%%:   58-block 14
+call   28 never executed
+    %%%%%:   58-block 15
+    %%%%%:   58-block 16
+call   29 never executed
+    %%%%%:   58-block 17
+        -:   59:
+        1:   60:    assert(dynamicVector1.valid_index(1) == true);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    $$$$$:   60-block  0
+call    3 never executed
+        1:   61:    assert(dynamicVector1.valid_index(7) == false);
+        1:   61-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    $$$$$:   61-block  1
+call    3 never executed
+        -:   62:
+        1:   63:    dynamicVector1.add(Tutorial("title3", "pres", 1, 1, 1, "www"));
+        1:   63-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   63-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   63-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   63-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   63-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   63-block  5
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+    %%%%%:   63-block  6
+call   25 never executed
+    %%%%%:   63-block  7
+    %%%%%:   63-block  8
+call   26 never executed
+    %%%%%:   63-block  9
+    %%%%%:   63-block 10
+call   27 never executed
+    %%%%%:   63-block 11
+    %%%%%:   63-block 12
+call   28 never executed
+    %%%%%:   63-block 13
+    %%%%%:   63-block 14
+call   29 never executed
+    %%%%%:   63-block 15
+    %%%%%:   63-block 16
+call   30 never executed
+    %%%%%:   63-block 17
+    %%%%%:   63-block 18
+call   31 never executed
+    %%%%%:   63-block 19
+        2:   64:    DynamicVector<Tutorial> dynamicVector3 = dynamicVector1;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+call    3 returned 1
+    %%%%%:   64-block  0
+call    4 never executed
+        -:   65:
+        1:   66:    dynamicVector1 + Tutorial("title3", "pres", 1, 1, 1, "www");
+        1:   66-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   66-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   66-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   66-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   66-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   66-block  5
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+    %%%%%:   66-block  6
+call   25 never executed
+    %%%%%:   66-block  7
+    %%%%%:   66-block  8
+call   26 never executed
+    %%%%%:   66-block  9
+    %%%%%:   66-block 10
+call   27 never executed
+    %%%%%:   66-block 11
+    %%%%%:   66-block 12
+call   28 never executed
+    %%%%%:   66-block 13
+    %%%%%:   66-block 14
+call   29 never executed
+    %%%%%:   66-block 15
+    %%%%%:   66-block 16
+call   30 never executed
+    %%%%%:   66-block 17
+    %%%%%:   66-block 18
+call   31 never executed
+    %%%%%:   66-block 19
+        1:   67:    assert(dynamicVector1[2].get_title() == "title3");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   67-block  0
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1
+    $$$$$:   67-block  1
+call    7 never executed
+        1:   67-block  2
+call    8 returned 1
+        1:   68:}
+        -:   69:
+function _ZN5Tests11testServiceEv called 1 returned 100% blocks executed 48%
+        1:   70:void Tests::testService() {
+        1:   70-block  0
+        2:   71:    DynamicVector<Tutorial> dynamicVector;
+        1:   71-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+call    3 returned 1
+    %%%%%:   71-block  1
+call    4 never executed
+        2:   72:    Service service(dynamicVector);
+        1:   72-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+call    3 returned 1
+    %%%%%:   72-block  1
+call    4 never executed
+        -:   73:
+        1:   74:    int res = service.add("title", "pres", -1, 0, 0, "www");
+        1:   74-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   74-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   74-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   74-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   74-block  4
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    %%%%%:   74-block  5
+call   21 never executed
+    %%%%%:   74-block  6
+    %%%%%:   74-block  7
+call   22 never executed
+    %%%%%:   74-block  8
+    %%%%%:   74-block  9
+call   23 never executed
+    %%%%%:   74-block 10
+    %%%%%:   74-block 11
+call   24 never executed
+    %%%%%:   74-block 12
+    %%%%%:   74-block 13
+call   25 never executed
+    %%%%%:   74-block 14
+    %%%%%:   74-block 15
+call   26 never executed
+    %%%%%:   74-block 16
+        1:   75:    assert(res == -1);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    $$$$$:   75-block  0
+call    2 never executed
+        -:   76:
+        1:   77:    res = service.add("title", "pres", 0, 61, 0, "www");
+        1:   77-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   77-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   77-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   77-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   77-block  4
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    %%%%%:   77-block  5
+call   21 never executed
+    %%%%%:   77-block  6
+    %%%%%:   77-block  7
+call   22 never executed
+    %%%%%:   77-block  8
+    %%%%%:   77-block  9
+call   23 never executed
+    %%%%%:   77-block 10
+    %%%%%:   77-block 11
+call   24 never executed
+    %%%%%:   77-block 12
+    %%%%%:   77-block 13
+call   25 never executed
+    %%%%%:   77-block 14
+    %%%%%:   77-block 15
+call   26 never executed
+    %%%%%:   77-block 16
+        1:   78:    assert(res == -2);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    $$$$$:   78-block  0
+call    2 never executed
+        -:   79:
+        1:   80:    res = service.add("title", "pres", 1, 0, -1, "www");
+        1:   80-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   80-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   80-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   80-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   80-block  4
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    %%%%%:   80-block  5
+call   21 never executed
+    %%%%%:   80-block  6
+    %%%%%:   80-block  7
+call   22 never executed
+    %%%%%:   80-block  8
+    %%%%%:   80-block  9
+call   23 never executed
+    %%%%%:   80-block 10
+    %%%%%:   80-block 11
+call   24 never executed
+    %%%%%:   80-block 12
+    %%%%%:   80-block 13
+call   25 never executed
+    %%%%%:   80-block 14
+    %%%%%:   80-block 15
+call   26 never executed
+    %%%%%:   80-block 16
+        1:   81:    assert(res == -3);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    $$$$$:   81-block  0
+call    2 never executed
+        -:   82:
+        1:   83:    res = service.add("title", "pres", 1, 0, 0, "www");
+        1:   83-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   83-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   83-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   83-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   83-block  4
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    %%%%%:   83-block  5
+call   21 never executed
+    %%%%%:   83-block  6
+    %%%%%:   83-block  7
+call   22 never executed
+    %%%%%:   83-block  8
+    %%%%%:   83-block  9
+call   23 never executed
+    %%%%%:   83-block 10
+    %%%%%:   83-block 11
+call   24 never executed
+    %%%%%:   83-block 12
+    %%%%%:   83-block 13
+call   25 never executed
+    %%%%%:   83-block 14
+    %%%%%:   83-block 15
+call   26 never executed
+    %%%%%:   83-block 16
+        1:   84:    assert(res == 1);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    $$$$$:   84-block  0
+call    2 never executed
+        -:   85:
+        1:   86:    int res2 = service.remove(-1);
+        1:   86-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   87:    assert(res2 == 0);
+        1:   87-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    $$$$$:   87-block  1
+call    2 never executed
+        -:   88:
+        1:   89:    res2 = service.remove(0);
+        1:   89-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   90:    assert(res2 == 1);
+        1:   90-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    $$$$$:   90-block  1
+call    2 never executed
+        -:   91:
+        1:   92:    service.add("tt", "pp", 0, 0, 0, "ll");
+        1:   92-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   92-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   92-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   92-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   92-block  4
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    %%%%%:   92-block  5
+call   21 never executed
+    %%%%%:   92-block  6
+    %%%%%:   92-block  7
+call   22 never executed
+    %%%%%:   92-block  8
+    %%%%%:   92-block  9
+call   23 never executed
+    %%%%%:   92-block 10
+    %%%%%:   92-block 11
+call   24 never executed
+    %%%%%:   92-block 12
+    %%%%%:   92-block 13
+call   25 never executed
+    %%%%%:   92-block 14
+    %%%%%:   92-block 15
+call   26 never executed
+    %%%%%:   92-block 16
+        -:   93:
+        2:   94:    DynamicVector<Tutorial> dynamicVector1 = service.get_all();
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   94-block  0
+call    3 returned 1
+    %%%%%:   94-block  1
+call    4 never executed
+        1:   95:    assert(dynamicVector1[0].get_title() == service.get_all()[0].get_title());
+        1:   95-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   95-block  1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   95-block  2
+call    7 returned 1
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:   95-block  3
+call   11 returned 1
+branch 12 taken 0 (fallthrough)
+branch 13 taken 1
+    $$$$$:   95-block  4
+call   14 never executed
+        1:   95-block  5
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+    %%%%%:   95-block  6
+call   18 never executed
+    %%%%%:   95-block  7
+    %%%%%:   95-block  8
+call   19 never executed
+    %%%%%:   95-block  9
+        -:   96:
+        1:   97:    int re = service.add("title", "pres", 1, 0, 0, "www");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   97-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   97-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   97-block  2
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   97-block  3
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    %%%%%:   97-block  4
+call   21 never executed
+    %%%%%:   97-block  5
+    %%%%%:   97-block  6
+call   22 never executed
+    %%%%%:   97-block  7
+    %%%%%:   97-block  8
+call   23 never executed
+    %%%%%:   97-block  9
+    %%%%%:   97-block 10
+call   24 never executed
+    %%%%%:   97-block 11
+    %%%%%:   97-block 12
+call   25 never executed
+    %%%%%:   97-block 13
+    %%%%%:   97-block 14
+call   26 never executed
+    %%%%%:   97-block 15
+        1:   98:    service.update(0, 0, "new", -1);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   98-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   98-block  1
+call    7 returned 1
+call    8 returned 1
+    %%%%%:   98-block  2
+call    9 never executed
+    %%%%%:   98-block  3
+    %%%%%:   98-block  4
+call   10 never executed
+    %%%%%:   98-block  5
+        1:   99:    assert(service.get_all()[0].get_title() == "new");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   99-block  0
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   99-block  1
+call    7 returned 1
+branch  8 taken 0 (fallthrough)
+branch  9 taken 1
+    $$$$$:   99-block  2
+call   10 never executed
+        1:   99-block  3
+call   11 returned 1
+call   12 returned 1
+    %%%%%:   99-block  4
+call   13 never executed
+    %%%%%:   99-block  5
+        -:  100:
+        1:  101:    service.update(0, 1, "newp", -1);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  101-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  101-block  1
+call    7 returned 1
+call    8 returned 1
+    %%%%%:  101-block  2
+call    9 never executed
+    %%%%%:  101-block  3
+    %%%%%:  101-block  4
+call   10 never executed
+    %%%%%:  101-block  5
+        1:  102:    assert(service.get_all()[0].get_presenter() == "newp");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  102-block  0
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  102-block  1
+call    7 returned 1
+branch  8 taken 0 (fallthrough)
+branch  9 taken 1
+    $$$$$:  102-block  2
+call   10 never executed
+        1:  102-block  3
+call   11 returned 1
+call   12 returned 1
+    %%%%%:  102-block  4
+call   13 never executed
+    %%%%%:  102-block  5
+        -:  103:
+        1:  104:    service.update(0, 2, "", 5);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  104-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  104-block  1
+call    7 returned 1
+call    8 returned 1
+    %%%%%:  104-block  2
+call    9 never executed
+    %%%%%:  104-block  3
+    %%%%%:  104-block  4
+call   10 never executed
+    %%%%%:  104-block  5
+        1:  105:    assert(service.get_all()[0].get_duration_minutes() == 5);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  105-block  0
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  105-block  1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    $$$$$:  105-block  2
+call    9 never executed
+        1:  105-block  3
+call   10 returned 1
+    %%%%%:  105-block  4
+call   11 never executed
+    %%%%%:  105-block  5
+        -:  106:
+        1:  107:    service.update(0, 3, "", 5);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  107-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  107-block  1
+call    7 returned 1
+call    8 returned 1
+    %%%%%:  107-block  2
+call    9 never executed
+    %%%%%:  107-block  3
+    %%%%%:  107-block  4
+call   10 never executed
+    %%%%%:  107-block  5
+        1:  108:    assert(service.get_all()[0].get_duration_seconds() == 5);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  108-block  0
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  108-block  1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    $$$$$:  108-block  2
+call    9 never executed
+        1:  108-block  3
+call   10 returned 1
+    %%%%%:  108-block  4
+call   11 never executed
+    %%%%%:  108-block  5
+        -:  109:
+        1:  110:    service.update(0, 4, "", 5);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  110-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  110-block  1
+call    7 returned 1
+call    8 returned 1
+    %%%%%:  110-block  2
+call    9 never executed
+    %%%%%:  110-block  3
+    %%%%%:  110-block  4
+call   10 never executed
+    %%%%%:  110-block  5
+        1:  111:    assert(service.get_all()[0].get_likes() == 5);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  111-block  0
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  111-block  1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    $$$$$:  111-block  2
+call    9 never executed
+        1:  111-block  3
+call   10 returned 1
+    %%%%%:  111-block  4
+call   11 never executed
+    %%%%%:  111-block  5
+        -:  112:
+        1:  113:    service.update(0, 5, "link1", -1);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  113-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  113-block  1
+call    7 returned 1
+call    8 returned 1
+    %%%%%:  113-block  2
+call    9 never executed
+    %%%%%:  113-block  3
+    %%%%%:  113-block  4
+call   10 never executed
+    %%%%%:  113-block  5
+        1:  114:    assert(service.get_all()[0].get_link() == "link1");
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  114-block  0
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  114-block  1
+call    7 returned 1
+branch  8 taken 0 (fallthrough)
+branch  9 taken 1
+    $$$$$:  114-block  2
+call   10 never executed
+        1:  114-block  3
+call   11 returned 1
+call   12 returned 1
+    %%%%%:  114-block  4
+call   13 never executed
+    %%%%%:  114-block  5
+        -:  115:
+        1:  116:    assert(service.valid_index(0) == true);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  116-block  0
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    $$$$$:  116-block  1
+call    5 never executed
+function _GLOBAL__sub_I__ZN5Tests10testDomainEv called 1 returned 100% blocks executed 100%
+function _Z41__static_initialization_and_destruction_0ii called 1 returned 100% blocks executed 100%
+        5:  117:}
+        1:  117-block  0
+        1:  117-block  1
+call    0 returned 1
+        1:  117-block  2
+        1:  117-block  3
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:  117-block  4
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0
