@@ -1,0 +1,4 @@
+/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/andrew/Downloads/clion-2022.1/bin/ninja/linux/ninja -G Ninja -S /home/andrew/UBB_stuff/Graph_Algo/practical5/AlgoGraph_practical5 -B /home/andrew/UBB_stuff/Graph_Algo/practical5/AlgoGraph_practical5/cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/andrew/UBB_stuff/Graph_Algo/practical5/AlgoGraph_practical5/cmake-build-debug

@@ -1,0 +1,3 @@
+/home/andrew/UBB_stuff/Graph_Algo/practical4/AlgoGraph_practical4/cmake-build-debug/CMakeFiles/AlgoGraph_practical3.dir
+/home/andrew/UBB_stuff/Graph_Algo/practical4/AlgoGraph_practical4/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/andrew/UBB_stuff/Graph_Algo/practical4/AlgoGraph_practical4/cmake-build-debug/CMakeFiles/rebuild_cache.dir

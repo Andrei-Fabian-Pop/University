@@ -1,0 +1,16 @@
+# ninja log v5
+959	1042	1652808192987382965	AlgoGraph_practical3	8c5e2d132a6135bc
+1	959	1652808192907382965	CMakeFiles/AlgoGraph_practical3.dir/Graph.cpp.o	e5ef78f4e9beb4bb
+1	706	1652808192655382966	CMakeFiles/AlgoGraph_practical3.dir/UI.cpp.o	ae909a02a0d0905f
+0	534	1652808192479382966	CMakeFiles/AlgoGraph_practical3.dir/main.cpp.o	a623ee42233ca633
+1	528	1652935563848868853	CMakeFiles/AlgoGraph_practical3.dir/UI.cpp.o	ae909a02a0d0905f
+528	668	1652935563988869255	AlgoGraph_practical3	8c5e2d132a6135bc
+1	455	1652935600872971246	CMakeFiles/AlgoGraph_practical3.dir/UI.cpp.o	ae909a02a0d0905f
+455	530	1652935600948971449	AlgoGraph_practical3	8c5e2d132a6135bc
+0	427	1654144613566706333	CMakeFiles/AlgoGraph_practical3.dir/main.cpp.o	a623ee42233ca633
+1	740	1654144613878718105	CMakeFiles/AlgoGraph_practical3.dir/Graph.cpp.o	e5ef78f4e9beb4bb
+740	815	1654144613954720972	AlgoGraph_practical3	8c5e2d132a6135bc
+0	471	1654145239680791073	CMakeFiles/AlgoGraph_practical3.dir/UI.cpp.o	ae909a02a0d0905f
+471	542	1654145239748791536	AlgoGraph_practical3	8c5e2d132a6135bc
+1	461	1654145301781204777	CMakeFiles/AlgoGraph_practical3.dir/UI.cpp.o	ae909a02a0d0905f
+461	536	1654145301853205249	AlgoGraph_practical3	8c5e2d132a6135bc

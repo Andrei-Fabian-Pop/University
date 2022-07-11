@@ -1,0 +1,15 @@
+# ninja log v5
+0	950	1653657494834155369	CMakeFiles/practical5.dir/Graph.cpp.o	5bb36e35d60d6f9f
+766	937	1653657585608385106	practical5	7df6a0bd5eabe9c
+0	528	1653657494414126942	CMakeFiles/practical5.dir/UI.cpp.o	50fce11177762d44
+0	766	1653657585440373451	CMakeFiles/practical5.dir/main.cpp.o	ffe02b1e479e59a9
+0	448	1653660064222879102	CMakeFiles/practical5.dir/main.cpp.o	ffe02b1e479e59a9
+1	585	1653660064362879737	CMakeFiles/practical5.dir/UI.cpp.o	50fce11177762d44
+1	1035	1653660064810881769	CMakeFiles/practical5.dir/Graph.cpp.o	5bb36e35d60d6f9f
+1035	1118	1653660064894882150	practical5	7df6a0bd5eabe9c
+0	456	1653660151151135038	CMakeFiles/practical5.dir/UI.cpp.o	50fce11177762d44
+456	531	1653660151227135152	practical5	7df6a0bd5eabe9c
+1	363	1653662169556330519	CMakeFiles/practical5.dir/main.cpp.o	ffe02b1e479e59a9
+1	953	1653662170148327102	CMakeFiles/practical5.dir/Graph.cpp.o	5bb36e35d60d6f9f
+0	443	1653662196492174792	CMakeFiles/practical5.dir/UI.cpp.o	50fce11177762d44
+443	520	1653662196568174351	practical5	7df6a0bd5eabe9c
