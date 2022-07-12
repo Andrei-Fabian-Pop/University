@@ -1,0 +1,3 @@
+/home/andrew/UBB_stuff/DSA/IndexedList/cmake-build-debug/CMakeFiles/IndexedList.dir
+/home/andrew/UBB_stuff/DSA/IndexedList/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/andrew/UBB_stuff/DSA/IndexedList/cmake-build-debug/CMakeFiles/rebuild_cache.dir

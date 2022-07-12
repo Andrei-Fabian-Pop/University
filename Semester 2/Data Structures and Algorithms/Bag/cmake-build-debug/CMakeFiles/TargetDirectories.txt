@@ -1,0 +1,3 @@
+/home/andrew/UBB_stuff/DSA/Bag/cmake-build-debug/CMakeFiles/Bag.dir
+/home/andrew/UBB_stuff/DSA/Bag/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/andrew/UBB_stuff/DSA/Bag/cmake-build-debug/CMakeFiles/rebuild_cache.dir
