@@ -6,10 +6,10 @@
 
 ### Semester 1
 - [Fundamentals of Programming](https://github.com/Andrei-Fabian-Pop/University/tree/main/Semester%201/Fundamentals%20Of%20Programming)
-- [Computer System Architecture](https://github.com/Andrei-Fabian-Pop/University/tree/main/Semester%201/NASM)
-- Computational Logic
+- [Computer System Architecture](https://github.com/Andrei-Fabian-Pop/University/tree/main/Semester%201/Computer%20System%20Architecture)
+- [Computational Logic](https://github.com/Andrei-Fabian-Pop/University/tree/main/Semester%201/Computational%20Logic)
 - Mathematical Analysis
-- Algebra
+- [Algebra](https://github.com/Andrei-Fabian-Pop/University/tree/main/Semester%201/Algebra)
 
 ### Semester 2
 - [Data Structrure and Algorithms](https://github.com/Andrei-Fabian-Pop/University/tree/main/Semester%202/Data%20Structures%20and%20Algorithms)
