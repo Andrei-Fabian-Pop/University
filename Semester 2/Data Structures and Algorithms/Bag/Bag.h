@@ -19,24 +19,27 @@ private:
     Node** elements;
     int _size;
     int capacity;
+    const float loadFactor;
 
     int hash(int key) const;
+
+    void resize();
 
 	//DO NOT CHANGE THIS PART
 	friend class BagIterator;
 
 public:
 	//constructor
-	explicit Bag();
+	explicit Bag(int capacity=100);
 
 	//adds an element to the bag
 	void add(TElem e);
 
-	//removes one occurence of an element from a bag
+	//removes one occurrence of an element from a bag
 	//returns true if an element was removed, false otherwise (if e was not part of the bag)
 	bool remove(TElem e);
 
-	//checks if an element appearch is the bag
+	//checks if an element appears is the bag
 	bool search(TElem e) const;
 
 	//returns the number of occurrences for an element in the bag

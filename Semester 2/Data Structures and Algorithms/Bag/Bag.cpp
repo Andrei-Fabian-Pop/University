@@ -5,8 +5,8 @@
 using namespace std;
 
 
-Bag::Bag() {
-    this->capacity = 100;
+Bag::Bag(int capacity) : loadFactor(0.75) {
+    this->capacity = capacity;
     this->_size = 0;
     this->elements = new Node *[this->capacity];
     for (int i = 0; i < this->capacity; ++i) {
@@ -16,6 +16,10 @@ Bag::Bag() {
 // O(capacity)
 
 void Bag::add(TElem elem) {
+    if ((float)(this->_size) / (float)(this->capacity) >= this->loadFactor) {
+        this->resize();
+    }
+
     // first element
     int pos = hash(elem);
     if (this->elements[pos] == nullptr) {
@@ -156,5 +160,21 @@ Bag::~Bag() {
 int Bag::hash(int key) const {
     if (key < 0) key = -key;
     return key % this->capacity;
+}
+
+void Bag::resize() {
+    auto newBag = new Bag(this->capacity * 2);
+    BagIterator b = this->iterator();
+    b.first();
+    while (b.valid()) {
+        newBag->add(b.getCurrent());
+        b.next();
+    }
+
+    delete[] this->elements;
+
+    this->elements = newBag->elements;
+    this->_size = newBag->size();
+    this->capacity = newBag->capacity;
 }
 // O(1)
