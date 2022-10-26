@@ -1,4 +1,4 @@
-# Install script for directory: /home/andrew/UBB_stuff/DSA/Bag
+# Install script for directory: /home/andrew/uni_github/University/Semester 2/Data Structures and Algorithms/Bag
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/andrew/UBB_stuff/DSA/Bag/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/andrew/uni_github/University/Semester 2/Data Structures and Algorithms/Bag/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

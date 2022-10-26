@@ -1,4 +1,16 @@
-/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/andrew/Downloads/clion-2022.1/bin/ninja/linux/ninja -G Ninja -S /home/andrew/UBB_stuff/DSA/Bag -B /home/andrew/UBB_stuff/DSA/Bag/cmake-build-debug
+/home/andrew/Downloads/clion-2022.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/andrew/Downloads/clion-2022.1/bin/ninja/linux/ninja -G Ninja -S "/home/andrew/uni_github/University/Semester 2/Data Structures and Algorithms/Bag" -B "/home/andrew/uni_github/University/Semester 2/Data Structures and Algorithms/Bag/cmake-build-debug"
+-- The C compiler identification is GNU 11.2.0
+-- The CXX compiler identification is GNU 11.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/andrew/UBB_stuff/DSA/Bag/cmake-build-debug
+-- Build files have been written to: /home/andrew/uni_github/University/Semester 2/Data Structures and Algorithms/Bag/cmake-build-debug
