@@ -1,0 +1,136 @@
+Execution stack:
+NopStatement
+Declaration{v: Int};
+Assignment{v = ValueExpression{2}}
+;
+Print{VariableExpression{v}}
+;
+Print{VariableExpression{v}}
+;
+Print{VariableExpression{v}}
+
+
+Symbol Table:
+
+Out:
+
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+Declaration{v: Int};
+Assignment{v = ValueExpression{2}}
+;
+Print{VariableExpression{v}}
+;
+Print{VariableExpression{v}}
+
+
+Symbol Table:
+
+Out:
+
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+Declaration{v: Int};
+Assignment{v = ValueExpression{2}}
+;
+Print{VariableExpression{v}}
+
+
+Symbol Table:
+
+Out:
+
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+Declaration{v: Int};
+Assignment{v = ValueExpression{2}}
+
+
+Symbol Table:
+
+Out:
+
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+Assignment{v = ValueExpression{2}}
+Declaration{v: Int}
+
+Symbol Table:
+
+Out:
+
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+Assignment{v = ValueExpression{2}}
+
+Symbol Table:
+v: 0
+
+Out:
+
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+
+Symbol Table:
+v: 2
+
+Out:
+
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+
+Symbol Table:
+v: 2
+
+Out:
+2
+
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+
+Symbol Table:
+v: 2
+
+Out:
+2
+2
+
+Execution stack:
+NopStatement
+
+Symbol Table:
+v: 2
+
+Out:
+2
+2
+2
+
+Execution stack:
+
+Symbol Table:
+v: 2
+
+Out:
+2
+2
+2
+
