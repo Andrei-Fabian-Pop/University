@@ -5,8 +5,11 @@ import Model.ADT.*;
 import Model.Statements.IStatement;
 import Model.Values.Values;
 
+import java.io.BufferedReader;
+
 public class ProgramState {
     private final IStack<IStatement> execStack;
+    private final IDictionary<String, BufferedReader> fileTable;
     private final IDictionary<String, Values> symTable;
     private final IList<String> out;
 
@@ -14,10 +17,12 @@ public class ProgramState {
         execStack = new MyStack<>();
         symTable = new MyDictionary<>();
         out = new MyList<>();
+        fileTable = new MyDictionary<>();
     }
 
-    public ProgramState(IStack<IStatement> execStack, IDictionary<String, Values> symTable, IList<String> out) {
+    public ProgramState(IStack<IStatement> execStack, IDictionary<String, BufferedReader> fileTable, IDictionary<String, Values> symTable, IList<String> out) {
         this.execStack = execStack;
+        this.fileTable = fileTable;
         this.symTable = symTable;
         this.out = out;
     }
@@ -32,6 +37,10 @@ public class ProgramState {
 
     public IStack<IStatement> getExecStack() {
         return this.execStack;
+    }
+
+    public IDictionary<String, BufferedReader> getFileTable() {
+        return fileTable;
     }
 
     public boolean isCompleted() {
