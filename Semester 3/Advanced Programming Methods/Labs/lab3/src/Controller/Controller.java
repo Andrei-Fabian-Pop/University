@@ -29,10 +29,11 @@ public class Controller {
         return repository.getProgramStates();
     }
 
-    private void displayCurrentProgrammeState(ProgramState programState) {
+    private String displayCurrentProgrammeState(ProgramState programState) {
         if (this.displayFlag) {
-            System.out.println(programState.toString());
+            return programState.toString();
         }
+        return null;
     }
 
     public ProgramState oneStep(ProgramState programState) throws MyException {
@@ -47,7 +48,7 @@ public class Controller {
         return crtStatement.execute(programState);
     }
 
-    public void allStep() throws MyException {
+    public IList<String> allStep() throws MyException {
         try {
             ProgramState programState = repository.getCurrentPrg();
 
@@ -59,5 +60,7 @@ public class Controller {
         } catch (IOException e) {
             System.out.println(e.toString());
         }
+
+        return repository.getCurrentPrg().getOut();
     }
 }

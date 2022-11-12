@@ -2,6 +2,7 @@ package Repository;
 
 import Exceptions.MyException;
 import Model.ADT.IList;
+import Model.ADT.MyList;
 import Model.ProgramState;
 
 import java.io.BufferedWriter;
@@ -11,11 +12,18 @@ import java.io.PrintWriter;
 
 public class Repository implements IRepository {
     private IList<ProgramState> programStates;
-    private String logFilePath;
+    private final String logFilePath;
 
-    public Repository(IList<ProgramState> programStates, String logFilePath) {
+    public Repository(String logFilePath) {
+        this.programStates = new MyList<>();
+        this.logFilePath = logFilePath;
+    }
+
+    public Repository(IList<ProgramState> programStates, String logFilePath) throws IOException {
         this.programStates = programStates;
         this.logFilePath = logFilePath;
+
+        new PrintWriter(new BufferedWriter(new FileWriter(this.logFilePath, false))); // clear prev log file
     }
 
     @Override

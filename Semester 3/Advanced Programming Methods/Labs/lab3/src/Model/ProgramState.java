@@ -13,6 +13,14 @@ public class ProgramState {
     private final IDictionary<String, Values> symTable;
     private final IList<String> out;
 
+    public ProgramState(IStatement originalProgram) {
+        execStack = new MyStack<>();
+        symTable = new MyDictionary<>();
+        out = new MyList<>();
+        fileTable = new MyDictionary<>();
+        execStack.push(originalProgram);
+    }
+
     public ProgramState() {
         execStack = new MyStack<>();
         symTable = new MyDictionary<>();
