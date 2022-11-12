@@ -83,7 +83,7 @@ public class ExamplesView implements View {
         ProgramState programState = new ProgramState();
         IList<ProgramState> programStates = new MyList<>();
         programStates.add(programState);
-        Repository repository = new Repository(programStates);
+        Repository repository = new Repository(programStates, "/home/andrew/uni_github/University/Semester 3/Advanced Programming Methods/Labs/lab3/src/Repository");
         Controller controller = new Controller(repository);
         IStatement statement = example0();
         try {

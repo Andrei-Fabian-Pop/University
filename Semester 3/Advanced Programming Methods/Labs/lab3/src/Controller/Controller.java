@@ -7,6 +7,8 @@ import Model.ProgramState;
 import Model.Statements.IStatement;
 import Repository.IRepository;
 
+import java.io.IOException;
+
 public class Controller {
     private final IRepository repository;
     private boolean displayFlag;
@@ -46,9 +48,16 @@ public class Controller {
     }
 
     public void allStep() throws MyException {
-        ProgramState programState = repository.getCurrentPrg();
-        while (!programState.getExecStack().isEmpty()) {
-            this.oneStep(programState);
+        try {
+            ProgramState programState = repository.getCurrentPrg();
+
+            repository.logProgramStateExecution(programState);
+            while (!programState.getExecStack().isEmpty()) {
+                this.oneStep(programState);
+                repository.logProgramStateExecution(programState);
+            }
+        } catch (IOException e) {
+            System.out.println(e.toString());
         }
     }
 }
