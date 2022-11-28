@@ -20,7 +20,7 @@ public class IfStatement implements IStatement {
 
     @Override
     public ProgramState execute(ProgramState state) throws MyException {
-        Values value = expression.eval(state.getSymTable());
+        Values value = expression.eval(state.getSymTable(), state.getHeap());
         if (value.getType().equals(new BoolType())) {
             BoolValue condition = (BoolValue) value;
             if (condition.getValue()) {

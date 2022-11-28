@@ -21,7 +21,7 @@ public class CloseFile implements IStatement {
 
     @Override
     public ProgramState execute(ProgramState state) throws MyException {
-        Values value = expression.eval(state.getSymTable());
+        Values value = expression.eval(state.getSymTable(), state.getHeap());
         if (!value.getType().equals(new StringType())) {
             throw new MyException(String.format("ERROR: %s does not evaluate to StringValue", expression));
         }

@@ -18,7 +18,7 @@ public class CompStatement implements IStatement {
         IStack<IStatement> stack = state.getExecStack();
         stack.push(second);
         stack.push(first);
-        return null; // TODO: if smth does not work, this might be the shiz
+        return null;
     }
 
     @Override

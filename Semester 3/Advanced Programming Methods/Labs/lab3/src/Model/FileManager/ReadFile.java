@@ -34,7 +34,7 @@ public class ReadFile implements IStatement {
 
         if (!value.getType().equals(new IntType()))
             throw new MyException(String.format("ERROR: %s is not of type IntType", value));
-        value = expression.eval(symTable);
+        value = expression.eval(symTable, state.getHeap());
 
         if (!value.getType().equals(new StringType()))
             throw new MyException(String.format("ERROR: %s does not evaluate to StringType", value));

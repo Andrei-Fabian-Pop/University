@@ -20,7 +20,7 @@ public class AssStatement implements IStatement{ // assign :)
     public ProgramState execute(ProgramState state) throws MyException {
         IDictionary<String, Values> symTable = state.getSymTable();
         Type type = symTable.get(key).getType();
-        Values value = expression.eval(symTable);
+        Values value = expression.eval(symTable, state.getHeap());
         if (!value.getType().equals(type)) {
             throw new MyException(String.format("Error: %s is not compatible with %s", value.toString(), type.toString()));
         }

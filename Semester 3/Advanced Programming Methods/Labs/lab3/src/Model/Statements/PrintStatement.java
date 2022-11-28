@@ -13,7 +13,7 @@ public class PrintStatement implements IStatement {
 
     @Override
     public ProgramState execute(ProgramState state) throws MyException {
-        state.getOut().add(this.expression.eval(state.getSymTable()).toString());
+        state.getOut().add(this.expression.eval(state.getSymTable(), state.getHeap()).toString());
         return null;
     }
 

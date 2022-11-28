@@ -2,6 +2,7 @@ package Model.Expressions;
 
 import Exceptions.MyException;
 import Model.ADT.IDictionary;
+import Model.ADT.IHeap;
 import Model.Types.BoolType;
 import Model.Types.Type;
 import Model.Values.BoolValue;
@@ -12,17 +13,17 @@ public class LogicExpression extends BinaryExpression {
         super(operator, left, right);
     }
 
-    private BoolValue getValue(Expression expression, IDictionary<String, Values> symTable) throws MyException {
-        Values value = expression.eval(symTable);
+    private BoolValue getValue(Expression expression, IDictionary<String, Values> symTable, IHeap heap) throws MyException {
+        Values value = expression.eval(symTable, heap);
         if (value instanceof BoolValue)
             return (BoolValue) value;
         throw new MyException(String.format("ERROR: %s is not of type BoolType", value.toString()));
     }
     
     @Override
-    public Values eval(IDictionary<String, Values> symTable) throws MyException {
-        BoolValue leftValue = getValue(left, symTable);
-        BoolValue rightValue = getValue(right, symTable);
+    public Values eval(IDictionary<String, Values> symTable, IHeap heap) throws MyException {
+        BoolValue leftValue = getValue(left, symTable, heap);
+        BoolValue rightValue = getValue(right, symTable, heap);
         return switch (operator) {
             case AND -> new BoolValue(leftValue.getValue() && rightValue.getValue());
             case OR -> new BoolValue(leftValue.getValue() || rightValue.getValue());

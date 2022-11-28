@@ -2,6 +2,7 @@ package Model.Expressions;
 
 import Exceptions.MyException;
 import Model.ADT.IDictionary;
+import Model.ADT.IHeap;
 import Model.Types.IntType;
 import Model.Types.Type;
 import Model.Values.IntValue;
@@ -13,8 +14,8 @@ public class ArithExpression extends BinaryExpression {
         super(operator, left, right);
     }
 
-    private IntValue getValue(Expression expression, IDictionary<String, Values> symTable) throws MyException {
-        Values values = expression.eval(symTable);
+    private IntValue getValue(Expression expression, IDictionary<String, Values> symTable, IHeap heap) throws MyException {
+        Values values = expression.eval(symTable, heap);
         if (values instanceof IntValue) {
             return (IntValue) values;
         } else {
@@ -23,9 +24,9 @@ public class ArithExpression extends BinaryExpression {
     }
 
     @Override
-    public Values eval(IDictionary<String, Values> symTable) throws MyException {
-        IntValue leftValue = getValue(left, symTable);
-        IntValue rightValue = getValue(right, symTable);
+    public Values eval(IDictionary<String, Values> symTable, IHeap heap) throws MyException {
+        IntValue leftValue = getValue(left, symTable, heap);
+        IntValue rightValue = getValue(right, symTable, heap);
         switch (operator) {
             case ADD -> { return new IntValue(leftValue.getValue() + rightValue.getValue()); }
             case SUBSTR -> { return new IntValue(leftValue.getValue() - rightValue.getValue()); }

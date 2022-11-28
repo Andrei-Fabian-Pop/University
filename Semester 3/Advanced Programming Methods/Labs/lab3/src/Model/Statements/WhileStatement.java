@@ -18,7 +18,7 @@ public class WhileStatement implements IStatement {
 
     @Override
     public ProgramState execute(ProgramState state) throws MyException {
-        Values value = expression.eval(state.getSymTable());
+        Values value = expression.eval(state.getSymTable(), state.getHeap());
         if (!value.getType().equals(new BoolType())) {
             throw new MyException(String.format("ERROR: %s is not bool type", value));
         }
