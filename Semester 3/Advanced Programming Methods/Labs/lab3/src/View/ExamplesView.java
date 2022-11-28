@@ -4,10 +4,7 @@ import Controller.Controller;
 import Exceptions.MyException;
 import Model.ADT.IList;
 import Model.ADT.MyList;
-import Model.Expressions.ArithExpression;
-import Model.Expressions.BinaryExpression;
-import Model.Expressions.ValueExpression;
-import Model.Expressions.VariableExpression;
+import Model.Expressions.*;
 import Model.FileManager.CloseFile;
 import Model.FileManager.OpenFile;
 import Model.FileManager.ReadFile;
@@ -15,6 +12,7 @@ import Model.ProgramState;
 import Model.Statements.*;
 import Model.Types.BoolType;
 import Model.Types.IntType;
+import Model.Types.RefType;
 import Model.Types.StringType;
 import Model.Values.BoolValue;
 import Model.Values.IntValue;
@@ -99,8 +97,54 @@ public class ExamplesView implements View {
         );
     }
 
+    protected static IStatement example4() {
+        return buildExample(
+                new DeclarationStatement("v", new RefType(new IntType())),
+                new New("v", new ValueExpression(new IntValue(20))),
+                new PrintStatement(new ReadHeap(new VariableExpression("v"))),
+                new WriteHeap("v", new ValueExpression(new IntValue(30))),
+                new PrintStatement(new ArithExpression(BinaryExpression.OPERATOR.ADD, new ReadHeap(new VariableExpression("v")), new ValueExpression(new IntValue(5))))
+        );
+    }
+
+    protected static IStatement example5() {
+        return buildExample(
+                new DeclarationStatement("v", new RefType(new IntType())),
+                new New("v", new ValueExpression(new IntValue(20))),
+                new DeclarationStatement("a", new RefType(new RefType(new IntType()))),
+                new New("a", new VariableExpression("v")),
+                new WriteHeap("v", new ValueExpression(new IntValue(30))),
+                new PrintStatement(new ReadHeap(new ReadHeap(new VariableExpression("a"))))
+        );
+    }
+
+    protected static IStatement example6() {
+        return buildExample(
+                new DeclarationStatement("v", new IntType()),
+                new AssStatement("v", new ValueExpression(new IntValue(4))),
+                new WhileStatement(
+                        new RelationalExpression(
+                                BinaryExpression.OPERATOR.MORE,
+                                new VariableExpression("v"),
+                                new ValueExpression(new IntValue(0))
+                        ),
+                        buildExample(
+                                new PrintStatement(new VariableExpression("v")),
+                                new AssStatement("v",
+                                        new ArithExpression(
+                                                BinaryExpression.OPERATOR.SUBSTR,
+                                                new VariableExpression("v"),
+                                                new ValueExpression(new IntValue(1))
+                                        )
+                                )
+                        )
+                ),
+                new PrintStatement(new VariableExpression("v"))
+        );
+    }
+
     public static IStatement[] exampleList() {
-        return new IStatement[]{example0(), example1(), example2(), example3()};
+        return new IStatement[]{example0(), example1(), example2(), example3(), example4(), example5(), example6()};
     }
 
     @Override
