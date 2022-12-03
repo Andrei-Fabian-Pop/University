@@ -1,0 +1,88 @@
+Functions, Views, The system catalog, Triggers, The merge statement - in SQL Server:
+1) Functions: 
+	= returned value: scalar/table
+	* Scalar user-defined functions (UDFs)
+	* Inline user-defined functions 
+	* Multi-statement UDFs
+
+-- Scalar UDFs:
+CREATE OR ALTER FUNCTION UFCountInspectionDate(@IDate DATE) RETURNS INT
+BEGIN
+	DECLARE @Res = COUNT(*)
+	SELECT FROM INSPECT I
+	WHERE I.DATE = @IDate
+	RETURN @Res
+END
+
+PRINT dbo UFCountInspectionDate('2022-06-05') -- DEFAULT for default value function 
+
+-- Inline UDFs:
+CREATE OR ALTER FUNCTION UFCountInspectionDate(@IDate DATE) RETURNS TABLE
+RETURN
+	SELECT *
+	FROM INSPECT I
+	WHERE IDate > @IDate
+GO
+	SELECT *
+	FROM UFCountInspectionDate('2022-06-05')
+
+-- Multi UDFs:
+CREATE OR ALTER FUNCTION UFCountInspectionDate(@IDate DATE)
+RETURNS @FileteredInspections TABLE(IId INT, IName VARCHAR(50))
+BEGIN
+	INSERT @FileteredInspections 
+	SELECT IId, IName
+	FROM Inspect
+	WHERE IDate > @IDate
+	IF @@ROWCOUNT = 0
+		INSERT @FileteredInspections
+		VALUE (-1, "No inspections foundi")
+	RETURN
+END
+
+SELECT *
+FROM UFCountInspectionDate('2022-06-05')
+
+
+2) Views
+
+CREATE VIEW uName
+AS
+	student	
+CREATE VIEW vStudentsExams
+AS
+	SELECT S.Name, C.Name AS CourseName
+	FROM Students S INNER JOIN Exams E ON S.Sid = E.Eid
+	INNER JOIN Courses C ON E.CId - C.CId
+
+SELECT *
+FROM vStudentsExams
+
+
+3) System Catalog
+	* sys.objects
+	* sys.sql_modules
+	* sys.columns
+
+4) Triggers
+	* DML triggers (insert/update/delete)
+	* DDL triggers (create/alter/drop)
+	* AFTER triggers
+	* INSTEAD OF triggers
+
+CREATE TRIGGER triggerName ON table
+	{FOR | AFTER | INSTAED OF} -- one of these
+	{[INSERT][,][UPDATE][,][DELETE]}
+
+Products	[PID, Name, Quantity]
+BuyLog 		[Name, Quantity, DateOf]
+
+CREATE TRIGGER trOnProductInsert
+	ON Products
+	AFTER INSERT
+AS
+	INSERT BuyLog
+	SELECT Name, Quantity, GETDATE() 
+	FROM inserted
+
+
