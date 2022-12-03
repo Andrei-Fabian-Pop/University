@@ -6832,3 +6832,459 @@ File Table:
 
 Heap:
 
+Execution stack:
+Declaration{v: Int};
+Assignment{v = ValueExpression{2}}
+;
+Print{VariableExpression{v}}
+;
+Print{VariableExpression{v}}
+;
+Print{VariableExpression{v}}
+;
+NopStatement
+
+
+Symbol Table:
+
+Out:
+
+File Table:
+
+Heap:
+
+Execution stack:
+NopStatement
+Declaration{v: Int};
+Assignment{v = ValueExpression{2}}
+;
+Print{VariableExpression{v}}
+;
+Print{VariableExpression{v}}
+;
+Print{VariableExpression{v}}
+
+
+Symbol Table:
+
+Out:
+
+File Table:
+
+Heap:
+
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+Declaration{v: Int};
+Assignment{v = ValueExpression{2}}
+;
+Print{VariableExpression{v}}
+;
+Print{VariableExpression{v}}
+
+
+Symbol Table:
+
+Out:
+
+File Table:
+
+Heap:
+
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+Declaration{v: Int};
+Assignment{v = ValueExpression{2}}
+;
+Print{VariableExpression{v}}
+
+
+Symbol Table:
+
+Out:
+
+File Table:
+
+Heap:
+
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+Declaration{v: Int};
+Assignment{v = ValueExpression{2}}
+
+
+Symbol Table:
+
+Out:
+
+File Table:
+
+Heap:
+
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+Assignment{v = ValueExpression{2}}
+Declaration{v: Int}
+
+Symbol Table:
+
+Out:
+
+File Table:
+
+Heap:
+
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+Assignment{v = ValueExpression{2}}
+
+Symbol Table:
+v: 0
+
+Out:
+
+File Table:
+
+Heap:
+
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+
+Symbol Table:
+v: 2
+
+Out:
+
+File Table:
+
+Heap:
+
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+
+Symbol Table:
+v: 2
+
+Out:
+2
+
+File Table:
+
+Heap:
+
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+
+Symbol Table:
+v: 2
+
+Out:
+2
+2
+
+File Table:
+
+Heap:
+
+Execution stack:
+NopStatement
+
+Symbol Table:
+v: 2
+
+Out:
+2
+2
+2
+
+File Table:
+
+Heap:
+
+Execution stack:
+
+Symbol Table:
+v: 2
+
+Out:
+2
+2
+2
+
+File Table:
+
+Heap:
+
+Execution stack:
+Declaration{v: Reference(Int)};
+New{v: ValueExpression{20}}
+;
+Declaration{a: Reference(Reference(Int))}
+;
+New{a: VariableExpression{v}}
+;
+WriteHeap{v: ValueExpression{30}}
+;
+Print{ReadHeap{ReadHeap{VariableExpression{a}}}}
+;
+NopStatement
+
+
+Symbol Table:
+
+Out:
+
+File Table:
+
+Heap:
+
+Execution stack:
+NopStatement
+Declaration{v: Reference(Int)};
+New{v: ValueExpression{20}}
+;
+Declaration{a: Reference(Reference(Int))}
+;
+New{a: VariableExpression{v}}
+;
+WriteHeap{v: ValueExpression{30}}
+;
+Print{ReadHeap{ReadHeap{VariableExpression{a}}}}
+
+
+Symbol Table:
+
+Out:
+
+File Table:
+
+Heap:
+
+Execution stack:
+NopStatement
+Print{ReadHeap{ReadHeap{VariableExpression{a}}}}
+Declaration{v: Reference(Int)};
+New{v: ValueExpression{20}}
+;
+Declaration{a: Reference(Reference(Int))}
+;
+New{a: VariableExpression{v}}
+;
+WriteHeap{v: ValueExpression{30}}
+
+
+Symbol Table:
+
+Out:
+
+File Table:
+
+Heap:
+
+Execution stack:
+NopStatement
+Print{ReadHeap{ReadHeap{VariableExpression{a}}}}
+WriteHeap{v: ValueExpression{30}}
+Declaration{v: Reference(Int)};
+New{v: ValueExpression{20}}
+;
+Declaration{a: Reference(Reference(Int))}
+;
+New{a: VariableExpression{v}}
+
+
+Symbol Table:
+
+Out:
+
+File Table:
+
+Heap:
+
+Execution stack:
+NopStatement
+Print{ReadHeap{ReadHeap{VariableExpression{a}}}}
+WriteHeap{v: ValueExpression{30}}
+New{a: VariableExpression{v}}
+Declaration{v: Reference(Int)};
+New{v: ValueExpression{20}}
+;
+Declaration{a: Reference(Reference(Int))}
+
+
+Symbol Table:
+
+Out:
+
+File Table:
+
+Heap:
+
+Execution stack:
+NopStatement
+Print{ReadHeap{ReadHeap{VariableExpression{a}}}}
+WriteHeap{v: ValueExpression{30}}
+New{a: VariableExpression{v}}
+Declaration{a: Reference(Reference(Int))}
+Declaration{v: Reference(Int)};
+New{v: ValueExpression{20}}
+
+
+Symbol Table:
+
+Out:
+
+File Table:
+
+Heap:
+
+Execution stack:
+NopStatement
+Print{ReadHeap{ReadHeap{VariableExpression{a}}}}
+WriteHeap{v: ValueExpression{30}}
+New{a: VariableExpression{v}}
+Declaration{a: Reference(Reference(Int))}
+New{v: ValueExpression{20}}
+Declaration{v: Reference(Int)}
+
+Symbol Table:
+
+Out:
+
+File Table:
+
+Heap:
+
+Execution stack:
+NopStatement
+Print{ReadHeap{ReadHeap{VariableExpression{a}}}}
+WriteHeap{v: ValueExpression{30}}
+New{a: VariableExpression{v}}
+Declaration{a: Reference(Reference(Int))}
+New{v: ValueExpression{20}}
+
+Symbol Table:
+v: ReferenceValue{0 in Int}
+
+Out:
+
+File Table:
+
+Heap:
+
+Execution stack:
+NopStatement
+Print{ReadHeap{ReadHeap{VariableExpression{a}}}}
+WriteHeap{v: ValueExpression{30}}
+New{a: VariableExpression{v}}
+Declaration{a: Reference(Reference(Int))}
+
+Symbol Table:
+v: ReferenceValue{dc75af09 in Int}
+
+Out:
+
+File Table:
+
+Heap:
+dc75af09 in 20
+
+Execution stack:
+NopStatement
+Print{ReadHeap{ReadHeap{VariableExpression{a}}}}
+WriteHeap{v: ValueExpression{30}}
+New{a: VariableExpression{v}}
+
+Symbol Table:
+a: ReferenceValue{0 in Reference(Int)}
+v: ReferenceValue{dc75af09 in Int}
+
+Out:
+
+File Table:
+
+Heap:
+dc75af09 in 20
+
+Execution stack:
+NopStatement
+Print{ReadHeap{ReadHeap{VariableExpression{a}}}}
+WriteHeap{v: ValueExpression{30}}
+
+Symbol Table:
+a: ReferenceValue{261eb852 in Reference(Int)}
+v: ReferenceValue{dc75af09 in Int}
+
+Out:
+
+File Table:
+
+Heap:
+dc75af09 in 20
+261eb852 in ReferenceValue{dc75af09 in Int}
+
+Execution stack:
+NopStatement
+Print{ReadHeap{ReadHeap{VariableExpression{a}}}}
+
+Symbol Table:
+a: ReferenceValue{261eb852 in Reference(Int)}
+v: ReferenceValue{dc75af09 in Int}
+
+Out:
+
+File Table:
+
+Heap:
+dc75af09 in 30
+261eb852 in ReferenceValue{dc75af09 in Int}
+
+Execution stack:
+NopStatement
+
+Symbol Table:
+a: ReferenceValue{261eb852 in Reference(Int)}
+v: ReferenceValue{dc75af09 in Int}
+
+Out:
+30
+
+File Table:
+
+Heap:
+dc75af09 in 30
+261eb852 in ReferenceValue{dc75af09 in Int}
+
+Execution stack:
+
+Symbol Table:
+a: ReferenceValue{261eb852 in Reference(Int)}
+v: ReferenceValue{dc75af09 in Int}
+
+Out:
+30
+
+File Table:
+
+Heap:
+dc75af09 in 30
+261eb852 in ReferenceValue{dc75af09 in Int}
+
