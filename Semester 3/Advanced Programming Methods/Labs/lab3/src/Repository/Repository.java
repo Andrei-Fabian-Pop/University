@@ -9,17 +9,19 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Repository implements IRepository {
-    private IList<ProgramState> programStates;
+    private List<ProgramState> programStates;
     private final String logFilePath;
 
     public Repository(String logFilePath) {
-        this.programStates = new MyList<>();
+        this.programStates = new ArrayList<>();
         this.logFilePath = logFilePath;
     }
 
-    public Repository(IList<ProgramState> programStates, String logFilePath) throws IOException {
+    public Repository(List<ProgramState> programStates, String logFilePath) throws IOException {
         this.programStates = programStates;
         this.logFilePath = logFilePath;
 
@@ -39,12 +41,12 @@ public class Repository implements IRepository {
     }
 
     @Override
-    public IList<ProgramState> getProgramStates() {
+    public List<ProgramState> getProgramStates() {
         return this.programStates;
     }
 
     @Override
-    public void setProgramStates(IList<ProgramState> prgStates) {
+    public void setProgramStates(List<ProgramState> prgStates) {
         this.programStates = prgStates;
     }
 

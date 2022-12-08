@@ -19,7 +19,7 @@ public interface IDictionary<K, V> {
 
     MyDictionary<K, V> cloneDict();
     Iterable<Map.Entry<K, V>> getAll();
-
+    Map<K, V> getContent();
     int size();
     String toString();
 }

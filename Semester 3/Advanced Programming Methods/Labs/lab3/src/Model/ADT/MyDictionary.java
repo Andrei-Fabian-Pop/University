@@ -71,6 +71,11 @@ public class MyDictionary<K, V> implements IDictionary<K, V>{
     }
 
     @Override
+    public Map<K, V> getContent() {
+        return this.dictionary;
+    }
+
+    @Override
     public int size() {
         return this.dictionary.size();
     }

@@ -7,14 +7,17 @@ import Model.Values.Values;
 
 import java.io.BufferedReader;
 import java.util.Map;
+import java.util.Random;
+import java.util.TreeSet;
 
 public class ProgramState {
     private final IStack<IStatement> execStack;
     private final IDictionary<String, Values> symTable;
     private final IList<String> out;
     private final IDictionary<String, BufferedReader> fileTable;
-
     private final IHeap heap;
+    private static final TreeSet<Integer> ids = new TreeSet<>();
+    public final Integer id;
 
     public ProgramState(IStatement originalProgram) {
         execStack = new MyStack<>();
@@ -23,6 +26,7 @@ public class ProgramState {
         fileTable = new MyDictionary<>();
         execStack.push(originalProgram);
         heap = new MyHeap();
+        id = newId();
     }
 
     public ProgramState() {
@@ -31,14 +35,16 @@ public class ProgramState {
         out = new MyList<>();
         fileTable = new MyDictionary<>();
         heap = new MyHeap();
+        id = newId();
     }
 
-    public ProgramState(IStack<IStatement> execStack, IDictionary<String, BufferedReader> fileTable, IDictionary<String, Values> symTable, IList<String> out, IHeap heap) {
+    public ProgramState(IStack<IStatement> execStack, IDictionary<String, Values> symTable, IList<String> out, IDictionary<String, BufferedReader> fileTable, IHeap heap) {
         this.execStack = execStack;
         this.fileTable = fileTable;
         this.symTable = symTable;
         this.out = out;
         this.heap = heap;
+        id = newId();
     }
 
     public IDictionary<String, Values> getSymTable() {
@@ -65,13 +71,26 @@ public class ProgramState {
         return this.execStack.isEmpty();
     }
 
-    public ProgramState thisStep() throws MyException {
+    public ProgramState oneStep() throws MyException {
         if (execStack.isEmpty()) {
             throw new MyException("Exec stack is empty.");
         }
 
         IStatement statement = execStack.pop();
         return statement.execute(this);
+    }
+
+    private static Integer newId() {
+        Random random = new Random();
+        int _id;
+        synchronized (ids) {
+            do {
+                _id = 1000 + (random.nextInt() % 9000); // to look like a pid :))
+            } while (ids.contains(_id));
+            ids.add(_id);
+        }
+
+        return _id;
     }
 
     public String execToString() {
@@ -121,7 +140,8 @@ public class ProgramState {
 
     @Override
     public String toString() {
-        return String.format("Execution stack:\n%s\nSymbol Table:\n%s\nOut:\n%s\nFile Table:\n%s\nHeap:\n%s",
+        return String.format("ID: %d\nExecution stack:\n%s\nSymbol Table:\n%s\nOut:\n%s\nFile Table:\n%s\nHeap:\n%s",
+                this.id,
                 execToString(),
                 symToString(),
                 outToString(),
