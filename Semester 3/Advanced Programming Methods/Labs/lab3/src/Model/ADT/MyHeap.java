@@ -32,45 +32,57 @@ public class MyHeap implements IHeap {
 
     @Override
     public String getFreeValue() {
-        return freeValue;
+        synchronized (this) {
+            return freeValue;
+        }
     }
 
     @Override
     public Map<String, Values> getContent() {
-        return map;
+        synchronized (this) {
+            return map;
+        }
     }
 
     @Override
     public void setContent(Map<String, Values> newMap) {
-        map.clear();
-        for (String i : newMap.keySet()) {
-            map.put(i, newMap.get(i));
+        synchronized (this) {
+            map.clear();
+            for (String i : newMap.keySet()) {
+                map.put(i, newMap.get(i));
+            }
         }
     }
 
     @Override
     public String add(Values value) {
-        map.put(this.freeValue, value);
-        String res = this.freeValue;
-        this.freeValue = this.newValue();
+        synchronized (this) {
+            map.put(this.freeValue, value);
+            String res = this.freeValue;
+            this.freeValue = this.newValue();
 
-        return res;
+            return res;
+        }
     }
 
     @Override
     public void update(String position, Values value) throws MyException {
-        if (!map.containsKey(position)) {
-            throw new MyException(String.format("ERROR: %s is not present in the heap", position));
+        synchronized (this) {
+            if (!map.containsKey(position)) {
+                throw new MyException(String.format("ERROR: %s is not present in the heap", position));
+            }
+            map.put(position, value);
         }
-        map.put(position, value);
     }
 
     @Override
     public Values get(String position) throws MyException {
-        if (!map.containsKey(position)) {
-            throw new MyException(String.format("ERROR: %s is not present in the heap", position));
-        }
+        synchronized (this) {
+            if (!map.containsKey(position)) {
+                throw new MyException(String.format("ERROR: %s is not present in the heap", position));
+            }
 
-        return map.get(position);
+            return map.get(position);
+        }
     }
 }

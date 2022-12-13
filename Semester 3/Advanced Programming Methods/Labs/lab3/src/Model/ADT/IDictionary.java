@@ -17,7 +17,7 @@ public interface IDictionary<K, V> {
     Collection<V> values();
     Set<K> keys();
 
-    MyDictionary<K, V> cloneDict();
+    MyDictionary<K, V> copy();
     Iterable<Map.Entry<K, V>> getAll();
     Map<K, V> getContent();
     int size();

@@ -17,7 +17,7 @@ public class ForkStatement implements IStatement {
         IStack<IStatement> newExeStack = new MyStack<>();
         newExeStack.push(statement);
 
-        return new ProgramState(newExeStack, state.getSymTable().cloneDict(), state.getOut(), state.getFileTable(), state.getHeap());
+        return new ProgramState(newExeStack, state.getSymTable().copy(), state.getOut(), state.getFileTable(), state.getHeap());
     }
 
     @Override

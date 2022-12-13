@@ -4,14 +4,13 @@ import Exceptions.MyException;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 import java.util.function.Consumer;
 
 public class MyList<T> implements IList<T>{
     private final ArrayList<T> list;
 
     public MyList() {
-        this.list = new ArrayList<T>();
+        this.list = new ArrayList<>();
     }
 
     public MyList(ArrayList<T> list) {
@@ -20,49 +19,68 @@ public class MyList<T> implements IList<T>{
 
     @Override
     public void add(T val) {
-        this.list.add(val);
+        synchronized (list) {
+            this.list.add(val);
+        }
     }
 
     @Override
     public void remove(T val) throws MyException {
-        if (!this.list.remove(val))
-            throw new MyException("ERROR: No such element in list.");
+        synchronized (list) {
+            if (!this.list.remove(val))
+                throw new MyException("ERROR: No such element in list.");
+        }
     }
 
     @Override
     public void remove(int index) throws MyException {
-        if (index < 0 || index >= this.list.size())
-            throw new MyException("ERROR: No such element in list.");
-        this.list.remove(index);
+        synchronized (list) {
+            if (index < 0 || index >= this.list.size())
+                throw new MyException("ERROR: No such element in list.");
+            this.list.remove(index);
+        }
     }
 
     @Override
-    public T get(int index) {
-        return this.list.get(index);
+    public T get(int index)
+    {
+        synchronized (list) {
+            return this.list.get(index);
+        }
     }
 
     @Override
     public boolean isEmpty() {
-        return this.list.isEmpty();
+        synchronized (list) {
+            return this.list.isEmpty();
+        }
     }
 
     @Override
     public java.util.List<T> getList() {
-        return this.list;
+        synchronized (list) {
+            return this.list;
+        }
     }
 
     @Override
     public Iterator<T> iterator() {
-        return this.list.listIterator();
+        synchronized (list) {
+            return this.list.listIterator();
+        }
     }
 
     @Override
     public void forEach(Consumer<? super T> action) {
-        IList.super.forEach(action);
+        synchronized (list) {
+            IList.super.forEach(action);
+        }
     }
 
     @Override
     public String toString() {
-        return this.list.toString();
+        synchronized (list) {
+            return this.list.toString();
+        }
     }
 }

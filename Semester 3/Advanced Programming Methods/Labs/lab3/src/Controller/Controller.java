@@ -2,7 +2,6 @@ package Controller;
 
 import Exceptions.MyException;
 import Model.ADT.IList;
-import Model.ADT.IPair;
 import Model.ADT.IStack;
 import Model.ADT.Pair;
 import Model.ProgramState;
@@ -53,11 +52,7 @@ public class Controller {
     }
 
     List<ProgramState> removeCompletedPrograms(List<ProgramState> programStateList) {
-        List<ProgramState> toReturn = programStateList.stream().filter(p -> !p.isCompleted()).collect(Collectors.toList());
-        if (toReturn.isEmpty() && !programStateList.isEmpty()) {
-            toReturn.add(programStateList.get(0));
-        }
-        return toReturn;
+        return programStateList.stream().filter(p -> !p.isCompleted()).collect(Collectors.toList());
     }
 
     Map<String, Values> safeGarbageCollector(Set<String> symTableAddr, Map<String, Values> heap) {
@@ -67,10 +62,6 @@ public class Controller {
     }
 
     Set<String> getAddrFromSymTable(List<Collection<Values>> symTableValues, Map<String, Values> heap) {
-//        return symTableValues.stream().filter(v -> v instanceof RefValue).map(v -> {
-//            RefValue v1 = (RefValue) v;
-//            return v1.getAddress();
-//        }).collect(Collectors.toSet());
         Set<String> res = new TreeSet<>();
         symTableValues.forEach(symTable -> symTable.stream()
                 .filter(v -> v instanceof RefValue)
@@ -97,7 +88,7 @@ public class Controller {
         return crtStatement.execute(programState);
     }
 
-    public void oneStepAll(List<ProgramState> programStateList) throws MyException {
+    public void oneStepForEachPrg(List<ProgramState> programStateList) throws MyException {
         programStateList.forEach(prg -> {
             try {
                 repository.logProgramStateExecution(prg);
@@ -144,6 +135,9 @@ public class Controller {
     public IList<String> allStep() throws MyException {
         executor = Executors.newFixedThreadPool(2);
         List<ProgramState> programStatesList = removeCompletedPrograms(repository.getProgramStates());
+        if (!repository.getCurrentPrg().getOut().isEmpty()) {
+            return repository.getCurrentPrg().getOut();
+        }
         IList<String> out = programStatesList.get(0).getOut();
         while (!programStatesList.isEmpty()) {
             ProgramState state = programStatesList.get(0);
@@ -157,12 +151,12 @@ public class Controller {
                     )
             );
 
-            oneStepAll(programStatesList);
+            oneStepForEachPrg(programStatesList);
             programStatesList = removeCompletedPrograms(repository.getProgramStates());
         }
 
         executor.shutdownNow();
-        repository.setProgramStates(programStatesList);
+//        repository.setProgramStates(programStatesList);
         return out;
     }
 }

@@ -15,6 +15,7 @@ public class RunExample extends Command {
     @Override
     public void execute() {
         try {
+
             System.out.println(controller.allStep().toString());
         } catch (MyException e) {
             System.out.println(e.toString());

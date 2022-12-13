@@ -23,6 +23,6 @@ public class CompStatement implements IStatement {
 
     @Override
     public String toString() {
-        return String.format("%s;\n%s\n", first.toString(), second.toString());
+        return String.format("%s -> %s\n", first.toString(), second.toString());
     }
 }

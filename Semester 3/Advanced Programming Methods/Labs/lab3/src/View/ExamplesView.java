@@ -145,8 +145,26 @@ public class ExamplesView implements View {
         );
     }
 
+    protected static IStatement example7() {
+        IStatement frk = buildExample(
+                new WriteHeap("a", new ValueExpression(new IntValue(30))),
+                new AssStatement("v", new ValueExpression(new IntValue(32))),
+                new PrintStatement(new VariableExpression("v")),
+                new PrintStatement(new ReadHeap(new VariableExpression("a")))
+        );
+        return buildExample(
+                new DeclarationStatement("v", new IntType()),
+                new DeclarationStatement("a", new RefType(new IntType())),
+                new AssStatement("v", new ValueExpression(new IntValue(10))),
+                new New("a", new ValueExpression(new IntValue(22))),
+                new ForkStatement(frk),
+                new PrintStatement(new VariableExpression("v")),
+                new PrintStatement(new ReadHeap(new VariableExpression("a")))
+        );
+    }
+
     public static IStatement[] exampleList() {
-        return new IStatement[]{example0(), example1(), example2(), example3(), example4(), example5(), example6()};
+        return new IStatement[]{example0(), example1(), example2(), example3(), example4(), example5(), example6(), example7()};
     }
 
     @Override
@@ -170,7 +188,5 @@ public class ExamplesView implements View {
         } catch (IOException e) {
             System.out.println(e.toString());
         }
-
-
     }
 }
