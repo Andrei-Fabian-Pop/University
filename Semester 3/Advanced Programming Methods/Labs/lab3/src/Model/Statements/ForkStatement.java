@@ -1,9 +1,11 @@
 package Model.Statements;
 
 import Exceptions.MyException;
+import Model.ADT.IDictionary;
 import Model.ADT.IStack;
 import Model.ADT.MyStack;
 import Model.ProgramState;
+import Model.Types.Type;
 
 public class ForkStatement implements IStatement {
     private final IStatement statement;
@@ -18,6 +20,12 @@ public class ForkStatement implements IStatement {
         newExeStack.push(statement);
 
         return new ProgramState(newExeStack, state.getSymTable().copy(), state.getOut(), state.getFileTable(), state.getHeap());
+    }
+
+    @Override
+    public IDictionary<String, Type> typeCheck(IDictionary<String, Type> typeTable) throws MyException {
+        statement.typeCheck(typeTable.copy());
+        return typeTable;
     }
 
     @Override

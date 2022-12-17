@@ -1,9 +1,11 @@
 package Model.Statements;
 
 import Exceptions.MyException;
+import Model.ADT.IDictionary;
 import Model.Expressions.Expression;
 import Model.ProgramState;
 import Model.Types.BoolType;
+import Model.Types.Type;
 import Model.Values.BoolValue;
 import Model.Values.Values;
 
@@ -29,6 +31,15 @@ public class WhileStatement implements IStatement {
             state.getExecStack().push(statement);
         }
         return null;
+    }
+
+    @Override
+    public IDictionary<String, Type> typeCheck(IDictionary<String, Type> typeTable) throws MyException {
+        if (!expression.typeCheck(typeTable).equals(new BoolType())) {
+            throw new MyException("The condition of while does not have the type bool");
+        }
+        statement.typeCheck(typeTable.copy());
+        return typeTable;
     }
 
     @Override

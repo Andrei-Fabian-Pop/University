@@ -1,8 +1,10 @@
 package Model.Statements;
 
 import Exceptions.MyException;
+import Model.ADT.IDictionary;
 import Model.ADT.IStack;
 import Model.ProgramState;
+import Model.Types.Type;
 
 public class CompStatement implements IStatement {
     private final IStatement first;
@@ -19,6 +21,11 @@ public class CompStatement implements IStatement {
         stack.push(second);
         stack.push(first);
         return null;
+    }
+
+    @Override
+    public IDictionary<String, Type> typeCheck(IDictionary<String, Type> typeTable) throws MyException {
+        return second.typeCheck(first.typeCheck(typeTable));
     }
 
     @Override

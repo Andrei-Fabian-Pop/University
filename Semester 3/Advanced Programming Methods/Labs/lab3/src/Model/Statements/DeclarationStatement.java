@@ -25,6 +25,12 @@ public class DeclarationStatement implements IStatement{
         return null;
     }
 
+    @Override
+    public IDictionary<String, Type> typeCheck(IDictionary<String, Type> typeTable) throws MyException {
+        typeTable.put(name, type);
+        return typeTable;
+    }
+
     public String toString() {
         return String.format("Declaration{%s: %s}", name, type.toString());
     }

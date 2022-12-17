@@ -32,6 +32,14 @@ public class AssStatement implements IStatement{ // assign :)
     }
 
     @Override
+    public IDictionary<String, Type> typeCheck(IDictionary<String, Type> typeTable) throws MyException {
+        if (!typeTable.get(key).equals(expression.typeCheck(typeTable))) {
+            throw new MyException("Assignment: right hand side and left hand side have different types.");
+        }
+        return typeTable;
+    }
+
+    @Override
     public String toString() {
         return String.format("Assignment{%s = %s}", key, expression.toString());
     }

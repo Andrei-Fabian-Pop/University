@@ -1,9 +1,11 @@
 package Model.Statements;
 
 import Exceptions.MyException;
+import Model.ADT.IDictionary;
 import Model.Expressions.Expression;
 import Model.ProgramState;
 import Model.Types.BoolType;
+import Model.Types.Type;
 import Model.Values.BoolValue;
 import Model.Values.Values;
 
@@ -30,6 +32,15 @@ public class IfStatement implements IStatement {
             }
         }
         return null;
+    }
+
+    @Override
+    public IDictionary<String, Type> typeCheck(IDictionary<String, Type> typeTable) throws MyException {
+        if (!expression.typeCheck(typeTable).equals(new BoolType()))
+            throw new MyException("The condition of if does not have the type bool");
+        first.typeCheck(typeTable.copy());
+        second.typeCheck(typeTable.copy());
+        return typeTable;
     }
 
     @Override

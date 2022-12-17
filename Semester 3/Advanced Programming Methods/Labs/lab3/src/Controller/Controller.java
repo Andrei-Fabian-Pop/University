@@ -1,11 +1,10 @@
 package Controller;
 
 import Exceptions.MyException;
-import Model.ADT.IList;
-import Model.ADT.IStack;
-import Model.ADT.Pair;
+import Model.ADT.*;
 import Model.ProgramState;
 import Model.Statements.IStatement;
+import Model.Types.Type;
 import Model.Values.RefValue;
 import Model.Values.Values;
 import Repository.IRepository;
@@ -132,19 +131,27 @@ public class Controller {
         repository.setProgramStates(programStateList);
     }
 
+    public void typeChecker() throws MyException {
+        for (ProgramState state: repository.getProgramStates()) {
+            IDictionary<String, Type> typeTable = new MyDictionary<>();
+            state.getExecStack().top().typeCheck(typeTable);
+        }
+    }
+
     public IList<String> allStep() throws MyException {
-        executor = Executors.newFixedThreadPool(2);
-        List<ProgramState> programStatesList = removeCompletedPrograms(repository.getProgramStates());
         if (!repository.getCurrentPrg().getOut().isEmpty()) {
             return repository.getCurrentPrg().getOut();
         }
+        typeChecker();
+        executor = Executors.newFixedThreadPool(2);
+        List<ProgramState> programStatesList = removeCompletedPrograms(repository.getProgramStates());
         IList<String> out = programStatesList.get(0).getOut();
         while (!programStatesList.isEmpty()) {
             ProgramState state = programStatesList.get(0);
             state.getHeap().setContent(
                     safeGarbageCollector(
                             getAddrFromSymTable(
-                                    programStatesList.stream().map(programState -> programState.getSymTable().getContent().values()).collect(Collectors.toList()),
+                                    programStatesList.stream().map(programState -> programState.getSymTable().getCon tent().values()).collect(Collectors.toList()),
                                     state.getHeap().getContent()
                             ),
                             state.getHeap().getContent()

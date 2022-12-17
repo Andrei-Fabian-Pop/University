@@ -6,6 +6,7 @@ import Model.Expressions.Expression;
 import Model.ProgramState;
 import Model.Statements.IStatement;
 import Model.Types.StringType;
+import Model.Types.Type;
 import Model.Values.StringValue;
 import Model.Values.Values;
 
@@ -40,6 +41,14 @@ public class OpenFile implements IStatement {
         }
         fileTable.put(fileName.getVal(), bufferedReader);
         return null;
+    }
+
+    @Override
+    public IDictionary<String, Type> typeCheck(IDictionary<String, Type> typeTable) throws MyException {
+        if (!expression.typeCheck(typeTable).equals(new StringType())) {
+            throw new MyException("ERROR: OpenFile requires a string expression");
+        }
+        return typeTable;
     }
 
     @Override
