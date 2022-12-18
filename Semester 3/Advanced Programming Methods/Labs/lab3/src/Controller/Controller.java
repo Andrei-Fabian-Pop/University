@@ -151,7 +151,7 @@ public class Controller {
             state.getHeap().setContent(
                     safeGarbageCollector(
                             getAddrFromSymTable(
-                                    programStatesList.stream().map(programState -> programState.getSymTable().getCon tent().values()).collect(Collectors.toList()),
+                                    programStatesList.stream().map(programState -> programState.getSymTable().getContent().values()).collect(Collectors.toList()),
                                     state.getHeap().getContent()
                             ),
                             state.getHeap().getContent()
