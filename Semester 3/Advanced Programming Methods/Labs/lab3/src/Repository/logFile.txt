@@ -3487,3 +3487,62 @@ File Table:
 Heap:
 ce0df817 in 30
 
+ID: 8269
+Execution stack:
+Declaration{v: Int} -> Assignment{v = ValueExpression{4}}
+ -> While (BinaryExpression{VariableExpression{v} MORE ValueExpression{false}}) {
+	Print{VariableExpression{v}} -> Assignment{v = BinaryExpression{VariableExpression{v} SUBSTR ValueExpression{1}}}
+ -> NopStatement
+
+}
+ -> Print{VariableExpression{v}}
+ -> NopStatement
+
+
+Symbol Table:
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 8269
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+While (BinaryExpression{VariableExpression{v} MORE ValueExpression{false}}) {
+	Print{VariableExpression{v}} -> Assignment{v = BinaryExpression{VariableExpression{v} SUBSTR ValueExpression{1}}}
+ -> NopStatement
+
+}
+Assignment{v = ValueExpression{4}}
+
+Symbol Table:
+v: 0
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 8269
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+While (BinaryExpression{VariableExpression{v} MORE ValueExpression{false}}) {
+	Print{VariableExpression{v}} -> Assignment{v = BinaryExpression{VariableExpression{v} SUBSTR ValueExpression{1}}}
+ -> NopStatement
+
+}
+
+Symbol Table:
+v: 4
+
+Out:
+
+File Table:
+
+Heap:
+

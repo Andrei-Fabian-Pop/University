@@ -128,7 +128,7 @@ public class ExamplesView implements View {
                         new RelationalExpression(
                                 BinaryExpression.OPERATOR.MORE,
                                 new VariableExpression("v"),
-                                new ValueExpression(new IntValue(0))
+                                new ValueExpression(new BoolValue(false))
                         ),
                         buildExample(
                                 new PrintStatement(new VariableExpression("v")),
