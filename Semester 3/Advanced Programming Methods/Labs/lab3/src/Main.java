@@ -1,10 +1,7 @@
-import View.CLI.CLIView;
-import View.ExamplesView;
-import View.View;
+import View.GUI.GUIView;
 
 public class Main {
     public static void main(String[] args) {
-        View view = new CLIView();
-        view.execute();
+        GUIView.main(args);
     }
 }

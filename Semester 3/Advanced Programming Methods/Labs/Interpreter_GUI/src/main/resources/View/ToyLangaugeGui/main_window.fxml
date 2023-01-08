@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="870.0" prefWidth="1069.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ToyLangaugeGui.MainController">
+   <children>
+      <TextField fx:id="PrgStateTextField" layoutX="14.0" layoutY="10.0" prefHeight="24.0" prefWidth="39.0" />
+      <HBox layoutX="12.0" layoutY="40.0" prefHeight="821.0" prefWidth="1048.0">
+         <children>
+            <VBox prefHeight="791.0" prefWidth="335.0">
+               <children>
+                  <GridPane prefHeight="594.0" prefWidth="335.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="366.0" minHeight="10.0" prefHeight="331.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="222.0" minHeight="10.0" prefHeight="204.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <TableView fx:id="HeapTableView" editable="true" prefHeight="200.0" prefWidth="150.0">
+                          <columns>
+                            <TableColumn fx:id="Address" prefWidth="84.0" text="Address" />
+                            <TableColumn fx:id="Value" prefWidth="82.0" text="Value" />
+                          </columns>
+                        </TableView>
+                        <ListView fx:id="OutListView" editable="true" prefHeight="83.0" prefWidth="150.0" GridPane.rowIndex="1" />
+                        <ListView fx:id="FileTableListView" prefHeight="83.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TableView fx:id="SymTableView" prefHeight="200.0" prefWidth="150.0" GridPane.columnIndex="1">
+                          <columns>
+                            <TableColumn fx:id="Variable" prefWidth="84.0" text="Variable" />
+                            <TableColumn fx:id="Name" prefWidth="81.0" text="Name" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </GridPane>
+                  <ListView fx:id="PrgStateIdListView" prefHeight="216.0" prefWidth="335.0" />
+               </children>
+            </VBox>
+            <ListView fx:id="ExeStackListView" editable="true" prefHeight="821.0" prefWidth="706.0" />
+         </children>
+      </HBox>
+      <Button fx:id="OneStepButton" layoutX="956.0" layoutY="10.0" mnemonicParsing="false" text="One Step All" />
+   </children>
+</AnchorPane>
