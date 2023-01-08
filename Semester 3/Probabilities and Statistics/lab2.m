@@ -1,5 +1,5 @@
-%n = input("nr of tries: ")
-%p = input("probabilities: ")
+n = input("nr of tries: ")
+p = input("probabilities: ")
 x = 0:n
 yp = binopdf(x,n,p)
 %plot(y, "*")
@@ -21,7 +21,7 @@ binocdf(0, 3, .5)
 
 % 2c P(X=0)
 binopdf(0,3,.5)
-1-binopdf(0,3,0.5)
+1-binopdf(1,3,0.5)
 
 % 2d
 binocdf(2,3,.5)
