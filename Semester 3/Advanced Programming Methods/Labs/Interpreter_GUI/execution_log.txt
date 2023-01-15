@@ -3052,3 +3052,1954 @@ File Table:
 
 Heap:
 
+ID: 8043
+Execution stack:
+Declaration{v: Int} -> Assignment{v = ValueExpression{2}}
+ -> Print{VariableExpression{v}}
+ -> Print{VariableExpression{v}}
+ -> Print{VariableExpression{v}}
+ -> NopStatement
+
+
+Symbol Table:
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 8043
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+Assignment{v = ValueExpression{2}}
+
+Symbol Table:
+v: 0
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 8043
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+
+Symbol Table:
+v: 2
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 8043
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+
+Symbol Table:
+v: 2
+
+Out:
+2
+
+File Table:
+
+Heap:
+
+ID: 8043
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+
+Symbol Table:
+v: 2
+
+Out:
+2
+2
+
+File Table:
+
+Heap:
+
+ID: 8043
+Execution stack:
+NopStatement
+
+Symbol Table:
+v: 2
+
+Out:
+2
+2
+2
+
+File Table:
+
+Heap:
+
+ID: 7720
+Execution stack:
+Declaration{v: Int} -> Declaration{a: Reference(Int)}
+ -> Assignment{v = ValueExpression{10}}
+ -> New{a: ValueExpression{22}}
+ -> Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+
+Symbol Table:
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 7720
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+New{a: ValueExpression{22}}
+Assignment{v = ValueExpression{10}}
+Declaration{a: Reference(Int)}
+
+Symbol Table:
+v: 0
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 7720
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+New{a: ValueExpression{22}}
+Assignment{v = ValueExpression{10}}
+
+Symbol Table:
+a: ReferenceValue{0 in Int}
+v: 0
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 7720
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+New{a: ValueExpression{22}}
+
+Symbol Table:
+a: ReferenceValue{0 in Int}
+v: 10
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 7720
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+
+Symbol Table:
+a: ReferenceValue{57434611 in Int}
+v: 10
+
+Out:
+
+File Table:
+
+Heap:
+57434611 in 22
+
+ID: 7720
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+
+Symbol Table:
+a: ReferenceValue{57434611 in Int}
+v: 10
+
+Out:
+
+File Table:
+
+Heap:
+57434611 in 22
+
+ID: 8587
+Execution stack:
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+
+Symbol Table:
+a: ReferenceValue{57434611 in Int}
+v: 10
+
+Out:
+
+File Table:
+
+Heap:
+57434611 in 22
+
+ID: 7720
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+
+Symbol Table:
+a: ReferenceValue{57434611 in Int}
+v: 10
+
+Out:
+10
+
+File Table:
+
+Heap:
+57434611 in 30
+
+ID: 8587
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Assignment{v = ValueExpression{32}}
+
+Symbol Table:
+a: ReferenceValue{57434611 in Int}
+v: 10
+
+Out:
+10
+
+File Table:
+
+Heap:
+57434611 in 30
+
+ID: 7922
+Execution stack:
+Declaration{varF: string} -> Assignment{varF = ValueExpression{test.in}}
+ -> Open(r) file {VariableExpression{varF}}
+ -> Declaration{x: Int}
+ -> ReadFile {VariableExpression{varF}: x}
+ -> Print{VariableExpression{x}}
+ -> ReadFile {VariableExpression{varF}: x}
+ -> Print{VariableExpression{x}}
+ -> Close(r) file {VariableExpression{varF}}
+ -> NopStatement
+
+
+Symbol Table:
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 7922
+Execution stack:
+NopStatement
+Close(r) file {VariableExpression{varF}}
+Print{VariableExpression{x}}
+ReadFile {VariableExpression{varF}: x}
+Print{VariableExpression{x}}
+ReadFile {VariableExpression{varF}: x}
+Declaration{x: Int}
+Open(r) file {VariableExpression{varF}}
+Assignment{varF = ValueExpression{test.in}}
+
+Symbol Table:
+varF: 
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 7922
+Execution stack:
+NopStatement
+Close(r) file {VariableExpression{varF}}
+Print{VariableExpression{x}}
+ReadFile {VariableExpression{varF}: x}
+Print{VariableExpression{x}}
+ReadFile {VariableExpression{varF}: x}
+Declaration{x: Int}
+Open(r) file {VariableExpression{varF}}
+
+Symbol Table:
+varF: test.in
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 7922
+Execution stack:
+NopStatement
+Close(r) file {VariableExpression{varF}}
+Print{VariableExpression{x}}
+ReadFile {VariableExpression{varF}: x}
+Print{VariableExpression{x}}
+ReadFile {VariableExpression{varF}: x}
+Declaration{x: Int}
+
+Symbol Table:
+varF: test.in
+
+Out:
+
+File Table:
+test.in
+
+Heap:
+
+ID: 7922
+Execution stack:
+NopStatement
+Close(r) file {VariableExpression{varF}}
+Print{VariableExpression{x}}
+ReadFile {VariableExpression{varF}: x}
+Print{VariableExpression{x}}
+ReadFile {VariableExpression{varF}: x}
+
+Symbol Table:
+varF: test.in
+x: 0
+
+Out:
+
+File Table:
+test.in
+
+Heap:
+
+ID: 7922
+Execution stack:
+NopStatement
+Close(r) file {VariableExpression{varF}}
+Print{VariableExpression{x}}
+ReadFile {VariableExpression{varF}: x}
+Print{VariableExpression{x}}
+
+Symbol Table:
+varF: test.in
+x: 100
+
+Out:
+
+File Table:
+test.in
+
+Heap:
+
+ID: 7922
+Execution stack:
+NopStatement
+Close(r) file {VariableExpression{varF}}
+Print{VariableExpression{x}}
+ReadFile {VariableExpression{varF}: x}
+
+Symbol Table:
+varF: test.in
+x: 100
+
+Out:
+100
+
+File Table:
+test.in
+
+Heap:
+
+ID: 7922
+Execution stack:
+NopStatement
+Close(r) file {VariableExpression{varF}}
+Print{VariableExpression{x}}
+
+Symbol Table:
+varF: test.in
+x: 99
+
+Out:
+100
+
+File Table:
+test.in
+
+Heap:
+
+ID: 7922
+Execution stack:
+NopStatement
+Close(r) file {VariableExpression{varF}}
+
+Symbol Table:
+varF: test.in
+x: 99
+
+Out:
+100
+99
+
+File Table:
+test.in
+
+Heap:
+
+ID: 7922
+Execution stack:
+NopStatement
+
+Symbol Table:
+varF: test.in
+x: 99
+
+Out:
+100
+99
+
+File Table:
+
+Heap:
+
+ID: 4324
+Execution stack:
+Declaration{v: Int} -> Declaration{a: Reference(Int)}
+ -> Assignment{v = ValueExpression{10}}
+ -> New{a: ValueExpression{22}}
+ -> Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+
+Symbol Table:
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 4324
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+New{a: ValueExpression{22}}
+Assignment{v = ValueExpression{10}}
+Declaration{a: Reference(Int)}
+
+Symbol Table:
+v: 0
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 4324
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+New{a: ValueExpression{22}}
+Assignment{v = ValueExpression{10}}
+
+Symbol Table:
+a: ReferenceValue{0 in Int}
+v: 0
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 4324
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+New{a: ValueExpression{22}}
+
+Symbol Table:
+a: ReferenceValue{0 in Int}
+v: 10
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 4324
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+
+Symbol Table:
+a: ReferenceValue{3387edce in Int}
+v: 10
+
+Out:
+
+File Table:
+
+Heap:
+3387edce in 22
+
+ID: 4324
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+
+Symbol Table:
+a: ReferenceValue{3387edce in Int}
+v: 10
+
+Out:
+
+File Table:
+
+Heap:
+3387edce in 22
+
+ID: 9825
+Execution stack:
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+
+Symbol Table:
+a: ReferenceValue{3387edce in Int}
+v: 10
+
+Out:
+
+File Table:
+
+Heap:
+3387edce in 22
+
+ID: 4324
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+
+Symbol Table:
+a: ReferenceValue{3387edce in Int}
+v: 10
+
+Out:
+10
+
+File Table:
+
+Heap:
+3387edce in 30
+
+ID: 9825
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Assignment{v = ValueExpression{32}}
+
+Symbol Table:
+a: ReferenceValue{3387edce in Int}
+v: 10
+
+Out:
+10
+
+File Table:
+
+Heap:
+3387edce in 30
+
+ID: 4324
+Execution stack:
+NopStatement
+
+Symbol Table:
+a: ReferenceValue{3387edce in Int}
+v: 10
+
+Out:
+10
+30
+
+File Table:
+
+Heap:
+3387edce in 30
+
+ID: 9825
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+
+Symbol Table:
+a: ReferenceValue{3387edce in Int}
+v: 32
+
+Out:
+10
+30
+
+File Table:
+
+Heap:
+3387edce in 30
+
+ID: 9825
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+
+Symbol Table:
+a: ReferenceValue{3387edce in Int}
+v: 32
+
+Out:
+10
+30
+32
+
+File Table:
+
+Heap:
+3387edce in 30
+
+ID: 9825
+Execution stack:
+NopStatement
+
+Symbol Table:
+a: ReferenceValue{3387edce in Int}
+v: 32
+
+Out:
+10
+30
+32
+30
+
+File Table:
+
+Heap:
+3387edce in 30
+
+ID: 3347
+Execution stack:
+Declaration{v: Int} -> Declaration{a: Reference(Int)}
+ -> Assignment{v = ValueExpression{10}}
+ -> New{a: ValueExpression{22}}
+ -> Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+
+Symbol Table:
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 3347
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+New{a: ValueExpression{22}}
+Assignment{v = ValueExpression{10}}
+Declaration{a: Reference(Int)}
+
+Symbol Table:
+v: 0
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 3347
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+New{a: ValueExpression{22}}
+Assignment{v = ValueExpression{10}}
+
+Symbol Table:
+a: ReferenceValue{0 in Int}
+v: 0
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 3347
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+New{a: ValueExpression{22}}
+
+Symbol Table:
+a: ReferenceValue{0 in Int}
+v: 10
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 3347
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+
+Symbol Table:
+a: ReferenceValue{4cd65e52 in Int}
+v: 10
+
+Out:
+
+File Table:
+
+Heap:
+4cd65e52 in 22
+
+ID: 3347
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+
+Symbol Table:
+a: ReferenceValue{4cd65e52 in Int}
+v: 10
+
+Out:
+
+File Table:
+
+Heap:
+4cd65e52 in 22
+
+ID: 9401
+Execution stack:
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+
+Symbol Table:
+a: ReferenceValue{4cd65e52 in Int}
+v: 10
+
+Out:
+
+File Table:
+
+Heap:
+4cd65e52 in 22
+
+ID: 3347
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+
+Symbol Table:
+a: ReferenceValue{4cd65e52 in Int}
+v: 10
+
+Out:
+10
+
+File Table:
+
+Heap:
+4cd65e52 in 30
+
+ID: 9401
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Assignment{v = ValueExpression{32}}
+
+Symbol Table:
+a: ReferenceValue{4cd65e52 in Int}
+v: 10
+
+Out:
+10
+
+File Table:
+
+Heap:
+4cd65e52 in 30
+
+ID: 3347
+Execution stack:
+NopStatement
+
+Symbol Table:
+a: ReferenceValue{4cd65e52 in Int}
+v: 10
+
+Out:
+10
+30
+
+File Table:
+
+Heap:
+4cd65e52 in 30
+
+ID: 9401
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+
+Symbol Table:
+a: ReferenceValue{4cd65e52 in Int}
+v: 32
+
+Out:
+10
+30
+
+File Table:
+
+Heap:
+4cd65e52 in 30
+
+ID: 9401
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+
+Symbol Table:
+a: ReferenceValue{4cd65e52 in Int}
+v: 32
+
+Out:
+10
+30
+32
+
+File Table:
+
+Heap:
+4cd65e52 in 30
+
+ID: 9401
+Execution stack:
+NopStatement
+
+Symbol Table:
+a: ReferenceValue{4cd65e52 in Int}
+v: 32
+
+Out:
+10
+30
+32
+30
+
+File Table:
+
+Heap:
+4cd65e52 in 30
+
+ID: 7949
+Execution stack:
+Declaration{v: Int} -> Declaration{a: Reference(Int)}
+ -> Assignment{v = ValueExpression{10}}
+ -> New{a: ValueExpression{22}}
+ -> Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+
+Symbol Table:
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 7949
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+New{a: ValueExpression{22}}
+Assignment{v = ValueExpression{10}}
+Declaration{a: Reference(Int)}
+
+Symbol Table:
+v: 0
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 7949
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+New{a: ValueExpression{22}}
+Assignment{v = ValueExpression{10}}
+
+Symbol Table:
+a: ReferenceValue{0 in Int}
+v: 0
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 7949
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+New{a: ValueExpression{22}}
+
+Symbol Table:
+a: ReferenceValue{0 in Int}
+v: 10
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 7949
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+
+Symbol Table:
+a: ReferenceValue{90b1f826 in Int}
+v: 10
+
+Out:
+
+File Table:
+
+Heap:
+90b1f826 in 22
+
+ID: 7949
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+
+Symbol Table:
+a: ReferenceValue{90b1f826 in Int}
+v: 10
+
+Out:
+
+File Table:
+
+Heap:
+90b1f826 in 22
+
+ID: 9192
+Execution stack:
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+
+Symbol Table:
+a: ReferenceValue{90b1f826 in Int}
+v: 10
+
+Out:
+
+File Table:
+
+Heap:
+90b1f826 in 22
+
+ID: 7949
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+
+Symbol Table:
+a: ReferenceValue{90b1f826 in Int}
+v: 10
+
+Out:
+10
+
+File Table:
+
+Heap:
+90b1f826 in 30
+
+ID: 9192
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Assignment{v = ValueExpression{32}}
+
+Symbol Table:
+a: ReferenceValue{90b1f826 in Int}
+v: 10
+
+Out:
+10
+
+File Table:
+
+Heap:
+90b1f826 in 30
+
+ID: 7949
+Execution stack:
+NopStatement
+
+Symbol Table:
+a: ReferenceValue{90b1f826 in Int}
+v: 10
+
+Out:
+10
+30
+
+File Table:
+
+Heap:
+90b1f826 in 30
+
+ID: 9192
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+
+Symbol Table:
+a: ReferenceValue{90b1f826 in Int}
+v: 32
+
+Out:
+10
+30
+
+File Table:
+
+Heap:
+90b1f826 in 30
+
+ID: 9192
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+
+Symbol Table:
+a: ReferenceValue{90b1f826 in Int}
+v: 32
+
+Out:
+10
+30
+32
+
+File Table:
+
+Heap:
+90b1f826 in 30
+
+ID: 9192
+Execution stack:
+NopStatement
+
+Symbol Table:
+a: ReferenceValue{90b1f826 in Int}
+v: 32
+
+Out:
+10
+30
+32
+30
+
+File Table:
+
+Heap:
+90b1f826 in 30
+
+ID: 2514
+Execution stack:
+Declaration{v: Reference(Int)} -> New{v: ValueExpression{20}}
+ -> Print{ReadHeap{VariableExpression{v}}}
+ -> WriteHeap{v: ValueExpression{30}}
+ -> Print{BinaryExpression{ReadHeap{VariableExpression{v}} ADD ValueExpression{5}}}
+ -> NopStatement
+
+
+Symbol Table:
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 2514
+Execution stack:
+NopStatement
+Print{BinaryExpression{ReadHeap{VariableExpression{v}} ADD ValueExpression{5}}}
+WriteHeap{v: ValueExpression{30}}
+Print{ReadHeap{VariableExpression{v}}}
+New{v: ValueExpression{20}}
+
+Symbol Table:
+v: ReferenceValue{0 in Int}
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 2514
+Execution stack:
+NopStatement
+Print{BinaryExpression{ReadHeap{VariableExpression{v}} ADD ValueExpression{5}}}
+WriteHeap{v: ValueExpression{30}}
+Print{ReadHeap{VariableExpression{v}}}
+
+Symbol Table:
+v: ReferenceValue{43bf9a15 in Int}
+
+Out:
+
+File Table:
+
+Heap:
+43bf9a15 in 20
+
+ID: 2514
+Execution stack:
+NopStatement
+Print{BinaryExpression{ReadHeap{VariableExpression{v}} ADD ValueExpression{5}}}
+WriteHeap{v: ValueExpression{30}}
+
+Symbol Table:
+v: ReferenceValue{43bf9a15 in Int}
+
+Out:
+20
+
+File Table:
+
+Heap:
+43bf9a15 in 20
+
+ID: 2514
+Execution stack:
+NopStatement
+Print{BinaryExpression{ReadHeap{VariableExpression{v}} ADD ValueExpression{5}}}
+
+Symbol Table:
+v: ReferenceValue{43bf9a15 in Int}
+
+Out:
+20
+
+File Table:
+
+Heap:
+43bf9a15 in 30
+
+ID: 2514
+Execution stack:
+NopStatement
+
+Symbol Table:
+v: ReferenceValue{43bf9a15 in Int}
+
+Out:
+20
+35
+
+File Table:
+
+Heap:
+43bf9a15 in 30
+
+ID: 8663
+Execution stack:
+Declaration{varF: string} -> Assignment{varF = ValueExpression{test.in}}
+ -> Open(r) file {VariableExpression{varF}}
+ -> Declaration{x: Int}
+ -> ReadFile {VariableExpression{varF}: x}
+ -> Print{VariableExpression{x}}
+ -> ReadFile {VariableExpression{varF}: x}
+ -> Print{VariableExpression{x}}
+ -> Close(r) file {VariableExpression{varF}}
+ -> NopStatement
+
+
+Symbol Table:
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 8663
+Execution stack:
+NopStatement
+Close(r) file {VariableExpression{varF}}
+Print{VariableExpression{x}}
+ReadFile {VariableExpression{varF}: x}
+Print{VariableExpression{x}}
+ReadFile {VariableExpression{varF}: x}
+Declaration{x: Int}
+Open(r) file {VariableExpression{varF}}
+Assignment{varF = ValueExpression{test.in}}
+
+Symbol Table:
+varF: 
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 8663
+Execution stack:
+NopStatement
+Close(r) file {VariableExpression{varF}}
+Print{VariableExpression{x}}
+ReadFile {VariableExpression{varF}: x}
+Print{VariableExpression{x}}
+ReadFile {VariableExpression{varF}: x}
+Declaration{x: Int}
+Open(r) file {VariableExpression{varF}}
+
+Symbol Table:
+varF: test.in
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 8663
+Execution stack:
+NopStatement
+Close(r) file {VariableExpression{varF}}
+Print{VariableExpression{x}}
+ReadFile {VariableExpression{varF}: x}
+Print{VariableExpression{x}}
+ReadFile {VariableExpression{varF}: x}
+Declaration{x: Int}
+
+Symbol Table:
+varF: test.in
+
+Out:
+
+File Table:
+test.in
+
+Heap:
+
+ID: 8663
+Execution stack:
+NopStatement
+Close(r) file {VariableExpression{varF}}
+Print{VariableExpression{x}}
+ReadFile {VariableExpression{varF}: x}
+Print{VariableExpression{x}}
+ReadFile {VariableExpression{varF}: x}
+
+Symbol Table:
+varF: test.in
+x: 0
+
+Out:
+
+File Table:
+test.in
+
+Heap:
+
+ID: 8663
+Execution stack:
+NopStatement
+Close(r) file {VariableExpression{varF}}
+Print{VariableExpression{x}}
+ReadFile {VariableExpression{varF}: x}
+Print{VariableExpression{x}}
+
+Symbol Table:
+varF: test.in
+x: 100
+
+Out:
+
+File Table:
+test.in
+
+Heap:
+
+ID: 8663
+Execution stack:
+NopStatement
+Close(r) file {VariableExpression{varF}}
+Print{VariableExpression{x}}
+ReadFile {VariableExpression{varF}: x}
+
+Symbol Table:
+varF: test.in
+x: 100
+
+Out:
+100
+
+File Table:
+test.in
+
+Heap:
+
+ID: 8663
+Execution stack:
+NopStatement
+Close(r) file {VariableExpression{varF}}
+Print{VariableExpression{x}}
+
+Symbol Table:
+varF: test.in
+x: 99
+
+Out:
+100
+
+File Table:
+test.in
+
+Heap:
+
+ID: 8663
+Execution stack:
+NopStatement
+Close(r) file {VariableExpression{varF}}
+
+Symbol Table:
+varF: test.in
+x: 99
+
+Out:
+100
+99
+
+File Table:
+test.in
+
+Heap:
+
+ID: 8663
+Execution stack:
+NopStatement
+
+Symbol Table:
+varF: test.in
+x: 99
+
+Out:
+100
+99
+
+File Table:
+
+Heap:
+
+ID: 2577
+Execution stack:
+Declaration{v: Int} -> Declaration{a: Reference(Int)}
+ -> Assignment{v = ValueExpression{10}}
+ -> New{a: ValueExpression{22}}
+ -> Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+
+Symbol Table:
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 2577
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+New{a: ValueExpression{22}}
+Assignment{v = ValueExpression{10}}
+Declaration{a: Reference(Int)}
+
+Symbol Table:
+v: 0
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 2577
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+New{a: ValueExpression{22}}
+Assignment{v = ValueExpression{10}}
+
+Symbol Table:
+a: ReferenceValue{0 in Int}
+v: 0
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 2577
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+New{a: ValueExpression{22}}
+
+Symbol Table:
+a: ReferenceValue{0 in Int}
+v: 10
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 2577
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Fork{
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+}
+
+Symbol Table:
+a: ReferenceValue{e06ed37d in Int}
+v: 10
+
+Out:
+
+File Table:
+
+Heap:
+e06ed37d in 22
+
+ID: 2577
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+
+Symbol Table:
+a: ReferenceValue{e06ed37d in Int}
+v: 10
+
+Out:
+
+File Table:
+
+Heap:
+e06ed37d in 22
+
+ID: 8644
+Execution stack:
+WriteHeap{a: ValueExpression{30}} -> Assignment{v = ValueExpression{32}}
+ -> Print{VariableExpression{v}}
+ -> Print{ReadHeap{VariableExpression{a}}}
+ -> NopStatement
+
+
+Symbol Table:
+a: ReferenceValue{e06ed37d in Int}
+v: 10
+
+Out:
+
+File Table:
+
+Heap:
+e06ed37d in 22
+
+ID: 2577
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+
+Symbol Table:
+a: ReferenceValue{e06ed37d in Int}
+v: 10
+
+Out:
+10
+
+File Table:
+
+Heap:
+e06ed37d in 30
+
+ID: 8644
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+Assignment{v = ValueExpression{32}}
+
+Symbol Table:
+a: ReferenceValue{e06ed37d in Int}
+v: 10
+
+Out:
+10
+
+File Table:
+
+Heap:
+e06ed37d in 30
+
+ID: 2577
+Execution stack:
+NopStatement
+
+Symbol Table:
+a: ReferenceValue{e06ed37d in Int}
+v: 10
+
+Out:
+10
+30
+
+File Table:
+
+Heap:
+e06ed37d in 30
+
+ID: 8644
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+Print{VariableExpression{v}}
+
+Symbol Table:
+a: ReferenceValue{e06ed37d in Int}
+v: 32
+
+Out:
+10
+30
+
+File Table:
+
+Heap:
+e06ed37d in 30
+
+ID: 8644
+Execution stack:
+NopStatement
+Print{ReadHeap{VariableExpression{a}}}
+
+Symbol Table:
+a: ReferenceValue{e06ed37d in Int}
+v: 32
+
+Out:
+10
+30
+32
+
+File Table:
+
+Heap:
+e06ed37d in 30
+
+ID: 8644
+Execution stack:
+NopStatement
+
+Symbol Table:
+a: ReferenceValue{e06ed37d in Int}
+v: 32
+
+Out:
+10
+30
+32
+30
+
+File Table:
+
+Heap:
+e06ed37d in 30
+
+ID: 6812
+Execution stack:
+Declaration{v: Int} -> Assignment{v = ValueExpression{2}}
+ -> Print{VariableExpression{v}}
+ -> Print{VariableExpression{v}}
+ -> Print{VariableExpression{v}}
+ -> NopStatement
+
+
+Symbol Table:
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 6812
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+Assignment{v = ValueExpression{2}}
+
+Symbol Table:
+v: 0
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 6812
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+
+Symbol Table:
+v: 2
+
+Out:
+
+File Table:
+
+Heap:
+
+ID: 6812
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+Print{VariableExpression{v}}
+
+Symbol Table:
+v: 2
+
+Out:
+2
+
+File Table:
+
+Heap:
+
+ID: 6812
+Execution stack:
+NopStatement
+Print{VariableExpression{v}}
+
+Symbol Table:
+v: 2
+
+Out:
+2
+2
+
+File Table:
+
+Heap:
+
+ID: 6812
+Execution stack:
+NopStatement
+
+Symbol Table:
+v: 2
+
+Out:
+2
+2
+2
+
+File Table:
+
+Heap:
+
