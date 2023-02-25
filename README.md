@@ -26,3 +26,9 @@
 - [Logical and Functional Programming](https://github.com/Andrei-Fabian-Pop/University/tree/main/Semester%203/Logical%20and%20Functional%20Programming)
 - [Probabilities and Statistics](https://github.com/Andrei-Fabian-Pop/University/tree/main/Semester%203/Probabilities%20and%20Statistics)
 
+### Semester 4
+- [Artificial Intelligence](https://github.com/Andrei-Fabian-Pop/University/tree/main/Semester%204/Artificial%20Intelligence)
+- [Database Management Systems](https://github.com/Andrei-Fabian-Pop/University/tree/main/Semester%204/Database%20Management%20Systems)
+- [Software Engineering](https://github.com/Andrei-Fabian-Pop/University/tree/main/Semester%204/Software%20Engineering)
+- [Systems for Design and Implementation](https://github.com/Andrei-Fabian-Pop/University/tree/main/Semester%204/Systems%20for%20Design%20and%20Implementation)
+- [Web Programming](https://github.com/Andrei-Fabian-Pop/University/tree/main/Semester%204/Web%20Programming)
