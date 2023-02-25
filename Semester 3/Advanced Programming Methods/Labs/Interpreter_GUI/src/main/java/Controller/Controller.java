@@ -185,5 +185,8 @@ public class Controller {
         oneStepForEachPrg(programStateList);
         programStateList = removeCompletedPrograms(repository.getProgramStates());
         executor.shutdownNow();
+        if (!programStateList.isEmpty()) {
+            repository.setProgramStates(programStateList);
+        }
     }
 }
