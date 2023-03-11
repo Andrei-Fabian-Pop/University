@@ -1,0 +1,56 @@
+#table_section {
+    position: relative;
+    left: 200px;
+    right: 50px;
+}
+
+table {
+    position: absolute;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+td:nth-child(2) {
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+td:nth-child(3) {
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+table, th, td {
+    border: transparent;
+}
+
+.person_image {
+    display: block;
+}
+
+.person_image:hover + .show_section {
+    color: black;
+}
+
+.show_section {
+    color: transparent;
+}
