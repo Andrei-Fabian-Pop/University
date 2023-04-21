@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipes</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <a id="back-button" href="../index.html">Back</a>
+    <br>
+
+    <div class="filter-section">
+        <label><input type="text" id="filter-input"></label>
+        <button id="filter-button">Filter</button>
+    </div>
+
+    <hr>
+    <br>
+
+    <div class="select-section">
+        <button id="select-button">Show All</button>
+        <table id="data-table">
+
+        </table>
+    </div>
+
+    <hr>
+
+    <div class="insert-section">
+        <button id="insert-button">Insert</button>
+        <table id="insert-table">
+            <tr>
+                <td>Recipe: </td>
+                <td><label for="name-input"></label><input type="text" name="recipe" id="name-input"></td>
+            </tr>
+            <tr>
+                <td>Ingredient: </td>
+                <td><label for="description-input"></label><input type="text" name="ingredient" id="description-input"></td>
+            </tr>
+            <tr>
+                <td>Amount: </td>
+                <td><label for="author-input"></label><input type="text" name="amount" id="author-input"></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+
+    <div class="delete-section">
+        <button id="delete-button">Delete</button>
+    </div>
+
+    <hr>
+
+    <div class="update-section">
+        <button id="update-button">Update</button>
+        <table id="update-table">
+            <tr>
+                <td>Recipe: </td>
+                <td><label for="name-update-input"></label><input type="text" name="recipe" id="name-update-input"></td>
+            </tr>
+            <tr>
+                <td>Ingredient: </td>
+                <td><label for="description-update-input"></label><input type="text" name="ingredient" id="description-update-input"></td>
+            </tr>
+            <tr>
+                <td>Amount: </td>
+                <td><label for="author-update-input"></label><input type="text" name="amount" id="author-update-input"></td>
+            </tr>
+        </table>
+    </div>
+
+<!-- Script includes -->
+    <script src="recipes.js"></script>
+</body>
+</html>
