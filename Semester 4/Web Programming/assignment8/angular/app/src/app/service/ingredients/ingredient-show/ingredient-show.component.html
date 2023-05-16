@@ -1,0 +1,60 @@
+<ng-container>
+
+    <div class="select-section center">
+        <button id="select-button" (click)="pullIngredients(this.offset, this.limit)">Select</button>
+        <hr>
+        <div class="page-selector-buttons">
+            <button id="previous-page-button" (click)="prevPage()">Previous page</button>
+            <label>{{this.offset / this.limit + 1}}</label>
+            <button id="next-page-button" (click)="nextPage()">Next page</button>
+        </div>
+        <table id="data-table">
+            <tr class='table-row'>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+            <tr class='clickable-row' *ngFor="let ingredient of ingredients"
+                (click)="selectIngredient(ingredient)"
+                [class.selected]="selectedIngredient === ingredient">
+                <td>{{ ingredient.id }}</td>
+                <td>{{ ingredient.name }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+
+    <div class="insert-section center">
+        <button id="insert-button" (click)="insertIngredient(name.value)">Insert</button>
+        <table id="insert-table">
+            <tr>
+                <td>Name:</td>
+                <td><label for="name-input"></label><input type="text" name="name" id="name-input" #name></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+
+    <div class="delete-section center">
+        <button id="delete-button" (click)="deleteIngredient()">Delete</button>
+    </div>
+
+    <hr>
+
+    <div class="update-section center">
+        <button id="update-button" (click)="updateIngredient(update_name.value)">Update</button>
+        <table id="update-table">
+            <tr>
+                <td>Name:</td>
+                <td>
+                    <label for="name-update-input"></label>
+                    <input value="{{selectedIngredient?.name}}" type="text" name="update_name" id="name-update-input"
+                           #update_name>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</ng-container>
+<router-outlet></router-outlet>
