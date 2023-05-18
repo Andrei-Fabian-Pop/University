@@ -1,0 +1,96 @@
+<!-- Import Angular modules -->
+<!DOCTYPE html>
+<html lang="en" ng-app="recipesApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipes</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include AngularJS library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<body ng-controller="recipesCtrl">
+<a id="back-button" href="../index.html">Back</a>
+<br>
+
+<div class="filter-section">
+    <label><input type="text" id="filter-input" ng-model="filterText"></label>
+    <button id="filter-button" ng-click="filterRecipes()">Filter</button>
+</div>
+
+<hr>
+<br>
+
+<div class="select-section">
+    <button id="select-button" ng-click="selectRecipes()">Show All</button>
+    <table id="data-table">
+        <tr class='table-row'>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Author</th>
+        </tr>
+        <tr class='clickable-row' ng-repeat="recipe in recipes" ng-click="selectRecipe(recipe)">
+            <td>{{ recipe.id }}</td>
+            <td>{{ recipe.name }}</td>
+            <td>{{ recipe.description }}</td>
+            <td>{{ recipe.author }}</td>
+        </tr>
+    </table>
+</div>
+
+<hr>
+
+<div class="insert-section">
+    <button id="insert-button" ng-click="insertRecipe()">Insert</button>
+    <table id="insert-table">
+        <tr>
+            <td>Recipe:</td>
+            <td><label for="name-input"></label><input type="text" name="recipe" id="name-input"
+                                                       ng-model="newRecipe.name"></td>
+        </tr>
+        <tr>
+            <td>Description:</td>
+            <td><label for="description-input"></label><input type="text" name="ingredient" id="description-input"
+                                                              ng-model="newRecipe.description"></td>
+        </tr>
+        <tr>
+            <td>Author:</td>
+            <td><label for="author-input"></label><input type="text" name="amount" id="author-input"
+                                                         ng-model="newRecipe.author"></td>
+        </tr>
+    </table>
+</div>
+
+<hr>
+
+<div class="delete-section">
+    <button id="delete-button" ng-click="deleteRecipe()">Delete</button>
+</div>
+
+<hr>
+
+<div class="update-section">
+    <button id="update-button" ng-click="updateRecipe()">Update</button>
+    <table id="update-table">
+        <tr>
+            <td>Recipe:</td>
+            <td><label for="name-update-input"></label><input type="text" name="recipe" id="name-update-input"
+                                                              ng-model="selectedRecipe.name"></td>
+        </tr>
+        <tr>
+            <td>Ingredient:</td>
+            <td><label for="description-update-input"></label><input type="text" name="ingredient"
+                                                                     id="description-update-input"
+                                                                     ng-model="selectedRecipe.description"></td>
+        <tr>
+            <td>Amount:</td>
+            <td><label for="author-update-input"></label><input type="text" name="amount" id="author-update-input"
+                                                                ng-model="selectedRecipe.author"></td>
+        </tr>
+    </table>
+</div>
+
+<script src="recipes.js"></script>
+</body>
+</html>

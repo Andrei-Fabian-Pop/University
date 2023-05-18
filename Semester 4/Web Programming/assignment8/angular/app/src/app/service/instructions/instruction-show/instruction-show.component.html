@@ -1,0 +1,86 @@
+<ng-container>
+    <div class="select-section center">
+        <button id="select-button">Select</button>
+        <hr>
+        <div class="page-selector-buttons">
+            <button id="previous-page-button" (click)="prevPage()">Previous page</button>
+            <label>{{this.offset / this.limit + 1}}</label>
+            <button id="next-page-button" (click)="nextPage()">Next page</button>
+        </div>
+        <table id="data-table">
+            <tr class='table-row'>
+                <th>ID</th>
+                <th>Recipe</th>
+                <th>Ingredient</th>
+                <th>Amount</th>
+            </tr>
+            <tr class='clickable-row' *ngFor="let instruction of instructions"
+                (click)="selectInstruction(instruction)"
+                [class.selected]="selectedInstruction === instruction">
+                <td>{{ instruction.id }}</td>
+                <td>{{ instruction.recipe }}</td>
+                <td>{{ instruction.ingredient }}</td>
+                <td>{{ instruction.amount }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+
+    <div class="insert-section center">
+        <button id="insert-button" (click)="insertInstruction(recipe.value, ingredient.value, amount.value)">Insert</button>
+
+        <table id="insert-table">
+            <tr>
+                <td>Recipe:</td>
+                <td><label for="recipe-input"></label><input type="text" name="recipe" id="recipe-input" #recipe></td>
+            </tr>
+            <tr>
+                <td>Ingredient:</td>
+                <td><label for="ingredient-input"></label><input type="text" name="ingredient" id="ingredient-input" #ingredient>
+                </td>
+            </tr>
+            <tr>
+                <td>Amount:</td>
+                <td><label for="amount-input"></label><input type="text" name="amount" id="amount-input" #amount></td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+
+    <div class="delete-section center">
+        <button id="delete-button" (click)="deleteInstruction()">Delete</button>
+    </div>
+
+    <hr>
+
+    <div class="update-section center">
+        <button id="update-button" (click)="updateInstruction(update_recipe.value, update_ingredient.value, update_amount.value)">Update</button>
+        <table id="update-table">
+            <tr>
+                <td>Recipe:</td>
+                <td>
+                    <label for="recipe-update-input"></label>
+                    <input value="{{selectedInstruction?.recipe}}" type="text" name="recipe" id="recipe-update-input" #update_recipe>
+                </td>
+            </tr>
+            <tr>
+                <td>Ingredient:</td>
+                <td>
+                    <label for="ingredient-update-input"></label>
+                    <input value="{{selectedInstruction?.ingredient}}" type="text" name="ingredient" id="ingredient-update-input" #update_ingredient>
+                </td>
+            </tr>
+            <tr>
+                <td>Amount:</td>
+                <td>
+                    <label for="amount-update-input"></label>
+                    <input value="{{selectedInstruction?.amount}}" type="text" name="amount" id="amount-update-input" #update_amount>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</ng-container>
+<router-outlet></router-outlet>

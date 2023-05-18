@@ -1,0 +1,104 @@
+<ng-container>
+    <div class="filter-section center">
+        <label><input (input)="filterRecipes(this.offset, this.limit, filterValue.value)" type="text" id="filter-input" #filterValue></label>
+        <button id="filter-button" (click)="filterRecipes(this.offset, this.limit, filterValue.value)">Filter</button>
+    </div>
+
+    <hr>
+    <br>
+
+    <div class="select-section center">
+        <button id="select-button" (click)="pullRecipes(this.offset, this.limit)">Show All</button>
+        <hr>
+        <div class="page-selector-buttons">
+            <button id="previous-page-button" (click)="prevPage()">Previous page</button>
+            <label>{{this.offset / this.limit + 1}}</label>
+            <button id="next-page-button" (click)="nextPage()">Next page</button>
+        </div>
+        <table id="data-table">
+            <tr class='table-row'>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Author</th>
+            </tr>
+            <tr class='clickable-row' *ngFor="let recipe of recipes"
+                (click)="selectRecipe(recipe)"
+                [class.selected]="selectedRecipe === recipe">
+                <td>{{ recipe.id }}</td>
+                <td>{{ recipe.name }}</td>
+                <td>{{ recipe.description }}</td>
+                <td>{{ recipe.author }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+
+    <div class="insert-section center">
+        <button id="insert-button" (click)="insertRecipe(name.value, description.value, author.value)">Insert</button>
+        <table id="insert-table">
+            <tr>
+                <td>Name:</td>
+                <td>
+                    <label for="name-input"></label>
+                    <input type="text" name="recipe" id="name-input" #name>
+                </td>
+            </tr>
+            <tr>
+                <td>Description:</td>
+                <td>
+                    <label for="description-input"></label>
+                    <input type="text" name="ingredient" id="description-input" #description>
+                </td>
+            </tr>
+            <tr>
+                <td>Author:</td>
+                <td>
+                    <label for="author-input"></label>
+                    <input type="text" name="amount" id="author-input" #author>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+
+    <div class="delete-section center">
+        <button id="delete-button" (click)="deleteRecipe()">Delete</button>
+    </div>
+
+    <hr>
+
+    <div class="update-section center">
+        <button id="update-button"
+                (click)="updateRecipe(update_name.value, update_description.value, update_author.value)">Update
+        </button>
+        <table id="update-table">
+            <tr>
+                <td>Name:</td>
+                <td>
+                    <label for="name-update-input"></label>
+                    <input value="{{selectedRecipe?.name}}" type="text" name="recipe" id="name-update-input"
+                           #update_name>
+                </td>
+            </tr>
+            <tr>
+                <td>Description:</td>
+                <td><label for="description-update-input"></label>
+                    <input value="{{selectedRecipe?.description}}" type="text" name="ingredient"
+                           id="description-update-input" #update_description></td>
+            <tr>
+                <td>Author:</td>
+                <td>
+                    <label for="author-update-input"></label>
+                    <input value="{{selectedRecipe?.author}}" type="text" name="amount" id="author-update-input"
+                           #update_author>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</ng-container>
+
+<router-outlet></router-outlet>

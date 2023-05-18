@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+.insert-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+td {
+    border: 1px #DDD solid;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: brown;
+    color: #FFF;
+}
+
+.page-selector-buttons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 2px;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+hr {
+    width: 50%;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ingredients</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<a id="back-button" href="../index.html">Back</a>
+<br>
+
+<div class="select-section">
+    <button id="select-button">Select</button>
+    <table id="data-table">
+
+    </table>
+</div>
+
+<hr>
+
+<div class="insert-section">
+    <button id="insert-button">Insert</button>
+    <table id="insert-table">
+        <tr>
+            <td>Name:</td>
+            <td><label for="name-input"></label><input type="text" name="name" id="name-input"></td>
+        </tr>
+    </table>
+</div>
+
+<hr>
+
+<div class="delete-section">
+    <button id="delete-button">Delete</button>
+    <label for="delete-text-area"></label><textarea id="delete-text-area"></textarea>
+</div>
+
+<hr>
+
+<div class="update-section">
+    <button id="update-button">Update</button>
+    <table id="update-table">
+        <tr>
+            <td>Name:</td>
+            <td><label for="name-update-input"></label><input type="text" name="name" id="name-update-input"></td>
+        </tr>
+    </table>
+</div>
+
+<!-- Script includes -->
+<script src="ingredients.js"></script>
+</body>
+</html>
