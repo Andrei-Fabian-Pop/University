@@ -1,0 +1,82 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/WebApplication7.csproj": {}
+  },
+  "projects": {
+    "/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/WebApplication7.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/WebApplication7.csproj",
+        "projectName": "WebApplication7",
+        "projectPath": "/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/WebApplication7.csproj",
+        "packagesPath": "/home/andrew/.nuget/packages/",
+        "outputPath": "/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/andrew/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Cookies": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.33, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.3.0-beta.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/andrew/.dotnet/sdk/6.0.408/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

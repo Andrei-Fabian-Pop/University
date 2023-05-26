@@ -1,0 +1,104 @@
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/appsettings.Development.json
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/appsettings.json
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/WebApplication7
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/WebApplication7.deps.json
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/WebApplication7.runtimeconfig.json
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/WebApplication7.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/WebApplication7.pdb
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/obj/Debug/net6.0/WebApplication7.csproj.AssemblyReference.cache
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/obj/Debug/net6.0/WebApplication7.GeneratedMSBuildEditorConfig.editorconfig
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/obj/Debug/net6.0/WebApplication7.AssemblyInfoInputs.cache
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/obj/Debug/net6.0/WebApplication7.AssemblyInfo.cs
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/obj/Debug/net6.0/WebApplication7.csproj.CoreCompileInputs.cache
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/obj/Debug/net6.0/WebApplication7.MvcApplicationPartsAssemblyInfo.cache
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/obj/Debug/net6.0/staticwebassets.build.json
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/obj/Debug/net6.0/staticwebassets.development.json
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/obj/Debug/net6.0/scopedcss/bundle/WebApplication7.styles.css
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/obj/Debug/net6.0/WebApplication7.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/obj/Debug/net6.0/refint/WebApplication7.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/obj/Debug/net6.0/WebApplication7.pdb
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/obj/Debug/net6.0/WebApplication7.genruntimeconfig.cache
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/obj/Debug/net6.0/ref/WebApplication7.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/System.Security.Permissions.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/obj/Debug/net6.0/WebApplication7.RazorAssemblyInfo.cache
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/obj/Debug/net6.0/WebApplication7.RazorAssemblyInfo.cs
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/obj/Debug/net6.0/WebApplication7.csproj.CopyComplete
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/Google.Protobuf.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/K4os.Compression.LZ4.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/K4os.Compression.LZ4.Streams.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/K4os.Hash.xxHash.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/MySql.Data.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/MySqlConnector.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/BouncyCastle.Crypto.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/System.Drawing.Common.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/System.IO.Pipelines.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/System.Text.Encodings.Web.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/System.Text.Json.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/System.Windows.Extensions.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/runtimes/win-x64/native/comerr64.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/runtimes/win-x64/native/gssapi64.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/runtimes/win-x64/native/k5sprt64.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/runtimes/win-x64/native/krb5_64.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/runtimes/win-x64/native/krbcc64.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll
+/home/andrew/RiderProjects/WebApplication7/WebApplication7/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/appsettings.Development.json
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/appsettings.json
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/WebApplication7
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/WebApplication7.deps.json
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/WebApplication7.runtimeconfig.json
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/WebApplication7.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/WebApplication7.pdb
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/Google.Protobuf.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/K4os.Compression.LZ4.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/K4os.Compression.LZ4.Streams.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/K4os.Hash.xxHash.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/MySql.Data.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/MySqlConnector.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/BouncyCastle.Crypto.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/System.Drawing.Common.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/System.IO.Pipelines.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/System.Security.Permissions.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/System.Text.Encodings.Web.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/System.Text.Json.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/System.Windows.Extensions.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/runtimes/win-x64/native/comerr64.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/runtimes/win-x64/native/gssapi64.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/runtimes/win-x64/native/k5sprt64.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/runtimes/win-x64/native/krb5_64.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/runtimes/win-x64/native/krbcc64.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/obj/Debug/net6.0/WebApplication7.csproj.AssemblyReference.cache
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/obj/Debug/net6.0/WebApplication7.GeneratedMSBuildEditorConfig.editorconfig
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/obj/Debug/net6.0/WebApplication7.AssemblyInfoInputs.cache
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/obj/Debug/net6.0/WebApplication7.AssemblyInfo.cs
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/obj/Debug/net6.0/WebApplication7.csproj.CoreCompileInputs.cache
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/obj/Debug/net6.0/WebApplication7.MvcApplicationPartsAssemblyInfo.cache
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/obj/Debug/net6.0/WebApplication7.RazorAssemblyInfo.cache
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/obj/Debug/net6.0/WebApplication7.RazorAssemblyInfo.cs
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/obj/Debug/net6.0/staticwebassets.build.json
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/obj/Debug/net6.0/staticwebassets.development.json
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/obj/Debug/net6.0/scopedcss/bundle/WebApplication7.styles.css
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/obj/Debug/net6.0/WebApplication7.csproj.CopyComplete
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/obj/Debug/net6.0/WebApplication7.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/obj/Debug/net6.0/refint/WebApplication7.dll
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/obj/Debug/net6.0/WebApplication7.pdb
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/obj/Debug/net6.0/WebApplication7.genruntimeconfig.cache
+/home/andrew/uni_github/University/Semester 4/Web Programming/assignment10/WebApplication7/obj/Debug/net6.0/ref/WebApplication7.dll
