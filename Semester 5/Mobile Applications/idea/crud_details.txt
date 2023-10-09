@@ -1,0 +1,58 @@
+Create (CRUD):
+
+1. Create User Profile:
+- Operation: This operation allows users to create a new user profile when they sign up for your news application.
+- Details: Users provide their username, email, profile picture, and set initial preferences.
+- Validation: Check for unique usernames and valid email formats.
+- Result: A new user profile is created with the specified information, and a unique User ID is generated.
+
+2. Create Preferences:
+- Operation: This operation allows users to set their preferences for news sources, categories, themes, and notification settings.
+- Details: Users can select their preferred news sources, categories, themes, and notification settings from available options.
+- Validation: Ensure the selected preferences are valid and match the available options.
+- Result: A set of user-specific preferences is created and associated with the user's profile.
+
+
+
+Read (CRUD):
+
+1. Read User Profile:
+- Operation: Users can view their profile details or other users' profiles.
+- Details: Retrieve the user's profile information, including username, email, profile picture, and saved preferences.
+- Result: Display the user's profile details to the user or authorized viewers.
+
+2. Read Preferences:
+- Operation: Users can view and access their saved preferences.
+- Details: Retrieve the user's selected news sources, categories, themes, and notification settings.
+- Result: Display the user's preferences to allow them to review and make changes.
+
+
+
+Update (CRUD):
+
+1. Update User Profile:
+- Operation: Users can edit their profile information.
+- Details: Allow users to change their username, email, and profile picture.
+- Validation: Ensure username uniqueness and valid email format.
+- Result: Update the user's profile with the modified information.
+
+2. Update Preferences:
+- Operation: Users can modify their preferences.
+- Details: Users can add or remove news sources, change categories, switch themes, or adjust notification settings.
+- Validation: Ensure the selected preferences are still valid and match available options.
+- Result: Update the user's preferences with the new selections.
+
+
+
+Delete (CRUD):
+
+1. Delete User Profile:
+- Operation: Users can delete their user profile and associated data.
+- Details: Users confirm their intent to delete their profile.
+- Result: Delete the user's profile, including their preferences, and any associated data. Optionally, you can archive user data for compliance.
+
+2. Delete Preferences:
+- Operation: Users can reset or delete their preferences.
+- Details: Users can choose to reset preferences to default or clear certain preferences.
+- Result: Reset or delete the selected preferences, while keeping the user's profile intact.
+
