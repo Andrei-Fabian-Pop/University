@@ -1,0 +1,54 @@
+1. User Profile:
+
+- User ID: A unique identifier for each user.
+- Username: The user's chosen username for the app.
+- Email: The user's email address for communication.
+- Profile Picture: An image representing the user.
+- Preferences: User-specific settings and preferences for news sources, categories, or themes.
+
+
+2. News Article:
+
+- Article ID: A unique identifier for each news article.
+- Title: The headline of the news article.
+- Content: The full content of the news article.
+- Publication Date: The date and time when the article was published.
+- Source: The news source where the article originated (e.g., CNN, BBC, etc.).
+- Category: The category or topic of the news article (e.g., politics, sports, technology).
+- Thumbnail Image: A small image associated with the article for preview.
+
+
+3. Expanded News State:
+
+- User ID: The ID of the user who has expanded the news.
+- Article ID: The ID of the news article that has been expanded.
+- Read Status: To track whether the user has read the article or not.
+- Last Viewed Timestamp: To record when the user last viewed the article.
+- Is Expanded: A boolean indicating if the article is currently expanded.
+
+
+4. News Source:
+
+- Source ID: A unique identifier for each news source.
+- Name: The name of the news source (e.g., "The New York Times").
+- Website URL: The URL of the news source's website.
+- Logo: The logo image of the news source.
+- Description: A brief description of the news source's focus or coverage.
+
+
+5. Category/Tag:
+
+- Category ID: A unique identifier for each category or tag.
+- Name: The name of the category or tag (e.g., "Politics," "Sports," "Technology").
+- Description: A brief description of the category.
+
+6. Preferences:
+
+- Preference ID: A unique identifier for each user's set of preferences.
+- User ID: The ID of the user these preferences belong to.
+- Selected News Sources: A list or reference to the news sources the user has selected or subscribed to.
+- Selected Categories/Tags: A list or reference to the news categories or tags the user is interested in.
+- Theme: The user's preferred theme or display mode (e.g., dark mode, light mode).
+- Notification Settings: User preferences for receiving notifications about breaking news, updates, etc.
+- Language Preference: The user's preferred language for news articles.
+

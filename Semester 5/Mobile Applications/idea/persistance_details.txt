@@ -1,0 +1,17 @@
+1. Create User Profile:
+
+- Local Database: When a user signs up for the app, you should create a local copy of the user's profile, including their username, email, and preferences. This allows the user to access their data even when offline.
+- Server: Simultaneously, this operation should be persisted on the server to ensure that the user's profile is stored centrally and can be accessed from any device. The server will generate a unique User ID and maintain a copy of the user's data.
+
+
+2. Update User Profile:
+
+- Local Database: When a user updates their profile information (e.g., changes their username or email), these changes should be immediately reflected in the local database. This ensures that the user sees their updated information on the current device.
+- Server: The server should also be updated with the latest user profile data to keep it synchronized across all devices. This maintains data consistency and ensures the same user profile is accessible from any device.
+
+
+3. Update Preferences:
+
+- Local Database: User preference changes, such as selecting different news sources, categories, themes, or notification settings, should be updated in the local database to provide a seamless user experience on the current device.
+- Server: These preference updates should be mirrored on the server to ensure that a user's preferences remain consistent across all devices. This is especially important for keeping their personalized news feed and settings intact.
+
