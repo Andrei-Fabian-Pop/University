@@ -1,0 +1,21 @@
+Alphabet
+a-z
+A-Z
+0-9
+_
+
+Lexic
+
+operators: +, -, *, /, ==, !=, <, <=, >, >=, =
+separators: {}, (), ;, space, newline, ", (comma)
+reserved words: int, char, bool, float, if, print, readNum, readString, else, while, set_nth, get_nth
+
+identifier = (letter|"_"){letter|digit|"_"}
+letter = "A"|"B"|..|"Z"|"a"|"b"|..|"z"
+digit = "0"|"1"|..|"9"
+
+int_constant = ["+"|"-"] non_zero_digit {digit} | "0"
+non_zero_digit = "1"|"2"|..|"9"
+
+string_constant = """{letter|digit|"_"|" "}"""
+

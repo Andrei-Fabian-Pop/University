@@ -1,0 +1,57 @@
+program ::= declaration_list
+
+declaration_list ::= declaration | declaration declaration_list
+
+declaration ::= variable_declaration | function_declaration
+
+variable_declaration ::= type IDENTIFIER ";"
+
+type ::= "int" | "float" | "char" | "bool"
+
+function_declaration ::= return_type IDENTIFIER "(" parameters ")" compound_statement
+
+return_type ::= type | "void"
+
+parameters ::= parameter | parameter "," parameters
+
+parameter ::= type IDENTIFIER
+
+compound_statement ::= "{" statement_list "}"
+
+statement_list ::= statement | statement statement_list
+
+statement ::= expression_statement | selection_statement | iteration_statement | compound_statement
+
+expression_statement ::= expression ";"
+
+selection_statement ::= "if" "(" expression ")" statement ["else" statement]
+
+iteration_statement ::= "while" "(" expression ")" statement
+
+expression ::= assignment_expression
+
+assignment_expression ::= logical_or_expression | IDENTIFIER "=" assignment_expression
+
+logical_or_expression ::= logical_and_expression | logical_or_expression "||" logical_and_expression
+
+logical_and_expression ::= equality_expression | logical_and_expression "&&" equality_expression
+
+equality_expression ::= relational_expression | equality_expression "==" relational_expression | equality_expression "!=" relational_expression
+
+relational_expression ::= additive_expression | relational_expression "<" additive_expression | relational_expression "<=" additive_expression | relational_expression ">" additive_expression | relational_expression ">=" additive_expression
+
+additive_expression ::= multiplicative_expression | additive_expression "+" multiplicative_expression | additive_expression "-" multiplicative_expression
+
+multiplicative_expression ::= primary_expression | multiplicative_expression "*" primary_expression | multiplicative_expression "/" primary_expression
+
+primary_expression ::= IDENTIFIER | INTEGER_LITERAL | FLOAT_LITERAL | CHAR_LITERAL | "(" expression ")"
+
+IDENTIFIER ::= [a-zA-Z_] {[a-zA-Z_0-9]}
+INTEGER_LITERAL ::= NON_ZERO_INTEGER_LITERAL | "0"
+NON_ZERO_INTEGER_LITERAL ::= ["+"|"-"|""] NON_ZERO_POSITIVE_INTEGER_LITERAL
+NON_ZERO_POSITIVE_INTEGER_LITERAL ::= NON_ZERO_DIGITS {DIGITS}
+DIGITS ::= [0-9]
+NON_ZERO_DIGITS ::= [1-9]
+FLOAT_LITERAL ::= {INTEGER_LITERAL} "." {DIGITS}
+CHAR_LITERAL ::= "\"[a-zA-Z0-9]\""
+
