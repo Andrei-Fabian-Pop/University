@@ -1,0 +1,58 @@
+// compute max of arrays
+
+int sum = 0;
+for (int i = 0; i < n; i++) {
+    sum += numbers[i];
+}
+
+
+int max = numbers[0];
+for (int i = 1; i < n; i++) {
+    if (numbers[i] > max) {
+        max = numbers[i];
+    }
+}
+
+
+int min = numbers[0];
+for (int i = 1; i < n; i++) {
+    if (numbers[i] < min) {
+        min = numbers[i];
+    }
+}
+
+// compute max of nums
+
+if (a >= b && a >= c) {
+    return a;
+} else if (b >= a && b >= c) {
+    return b;
+} else {
+    return c;
+}
+
+if (a <= b && a <= c) {
+    return a;
+} else if (b <= a && b <= c) {
+    return b;
+} else {
+    return c;
+}
+
+// compute primes
+
+if (num <= 1) {
+    return false;
+}
+if (num <= 3) {
+    return true;
+}
+if (num % 2 == 0 || num % 3 == 0) {
+    return false;
+}
+for (int i = 5; i * i <= num; i += 6) {
+    if (num % i == 0 || num % (i + 2) == 0) {
+        return false;
+    }
+}
+
