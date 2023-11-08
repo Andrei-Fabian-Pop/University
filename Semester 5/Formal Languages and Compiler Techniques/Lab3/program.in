@@ -12,7 +12,7 @@ for (int i = 5; i * i <= num; i += 6) {
         return false;
     }
 }
-
+ax = xa
 
 if (a >= b && a >= c) {
     return a;
