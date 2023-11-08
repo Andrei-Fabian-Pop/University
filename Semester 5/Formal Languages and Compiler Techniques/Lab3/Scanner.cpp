@@ -6,11 +6,12 @@
 #include <fstream>
 
 
-Scanner::Scanner(std::string program_text) : m_text(std::move(program_text)), m_symTable(new SymbolTable()) {
+Scanner::Scanner(std::string program_text) : m_text(std::move(program_text)), m_idSymTable(new SymbolTable()),
+											 m_constantsSymTable(new SymbolTable()) {
 	parse();
 }
 
-Scanner::Scanner() : m_symTable(new SymbolTable()) {
+Scanner::Scanner() : m_idSymTable(new SymbolTable()), m_constantsSymTable(new SymbolTable()) {
 //	Scanner::getLexemes("int i;");
 //	Scanner::getLexemes("if (a < b) {");
 //	Scanner::getLexemes("x = a == b;");
@@ -18,7 +19,8 @@ Scanner::Scanner() : m_symTable(new SymbolTable()) {
 }
 
 Scanner::~Scanner() {
-	delete m_symTable;
+	delete m_idSymTable;
+	delete m_constantsSymTable;
 }
 
 void Scanner::setProgramText(std::string programText) {
@@ -27,14 +29,13 @@ void Scanner::setProgramText(std::string programText) {
 }
 
 void Scanner::parse() {
-	int id = 0;
 	std::vector<std::string> lexemes = Scanner::initLexemes(m_text);
 	std::stack<std::string> parenthesis_stack;
 	const std::unordered_set<std::string> reserved_tokens =
 			{
 					"int", "char", "bool", "double", "if", "else", "print", "read", "return",
-					"while", ",", ";", "(", ")", "[", "]", "{", "}", " ", "+", "-",
-					"*", "/", "%", "=", "<", ">", "==", ">=", "<=", "&&", "||"
+					"while", "for", ",", ";", "(", ")", "[", "]", "{", "}", " ", "+", "-",
+					"*", "/", "%", "=", "<", ">", "==", ">=", "<=", "&&", "||", "true", "false"
 			};
 	std::regex identifier_regex(IDENTIFIER_REGEX);
 	std::regex constants_regex(CONSTANTS_REGEX);
@@ -44,30 +45,32 @@ void Scanner::parse() {
 
 	for (const std::string& lex: lexemes) {
 		if (reserved_tokens.find(lex) != reserved_tokens.end()) {
-			if (!m_symTable->contains(lex)) {
-				pif << lex << " " << -1 << "\n";
-			}
+			pif << "[-1, " << lex << " ]" << "\n";
 		} else if (std::regex_match(lex, identifier_regex)) {
 			// add to id symtable
-			if (!m_symTable->contains(lex)) {
-				sym << lex << " " << id << " \n";
-				pif << lex << " " << id++ << "\n";
+			if (!m_idSymTable->contains(lex)) {
+				std::pair<int, int> x = m_idSymTable->insert(lex);
+				pif << "[[" << x.first << ", " << x.second << "], " << lex << "]" << "\n";
 			} else {
-				pif << lex << " " << std::get<int>(m_symTable->get(lex)) << "\n";
+				std::pair<int, int> x = m_idSymTable->getUniqueId(lex);
+				pif << "[[" << x.first << ", " << x.second << "], " << lex << "]" << "\n";
 			}
-			m_symTable->insert(lex, id);
 		} else if (std::regex_match(lex, constants_regex)) {
 			// add to constants symtable
-			if (!m_symTable->contains(lex)) {
-				sym << lex << " " << id << "\n";
+			if (!m_constantsSymTable->contains(lex)) {
+				std::pair<int, int> x = m_constantsSymTable->insert(lex);
+				pif << "[[" << x.first << ", " << x.second << "], " << lex << "]" << "\n";
+			} else {
+				std::pair<int, int> x = m_constantsSymTable->getUniqueId(lex);
+				pif << "[[" << x.first << ", " << x.second << "], " << lex << "]" << "\n";
 			}
-			m_symTable->insert(lex, id);
-			pif << lex << " " << id++ << "\n";
 		} else {
-			// TODO: show the row:line where the error is at
 			throw std::runtime_error("Lexically Incorrect\n");
 		}
 	}
+
+	sym << "ID:\n" << m_idSymTable->printST();
+	sym << "\nCON:\n" << m_constantsSymTable->printST();
 
 	pif.close();
 	sym.close();

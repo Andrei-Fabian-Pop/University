@@ -20,8 +20,8 @@ SymbolTable::~SymbolTable() {
 	delete[] m_nodes;
 }
 
-void SymbolTable::insert(std::string name, std::variant<ATOMIC_TYPES_ALLOWED> item) {
-	if ((double)(m_size + 1) / (double)(m_capacity) >= LOAD_FACTOR) {
+std::pair<int, int> SymbolTable::insert(std::string name, std::variant<ATOMIC_TYPES_ALLOWED> item) {
+	if ((double) (m_size + 1) / (double) (m_capacity) >= LOAD_FACTOR) {
 		this->resize();
 	}
 
@@ -34,19 +34,21 @@ void SymbolTable::insert(std::string name, std::variant<ATOMIC_TYPES_ALLOWED> it
 		nodeRow->var = item;
 		nodeRow->next = nullptr;
 		++m_size;
-		return;
+		return {index, 0};
 	}
 
 	if (nodeRow->name == name) {
 		nodeRow->var = item;
-		return;
+		return {index, 0};
 	}
 
+	int y = 0;
 	while (nodeRow->next) {
 		if (nodeRow->name == name) {
 			nodeRow->var = item;
-			return;
+			return {index, y};
 		}
+		++y;
 		nodeRow = nodeRow->next;
 	}
 
@@ -55,6 +57,7 @@ void SymbolTable::insert(std::string name, std::variant<ATOMIC_TYPES_ALLOWED> it
 	nodeRow->next->var = item;
 	nodeRow->next->next = nullptr;
 	++m_size;
+	return {index, y + 1};
 }
 
 void SymbolTable::remove(const std::string& name) {
@@ -153,3 +156,40 @@ std::variant<ATOMIC_TYPES_ALLOWED>& SymbolTable::get(const std::string& name) co
 std::variant<ATOMIC_TYPES_ALLOWED>& SymbolTable::operator[](const std::string& name) const {
 	return this->get(name);
 }
+
+std::pair<int, int> SymbolTable::getUniqueId(const std::string& name) const {
+	Node* node;
+	int x = 0, y = 0;
+	for (int i = 0; i < m_capacity; ++i) {
+		node = m_nodes[i];
+		x = i;
+		y = 0;
+		while (node) {
+			if (node->name == name) {
+				return {x, y};
+			} else {
+				++y;
+			}
+			node = node->next;
+		}
+	}
+
+	return {x, y};
+}
+
+std::string SymbolTable::printST() {
+	std::string result;
+	Node* node;
+	for (int i = 0; i < m_capacity; ++i) {
+		node = m_nodes[i];
+		int y = 0;
+		while (node) {
+			result.append("[" + std::to_string(i) + " " + std::to_string(y) + "](" + node->name + ")\n");
+			node = node->next;
+			++y;
+		}
+	}
+
+	return result;
+}
+

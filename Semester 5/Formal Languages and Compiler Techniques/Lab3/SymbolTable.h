@@ -5,8 +5,9 @@
 #include <atomic>
 #include <variant>
 #include <iostream>
+#include <vector>
 
-#define ATOMIC_TYPES_ALLOWED int, char, double, bool, std::string
+#define ATOMIC_TYPES_ALLOWED int, char, double, bool, std::monostate
 #define INITIAL_CAPACITY 256
 #define LOAD_FACTOR 0.7
 
@@ -34,7 +35,7 @@ public:
 	 * @param name The identifier for the key-value pair.
 	 * @param item A std::variant that contains all allowed types. These can be found under the ATOMIC_TYPES_ALLOWED macro.
 	 * */
-	void insert(std::string name, std::variant<ATOMIC_TYPES_ALLOWED> item);
+	std::pair<int, int> insert(std::string name, std::variant<ATOMIC_TYPES_ALLOWED> item = std::monostate{});
 
 	/**
 	 * @brief Removes a key-value pair in the HashMap, if the value does not exist, nothing is done.
@@ -81,6 +82,17 @@ public:
 				[](auto arg) { return false; }
 		}, variant);
 	}
+
+	/**
+	 * @brief Returns a unique id generated for any entry of the map, that is a pair of 2 integers. The first is the
+	 * SymbolTable row index and the second is the column index.
+	 * */
+	[[nodiscard]] std::pair<int, int> getUniqueId(const std::string& name) const;
+
+	/**
+	 * @brief Prints the full contents of the SymbolTable as the [index, name]
+	 * */
+	std::string printST();
 
 private:
 	/**
