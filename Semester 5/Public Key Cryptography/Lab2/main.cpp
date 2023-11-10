@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 
+// next week - p 2
+
 std::string belaso_encrypt(const std::string& plaintext, const std::string& key) {
 	std::string ciphertext;
 
