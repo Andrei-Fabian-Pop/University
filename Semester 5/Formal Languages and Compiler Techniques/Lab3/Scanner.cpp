@@ -29,7 +29,7 @@ void Scanner::setProgramText(std::string programText) {
 }
 
 void Scanner::parse() {
-	std::vector<std::string> lexemes = Scanner::initLexemes(m_text);
+	std::vector<std::pair<int, std::string>> lexemes = initLexemes(m_text);
 	std::stack<std::string> parenthesis_stack;
 	const std::unordered_set<std::string> reserved_tokens =
 			{
@@ -43,7 +43,8 @@ void Scanner::parse() {
 	pif.open("../pif.out");
 	sym.open("../sym.out");
 
-	for (const std::string& lex: lexemes) {
+	for (const std::pair<int, std::string>& lexPair: lexemes) {
+		std::string lex = lexPair.second;
 		if (reserved_tokens.find(lex) != reserved_tokens.end()) {
 			pif << "[-1, " << lex << " ]" << "\n";
 		} else if (std::regex_match(lex, identifier_regex)) {
@@ -65,7 +66,9 @@ void Scanner::parse() {
 				pif << "[[" << x.first << ", " << x.second << "], " << lex << "]" << "\n";
 			}
 		} else {
-			throw std::runtime_error("Lexically Incorrect\n");
+			std::string errorMessage =
+					"Lexical error found at line " + std::to_string(lexPair.first) + " with the token " + lex + "\n";
+			throw std::runtime_error(errorMessage);
 		}
 	}
 
@@ -147,17 +150,19 @@ std::vector<std::string> Scanner::getLexemes(const std::string& row) {
 	return lexemes;
 }
 
-std::vector<std::string> Scanner::initLexemes(const std::string& file_content) {
+std::vector<std::pair<int, std::string>> Scanner::initLexemes(const std::string& file_content) {
 	std::istringstream iss(file_content);
 	std::string line;
-	std::vector<std::string> lexemes;
+	std::vector<std::pair<int, std::string>> lexemes;
 
+	int lineNum = 1;
 	while (std::getline(iss, line)) {
 		// Call getLexemes for each row (line)
 		std::vector<std::string> line_lexemes = Scanner::getLexemes(line);
 		for (const std::string& lex: line_lexemes) {
-			lexemes.push_back(lex);
+			lexemes.emplace_back(lineNum, lex);
 		}
+		++lineNum;
 	}
 
 	return lexemes;

@@ -21,7 +21,7 @@ public:
 private:
 	void parse();
 	static std::vector<std::string> getLexemes(const std::string& row);
-	static std::vector<std::string> initLexemes(const std::string& file_content);
+	static std::vector<std::pair<int, std::string>> initLexemes(const std::string& file_content);
 
 	SymbolTable *m_idSymTable;
 	SymbolTable *m_constantsSymTable;
