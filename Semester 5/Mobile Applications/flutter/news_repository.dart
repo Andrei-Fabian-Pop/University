@@ -13,21 +13,25 @@ class NewsRepository with ChangeNotifier {
     notifyListeners(); // Notify listeners when the data changes
   }
 
-  void deleteNews(int index) {
+  void deleteNewsByIndex(int index) {
     _items.removeAt(index);
     notifyListeners();
   }
 
-  void updateNews(int index, NewsItem item) {
+  void deleteNewsByInstance(NewsCard newsCard) {
+    items.remove(newsCard);
+    notifyListeners();
+  }
+
+  void updateNews(NewsCard oldCard, NewsItem newItem) {
     // Implement the update logic here
-    NewsCard newsCard = NewsCard(entity: item);
-    _items.elementAt(index);
-    _items.insert(index, newsCard);
+    NewsCard newsCard = NewsCard(entity: newItem);
+    _items[_items.indexOf(oldCard)] = newsCard; // Update the item at the specified index
     notifyListeners();
   }
 
   NewsCard getNews(int index) {
-    return _items.elementAt(index);
+    return _items[index];
   }
 
   List<NewsCard> getAllNews() {

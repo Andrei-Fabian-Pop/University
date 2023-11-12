@@ -15,5 +15,3 @@ class NewsItem {
     this.image = "No Image"
   });
 }
-
-
