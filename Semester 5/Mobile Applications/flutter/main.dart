@@ -3,9 +3,8 @@ import 'package:nonnative/news_repository.dart';
 import 'package:provider/provider.dart';
 
 import 'add_page.dart';
-import 'news_entity.dart';
 
-void main() {
+void main() async {
   runApp(const MyApp());
 }
 
@@ -42,44 +41,14 @@ class _MyHomePageState extends State<MyHomePage> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => AddPage(repository: Provider.of<NewsRepository>(context, listen: false)),
+        builder: (context) => AddPage(
+            repository: Provider.of<NewsRepository>(context, listen: false)),
       ),
     );
   }
 
   @override
   Widget build(BuildContext context) {
-    NewsItem newsEntity = NewsItem(
-      title: 'Sample Title',
-      content:
-      'Sample Contenta jknad dnlad  adkn adbnjlkda kadbn adjl dajk adn jadcn kmadcn lkadcnk ad nkmad km',
-      date: DateTime.now(),
-      source: 'Sample Source',
-      category: 'Sample Category',
-      image: 'Sample Image',
-    );
-    Provider.of<NewsRepository>(context, listen: false).addNews(newsEntity);
-    NewsItem newsEntity2 = NewsItem(
-      title: 'Sample Title 2',
-      content:
-      'Sample Contenta jknad dnlad  adkn adbnjlkda kadbn adjl dajk adn jadcn kmadcn lkadcnk ad nkmad km',
-      date: DateTime.now(),
-      source: 'Sample Source 2',
-      category: 'Sample Category',
-      image: 'Sample Image',
-    );
-    Provider.of<NewsRepository>(context, listen: false).addNews(newsEntity2);
-    NewsItem newsEntity3 = NewsItem(
-      title: 'Sample Title 3',
-      content:
-      'Sample Contenta jknad dnlad  adkn adbnjlkda kadbn adjl dajk adn jadcn kmadcn lkadcnk ad nkmad km',
-      date: DateTime.now(),
-      source: 'Sample Source',
-      category: 'Sample Category',
-      image: 'Sample Image',
-    );
-    Provider.of<NewsRepository>(context, listen: false).addNews(newsEntity3);
-
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,

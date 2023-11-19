@@ -5,7 +5,8 @@ import 'package:nonnative/news_widget.dart';
 import 'package:provider/provider.dart';
 
 class UpdatePage extends StatefulWidget {
-  const UpdatePage({super.key, required this.repository, required this.newsCard});
+  const UpdatePage(
+      {super.key, required this.repository, required this.newsCard});
 
   final NewsRepository repository;
   final NewsCard newsCard;
@@ -28,11 +29,14 @@ class UpdatePageState extends State<UpdatePage> {
 
     // Initialize controllers with existing data
     titleController = TextEditingController(text: widget.newsCard.entity.title);
-    contentController = TextEditingController(text: widget.newsCard.entity.content);
-    dateController =
-        TextEditingController(text: widget.newsCard.entity.date.toIso8601String());
-    sourceController = TextEditingController(text: widget.newsCard.entity.source);
-    categoryController = TextEditingController(text: widget.newsCard.entity.category);
+    contentController =
+        TextEditingController(text: widget.newsCard.entity.content);
+    dateController = TextEditingController(
+        text: widget.newsCard.entity.date.toIso8601String());
+    sourceController =
+        TextEditingController(text: widget.newsCard.entity.source);
+    categoryController =
+        TextEditingController(text: widget.newsCard.entity.category);
     imageController = TextEditingController(text: widget.newsCard.entity.image);
   }
 
@@ -46,13 +50,8 @@ class UpdatePageState extends State<UpdatePage> {
       image: imageController.text,
     );
 
-    // Remove the old item and add the updated one
-    Provider.of<NewsRepository>(context, listen: false).updateNews(widget.newsCard, updatedItem);
-    // widget.repository.updateNews(widget.newsCard, updatedItem);
-    // widget.repository.removeNews(widget.newsItem);
-    // widget.repository.addNews(updatedItem);
-
-    // You can also navigate back to the main page or perform any other actions as needed.
+    Provider.of<NewsRepository>(context, listen: false)
+        .updateNews(widget.newsCard, updatedItem);
     Navigator.pop(context);
   }
 
