@@ -29,11 +29,8 @@ class AddPageState extends State<AddPage> {
       category: categoryController.text,
       image: imageController.text,
     );
+
     Provider.of<NewsRepository>(context, listen: false).addNews(newsItem);
-
-    // widget.repository.addNews(newItem);
-
-    // You can also navigate back to the main page or perform any other actions as needed.
     Navigator.pop(context);
   }
 

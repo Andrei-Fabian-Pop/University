@@ -1,4 +1,5 @@
 class NewsItem {
+  final int id;
   final String title;
   final String content;
   final DateTime date;
@@ -7,6 +8,7 @@ class NewsItem {
   final String image;
 
   NewsItem({
+    this.id = -1,
     required this.title,
     required this.content,
     required this.date,

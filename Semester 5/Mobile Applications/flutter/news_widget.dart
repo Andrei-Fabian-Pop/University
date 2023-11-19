@@ -21,7 +21,9 @@ class NewsCardState extends State<NewsCard> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => UpdatePage(repository: Provider.of<NewsRepository>(context, listen: false), newsCard: widget),
+        builder: (context) => UpdatePage(
+            repository: Provider.of<NewsRepository>(context, listen: false),
+            newsCard: widget),
       ),
     );
   }
@@ -96,7 +98,9 @@ class NewsCardState extends State<NewsCard> {
                       ),
                       ElevatedButton(
                         onPressed: () {
-                          Provider.of<NewsRepository>(context, listen: false).deleteNewsByInstance(widget);
+                          isExpanded = false;
+                          Provider.of<NewsRepository>(context, listen: false)
+                              .deleteNewsByInstance(widget);
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.red,
