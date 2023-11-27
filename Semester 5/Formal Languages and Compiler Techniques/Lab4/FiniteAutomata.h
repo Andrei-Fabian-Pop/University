@@ -7,6 +7,8 @@
 #include <map>
 #include <set>
 
+// 1.a. recursive descendent
+
 #define TRANSITION_MAP_T std::map<std::pair<std::string, std::string>, std::vector<char>>
 
 class FiniteAutomata {
