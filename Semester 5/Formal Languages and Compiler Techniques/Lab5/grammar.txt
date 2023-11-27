@@ -1,0 +1,14 @@
+statement composed_stmt decl_stmt assign_stmt io_stmt if_stmt ifelse_stmt while_stmt for_stmt return_stmt type identifier seq_identifier array n0_u_int n0_digit seq_digits digits letters signs
+; int string , _ [ ] ( ) { } 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U V W X Y Z = + - / * % " . ? ! ' @ # $ ^ & ` ~ read write if else > < <= >= == for while
+composed_stmt => statement | statement composed_stmt
+statement => composed_stmt | decl_stmt | assign_stmt | io_stmt | if_stmt | ifelse_stmt | while_stmt | for_stmt | return_stmt
+decl_statement => type identifier ;
+type => int | string
+seq_identifier => identifier | array | identifier , seq_identifier | array, seq_identifier
+array => identifier [ n0_u_int ]
+n0_u_int => n0_digit | n0_digit digits
+n0_digit => 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+seq_digits => digits | digits seq_digits
+digits => 0 | n0_digit
+letters => a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z
+signs => + -
