@@ -48,6 +48,7 @@ class UpdatePageState extends State<UpdatePage> {
       source: sourceController.text,
       category: categoryController.text,
       image: imageController.text,
+      timestamp: widget.newsCard.entity.timestamp
     );
 
     Provider.of<NewsRepository>(context, listen: false)

@@ -28,6 +28,7 @@ class AddPageState extends State<AddPage> {
       source: sourceController.text,
       category: categoryController.text,
       image: imageController.text,
+      timestamp: DateTime.timestamp()
     );
 
     Provider.of<NewsRepository>(context, listen: false).addNews(newsItem);
