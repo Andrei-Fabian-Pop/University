@@ -3,29 +3,43 @@ import 'package:path/path.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 import 'package:path_provider/path_provider.dart';
 import 'news_entity.dart';
+import 'server_communication.dart';
 import 'dart:io';
 
 class NewsDatabase {
   static Database? _database;
+  bool initialUpdateCompleted = false;
   final String _tableName = "news";
 
   NewsDatabase() {
-    initDatabase();
+    // initDatabase();
   }
 
   Future<Database> get database async {
     _database ??= await initDatabase();
+    // if (!initialUpdateCompleted) {
+    //   initialUpdateCompleted = true;
+    //   await updateDbIfPossible();
+    // }
     return _database!;
   }
 
   Future<Database> initDatabase() async {
     WidgetsFlutterBinding.ensureInitialized();
-    final Directory appDocumentsDir = await getApplicationDocumentsDirectory();
+    String path;
+    if (Platform.isAndroid) {
+      // DynamicLibrary.open('sqlite3.framework/sqlite3');
+      var databasesPath = await getDatabasesPath();
+      path = join(databasesPath, 'news_database.sqlite');
+    } else {
+      final Directory appDocumentsDir =
+          await getApplicationDocumentsDirectory();
 
-    // Get the path to the database
-    String path =
-        join(appDocumentsDir.path, "databases", "news_database.sqlite");
-    // print("PATH ==================== $path");
+      // Get the path to the database
+      path = join(appDocumentsDir.path, "databases", "news_database.sqlite");
+    }
+
+    print("PATH ==================== $path");
 
     sqfliteFfiInit();
 
@@ -39,7 +53,8 @@ class NewsDatabase {
             date DATETIME,
             source TEXT,
             category TEXT,
-            image TEXT
+            image TEXT,
+            timestamp DATETIME
           );
     ''');
 
@@ -53,14 +68,28 @@ class NewsDatabase {
 
   Future<void> insertNews(NewsItem item) async {
     final db = await database;
-    db.insert(_tableName, {
-      "title": item.title,
-      "content": item.content,
-      "date": item.date.toString(),
-      "source": item.source,
-      "category": item.category,
-      "image": item.image
-    });
+    if (item.id == -1) {
+      db.insert(_tableName, {
+        "title": item.title,
+        "content": item.content,
+        "date": item.date.toString(),
+        "source": item.source,
+        "category": item.category,
+        "image": item.image,
+        "timestamp": item.timestamp.toString()
+      });
+    } else {
+      db.insert(_tableName, {
+        "id": item.id,
+        "title": item.title,
+        "content": item.content,
+        "date": item.date.toString(),
+        "source": item.source,
+        "category": item.category,
+        "image": item.image,
+        "timestamp": item.timestamp.toString()
+      });
+    }
   }
 
   Future<void> deleteNews(int index) async {
@@ -77,14 +106,18 @@ class NewsDatabase {
       // TREAT ERROR
     } else {
       final db = await database;
-      db.update(_tableName, {
-        "title": item.title,
-        "content": item.content,
-        "date": item.date.toString(),
-        "source": item.source,
-        "category": item.category,
-        "image": item.image
-      }, where: "id=$index");
+      db.update(
+          _tableName,
+          {
+            "title": item.title,
+            "content": item.content,
+            "date": item.date.toString(),
+            "source": item.source,
+            "category": item.category,
+            "image": item.image,
+            "timestamp": item.timestamp.toString()
+          },
+          where: "id=$index");
     }
   }
 }

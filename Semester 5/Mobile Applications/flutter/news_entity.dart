@@ -6,6 +6,7 @@ class NewsItem {
   final String source;
   final String category;
   final String image;
+  final DateTime timestamp;
 
   NewsItem({
     this.id = -1,
@@ -14,6 +15,20 @@ class NewsItem {
     required this.date,
     required this.source,
     required this.category,
+    required this.timestamp,
     this.image = "No Image"
   });
+
+  Map<String, dynamic> toDynamicMap() {
+    return {
+      'id': id,
+      'title': title,
+      'content': content,
+      'date': date.toIso8601String(),
+      'source': source,
+      'category': category,
+      'image': image,
+      'timestamp': timestamp.toIso8601String(),
+    };
+  }
 }

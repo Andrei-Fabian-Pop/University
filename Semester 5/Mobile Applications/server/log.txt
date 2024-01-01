@@ -1,0 +1,254 @@
+2023-12-10 13:53:14 - GET: /items
+2023-12-10 14:18:46 - GET: /items
+2023-12-10 14:18:46 - GET: /items
+2023-12-10 14:20:33 - GET: /items
+2023-12-10 14:20:33 - GET: /items
+2023-12-10 14:21:04 - GET: /items
+2023-12-10 14:21:04 - GET: /items
+2023-12-10 14:25:29 - GET: /items
+2023-12-10 14:26:05 - GET: /items
+2023-12-10 14:26:05 - GET: /items
+2023-12-10 14:27:41 - GET: /items
+2023-12-10 14:27:44 - GET: /items
+2023-12-10 14:30:21 - GET: /items
+2023-12-10 14:30:21 - GET: /items
+2023-12-10 14:31:49 - GET: /items
+2023-12-10 14:31:49 - GET: /items
+2023-12-10 14:34:50 - GET: /items
+2023-12-10 14:34:50 - GET: /items
+2023-12-10 14:35:36 - GET: /items
+2023-12-10 14:35:36 - GET: /items
+2023-12-10 14:36:37 - GET: /items
+2023-12-10 14:36:37 - GET: /items
+2023-12-10 14:38:42 - GET: /items
+2023-12-10 14:38:42 - GET: /items
+2023-12-10 14:46:52 - GET: /items
+2023-12-10 14:46:52 - GET: /items
+2023-12-10 14:47:00 - GET: /items
+2023-12-10 14:47:00 - GET: /items
+2023-12-10 14:47:00 - GET: /items
+2023-12-10 14:47:00 - GET: /items
+2023-12-10 14:47:00 - GET: /items
+2023-12-10 14:47:00 - GET: /items
+2023-12-10 14:47:00 - GET: /items
+2023-12-10 14:47:07 - GET: /items
+2023-12-10 14:49:14 - GET: /items
+2023-12-10 14:49:14 - GET: /items
+2023-12-10 14:49:14 - GET: /items
+2023-12-10 14:49:14 - GET: /items
+2023-12-10 14:49:14 - GET: /items
+2023-12-10 14:49:14 - GET: /items
+2023-12-10 14:49:14 - GET: /items
+2023-12-10 14:49:14 - GET: /items
+2023-12-10 14:49:45 - GET: /items
+2023-12-10 14:49:45 - GET: /items
+2023-12-10 14:49:46 - GET: /items
+2023-12-10 14:49:46 - GET: /items
+2023-12-10 14:49:46 - GET: /items
+2023-12-10 14:49:46 - GET: /items
+2023-12-10 14:49:46 - GET: /items
+2023-12-10 14:49:46 - GET: /items
+2023-12-10 14:50:22 - GET: /items
+2023-12-10 14:50:22 - GET: /items
+2023-12-10 14:50:22 - GET: /items
+2023-12-10 14:50:22 - GET: /items
+2023-12-10 14:50:22 - GET: /items
+2023-12-10 14:50:22 - GET: /items
+2023-12-10 14:51:29 - GET: /items
+2023-12-10 14:51:29 - GET: /items
+2023-12-10 14:51:29 - GET: /items
+2023-12-10 14:51:29 - GET: /items
+2023-12-10 14:51:29 - GET: /items
+2023-12-10 14:51:29 - GET: /items
+2023-12-10 14:51:29 - GET: /items
+2023-12-10 14:52:19 - GET: /items
+2023-12-10 14:52:21 - GET: /items
+2023-12-10 14:52:22 - GET: /items
+2023-12-10 14:52:22 - GET: /items
+2023-12-10 14:52:22 - GET: /items
+2023-12-10 14:52:22 - GET: /items
+2023-12-10 14:52:22 - GET: /items
+2023-12-10 14:53:07 - GET: /items
+2023-12-10 14:53:07 - GET: /items
+2023-12-10 14:53:45 - GET: /items
+2023-12-10 14:53:45 - GET: /items
+2023-12-10 14:54:14 - GET: /items
+2023-12-10 14:54:14 - GET: /items
+2023-12-10 14:54:33 - GET: /items
+2023-12-10 14:54:33 - GET: /items
+2023-12-10 14:54:45 - GET: /items
+2023-12-10 14:54:45 - GET: /items
+2023-12-10 15:17:00 - GET: /items
+2023-12-10 15:17:00 - GET: /items
+2023-12-10 15:17:37 - GET: /items
+2023-12-10 15:19:17 - GET: /items
+2023-12-10 15:19:17 - GET: /items
+2023-12-10 15:19:33 - GET: /items
+2023-12-10 15:20:03 - GET: /items
+2023-12-10 15:20:03 - GET: /items
+2023-12-10 15:21:26 - GET: /items
+2023-12-10 15:21:26 - GET: /items
+2023-12-10 15:22:23 - GET: /items
+2023-12-10 15:22:23 - GET: /items
+2023-12-10 15:23:10 - GET: /items
+2023-12-10 15:24:56 - GET: /items
+2023-12-10 15:24:58 - GET: /items
+2023-12-10 15:24:58 - GET: /items
+2023-12-10 15:24:59 - GET: /items
+2023-12-10 15:24:59 - GET: /items
+2023-12-10 15:24:59 - GET: /items
+2023-12-10 15:24:59 - GET: /items
+2023-12-10 15:24:59 - GET: /items
+2023-12-10 15:25:42 - GET: /items
+2023-12-10 15:25:56 - GET: /items
+2023-12-10 15:25:56 - GET: /items
+2023-12-10 15:26:13 - GET: /items
+2023-12-10 15:28:41 - GET: /items
+2023-12-10 15:29:03 - GET: /items
+2023-12-10 15:29:03 - GET: /items
+2023-12-10 15:31:53 - GET: /items
+2023-12-10 15:32:19 - GET: /items
+2023-12-10 15:32:19 - GET: /items
+2023-12-10 15:34:59 - GET: /items
+2023-12-10 15:34:59 - GET: /items
+2023-12-10 15:35:35 - GET: /items
+2023-12-10 15:35:35 - GET: /items
+2023-12-10 15:37:40 - GET: /items
+2023-12-10 15:37:40 - GET: /items
+2023-12-10 15:38:14 - GET: /items
+2023-12-10 15:38:14 - GET: /items
+2023-12-10 16:21:14 - GET: /items
+2023-12-10 16:21:14 - GET: /items
+2023-12-10 16:24:26 - GET: /items
+2023-12-10 16:24:26 - GET: /items
+2023-12-10 16:26:55 - GET: /items
+2023-12-10 16:26:55 - GET: /items
+2023-12-10 16:29:33 - GET: /items
+2023-12-10 16:29:33 - GET: /items
+2023-12-10 16:31:07 - GET: /items
+2023-12-10 16:31:07 - GET: /items
+2023-12-10 16:31:36 - GET: /items
+2023-12-10 16:31:36 - GET: /items
+2023-12-10 16:48:55 - GET: /items
+2023-12-10 16:48:55 - GET: /items
+2023-12-10 16:49:25 - GET: /items
+2023-12-10 16:49:25 - GET: /items
+2023-12-10 16:50:34 - POST: /items/add - {'id': -1, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03T00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'test7', 'timestamp': '2023-12-10T14:50:34.293677Z'}
+2023-12-10 16:52:47 - GET: /items
+2023-12-10 16:52:47 - GET: /items
+2023-12-10 16:52:47 - POST: /items/add - {'id': 7, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'test7', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2023-12-10 16:54:10 - GET: /items
+2023-12-10 16:54:10 - GET: /items
+2023-12-10 16:54:10 - POST: /items/add - {'id': 8, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2023-12-28 16:13:52 - GET: /items
+2023-12-28 16:13:52 - GET: /items
+2023-12-28 16:13:52 - POST: /items/add - {'id': 9, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2023-12-31 14:43:34 - GET: /items
+2023-12-31 14:43:34 - GET: /items
+2023-12-31 14:43:34 - POST: /items/add - {'id': 10, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2023-12-31 14:44:41 - GET: /items
+2023-12-31 14:44:41 - GET: /items
+2023-12-31 14:45:58 - GET: /items
+2023-12-31 14:48:51 - GET: /items
+2023-12-31 14:48:51 - GET: /items
+2023-12-31 14:48:51 - POST: /items/add - {'id': 1, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2023-12-31 14:48:51 - POST: /items/add - {'id': 2, 'title': 'test2', 'content': 'test1', 'date': '2021-06-03 00:00:00.000', 'source': 'test1', 'category': 'test1', 'image': 'No Image', 'timestamp': '2023-12-10 13:31:49.000'}
+2023-12-31 14:48:51 - POST: /items/add - {'id': 3, 'title': 'test3', 'content': 'test1', 'date': '2021-06-03 00:00:00.000', 'source': 'test1', 'category': 'test1', 'image': 'No Image', 'timestamp': '2023-12-10 13:31:49.000'}
+2023-12-31 14:48:51 - POST: /items/add - {'id': 4, 'title': 'test4', 'content': 'test1', 'date': '2021-06-03 00:00:00.000', 'source': 'test1', 'category': 'test1', 'image': 'No Image', 'timestamp': '2023-12-10 13:31:49.000'}
+2023-12-31 14:48:51 - POST: /items/add - {'id': 5, 'title': 'test5', 'content': 'test1', 'date': '2021-06-03 00:00:00.000', 'source': 'test1', 'category': 'test1', 'image': 'No Image', 'timestamp': '2023-12-10 13:31:49.000'}
+2023-12-31 14:48:51 - POST: /items/add - {'id': 6, 'title': 'test6', 'content': 'test', 'date': '2021-06-03 00:00:00.000', 'source': 'test', 'category': 'test', 'image': 'No Image', 'timestamp': '2023-12-10 13:51:49.000'}
+2023-12-31 14:48:51 - POST: /items/add - {'id': 7, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2023-12-31 14:48:51 - POST: /items/add - {'id': 9, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2023-12-31 14:48:51 - POST: /items/add - {'id': 8, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2023-12-31 14:48:51 - POST: /items/add - {'id': 10, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2023-12-31 14:52:43 - GET: /items
+2023-12-31 14:52:43 - GET: /items
+2023-12-31 14:52:43 - POST: /items/add - {'id': 4, 'title': 'test4', 'content': 'test1', 'date': '2021-06-03 00:00:00.000', 'source': 'test1', 'category': 'test1', 'image': 'No Image', 'timestamp': '2023-12-10 13:31:49.000'}
+2023-12-31 14:52:43 - POST: /items/add - {'id': 5, 'title': 'test5', 'content': 'test1', 'date': '2021-06-03 00:00:00.000', 'source': 'test1', 'category': 'test1', 'image': 'No Image', 'timestamp': '2023-12-10 13:31:49.000'}
+2023-12-31 14:52:43 - POST: /items/add - {'id': 9, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2023-12-31 14:52:43 - POST: /items/add - {'id': 10, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2023-12-31 14:55:56 - GET: /items
+2023-12-31 14:55:56 - GET: /items
+2023-12-31 14:56:28 - GET: /items
+2023-12-31 14:56:28 - GET: /items
+2023-12-31 14:56:28 - POST: /items/add - {'id': 1, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2023-12-31 14:56:28 - POST: /items/add - {'id': 2, 'title': 'test2', 'content': 'test1', 'date': '2021-06-03 00:00:00.000', 'source': 'test1', 'category': 'test1', 'image': 'No Image', 'timestamp': '2023-12-10 13:31:49.000'}
+2023-12-31 14:56:28 - POST: /items/add - {'id': 3, 'title': 'test3', 'content': 'test1', 'date': '2021-06-03 00:00:00.000', 'source': 'test1', 'category': 'test1', 'image': 'No Image', 'timestamp': '2023-12-10 13:31:49.000'}
+2023-12-31 14:56:28 - POST: /items/add - {'id': 7, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2023-12-31 14:56:28 - POST: /items/add - {'id': 4, 'title': 'test4', 'content': 'test1', 'date': '2021-06-03 00:00:00.000', 'source': 'test1', 'category': 'test1', 'image': 'No Image', 'timestamp': '2023-12-10 13:31:49.000'}
+2023-12-31 14:56:28 - POST: /items/add - {'id': 8, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2023-12-31 14:56:28 - POST: /items/add - {'id': 6, 'title': 'test6', 'content': 'test', 'date': '2021-06-03 00:00:00.000', 'source': 'test', 'category': 'test', 'image': 'No Image', 'timestamp': '2023-12-10 13:51:49.000'}
+2023-12-31 14:56:28 - POST: /items/add - {'id': 10, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2024-01-01 17:24:17 - GET: /items
+2024-01-01 17:24:18 - GET: /items
+2024-01-01 17:24:18 - POST: /items/add - {'id': 1, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2024-01-01 17:24:18 - POST: /items/add - {'id': 3, 'title': 'test3', 'content': 'test1', 'date': '2021-06-03 00:00:00.000', 'source': 'test1', 'category': 'test1', 'image': 'No Image', 'timestamp': '2023-12-10 13:31:49.000'}
+2024-01-01 17:24:18 - POST: /items/add - {'id': 4, 'title': 'test4', 'content': 'test1', 'date': '2021-06-03 00:00:00.000', 'source': 'test1', 'category': 'test1', 'image': 'No Image', 'timestamp': '2023-12-10 13:31:49.000'}
+2024-01-01 17:24:18 - POST: /items/add - {'id': 2, 'title': 'test2', 'content': 'test1', 'date': '2021-06-03 00:00:00.000', 'source': 'test1', 'category': 'test1', 'image': 'No Image', 'timestamp': '2023-12-10 13:31:49.000'}
+2024-01-01 17:24:18 - POST: /items/add - {'id': 7, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2024-01-01 17:24:18 - POST: /items/add - {'id': 6, 'title': 'test6', 'content': 'test', 'date': '2021-06-03 00:00:00.000', 'source': 'test', 'category': 'test', 'image': 'No Image', 'timestamp': '2023-12-10 13:51:49.000'}
+2024-01-01 17:24:18 - POST: /items/add - {'id': 8, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2024-01-01 17:24:18 - POST: /items/add - {'id': 10, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2024-01-01 17:26:06 - GET: /items
+2024-01-01 17:26:29 - GET: /items
+2024-01-01 17:26:29 - GET: /items
+2024-01-01 17:26:30 - POST: /items/add - {'id': 1, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2024-01-01 17:26:30 - POST: /items/add - {'id': 2, 'title': 'test2', 'content': 'test1', 'date': '2021-06-03 00:00:00.000', 'source': 'test1', 'category': 'test1', 'image': 'No Image', 'timestamp': '2023-12-10 13:31:49.000'}
+2024-01-01 17:26:30 - POST: /items/add - {'id': 3, 'title': 'test3', 'content': 'test1', 'date': '2021-06-03 00:00:00.000', 'source': 'test1', 'category': 'test1', 'image': 'No Image', 'timestamp': '2023-12-10 13:31:49.000'}
+2024-01-01 17:26:30 - POST: /items/add - {'id': 6, 'title': 'test6', 'content': 'test', 'date': '2021-06-03 00:00:00.000', 'source': 'test', 'category': 'test', 'image': 'No Image', 'timestamp': '2023-12-10 13:51:49.000'}
+2024-01-01 17:26:30 - POST: /items/add - {'id': 4, 'title': 'test4', 'content': 'test1', 'date': '2021-06-03 00:00:00.000', 'source': 'test1', 'category': 'test1', 'image': 'No Image', 'timestamp': '2023-12-10 13:31:49.000'}
+2024-01-01 17:26:30 - POST: /items/add - {'id': 7, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2024-01-01 17:26:30 - POST: /items/add - {'id': 8, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2024-01-01 17:26:30 - POST: /items/add - {'id': 10, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2024-01-01 17:27:11 - GET: /items
+2024-01-01 17:27:11 - GET: /items
+2024-01-01 17:30:25 - GET: /items
+2024-01-01 17:30:25 - GET: /items
+2024-01-01 18:00:31 - GET: /items
+2024-01-01 18:00:31 - GET: /items
+2024-01-01 18:02:35 - GET: /items
+2024-01-01 18:02:35 - GET: /items
+2024-01-01 18:02:35 - POST: /items/add - {'id': 1, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2024-01-01 18:02:35 - POST: /items/add - {'id': 2, 'title': 'test2', 'content': 'test1', 'date': '2021-06-03 00:00:00.000', 'source': 'test1', 'category': 'test1', 'image': 'No Image', 'timestamp': '2023-12-10 13:31:49.000'}
+2024-01-01 18:02:35 - POST: /items/add - {'id': 3, 'title': 'test3', 'content': 'test1', 'date': '2021-06-03 00:00:00.000', 'source': 'test1', 'category': 'test1', 'image': 'No Image', 'timestamp': '2023-12-10 13:31:49.000'}
+2024-01-01 18:02:35 - POST: /items/add - {'id': 6, 'title': 'test6', 'content': 'test', 'date': '2021-06-03 00:00:00.000', 'source': 'test', 'category': 'test', 'image': 'No Image', 'timestamp': '2023-12-10 13:51:49.000'}
+2024-01-01 18:02:35 - POST: /items/add - {'id': 4, 'title': 'test4', 'content': 'test1', 'date': '2021-06-03 00:00:00.000', 'source': 'test1', 'category': 'test1', 'image': 'No Image', 'timestamp': '2023-12-10 13:31:49.000'}
+2024-01-01 18:02:35 - POST: /items/add - {'id': 7, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2024-01-01 18:02:35 - POST: /items/add - {'id': 8, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2024-01-01 18:02:35 - POST: /items/add - {'id': 10, 'title': 'test7', 'content': 'test7', 'date': '2002-09-03 00:00:00.000', 'source': 'test7', 'category': 'test7', 'image': 'No Image', 'timestamp': '2023-12-10 14:50:34.293677Z'}
+2024-01-01 18:02:35 - POST: /items/add - {'id': 11, 'title': 'test8', 'content': 't8', 'date': '2002-09-03 00:00:00.000', 'source': 't8', 'category': 't8', 'image': 'No Image', 'timestamp': '2023-12-10 15:50:34.293677Z'}
+2024-01-01 18:02:35 - POST: /items/add - {'id': 12, 'title': 'test9', 'content': 't9', 'date': '2002-09-03 00:00:00.000', 'source': 't9', 'category': 't8', 'image': 'No Image', 'timestamp': '2023-12-11 15:50:34.293677Z'}
+2024-01-01 18:03:18 - GET: /items
+2024-01-01 18:03:18 - GET: /items
+2024-01-01 18:07:16 - GET: /items
+2024-01-01 18:07:16 - GET: /items
+2024-01-01 18:07:16 - POST: /items/add - {'id': 13, 'title': 'test10', 'content': 't100', 'date': '2002-09-05 00:00:00.000', 'source': 't9', 'category': 't8', 'image': 'no img', 'timestamp': '2023-12-12 15:50:34.293677Z'}
+2024-01-01 18:20:33 - GET: /items
+2024-01-01 18:20:33 - GET: /items
+2024-01-01 18:20:33 - GET: /items
+2024-01-01 18:20:33 - GET: /items
+2024-01-01 18:20:56 - GET: /items
+2024-01-01 18:20:56 - GET: /items
+2024-01-01 18:23:47 - GET: /items
+2024-01-01 18:23:47 - GET: /items
+2024-01-01 18:24:59 - GET: /items
+2024-01-01 18:24:59 - GET: /items
+2024-01-01 18:25:56 - GET: /items
+2024-01-01 18:25:56 - GET: /items
+2024-01-01 18:30:08 - GET: /items
+2024-01-01 18:30:08 - GET: /items
+2024-01-01 18:36:01 - GET: /items
+2024-01-01 18:36:01 - GET: /items
+2024-01-01 18:38:45 - GET: /items
+2024-01-01 18:38:45 - GET: /items
+2024-01-01 18:40:01 - GET: /items
+2024-01-01 18:40:01 - GET: /items
+2024-01-01 18:40:49 - POST: /items/update - {'id': -1, 'title': 'update1', 'content': 'update1', 'date': '2002-09-03T00:00:00.000', 'source': 'src', 'category': 'cat', 'image': 'No Image', 'timestamp': '2023-12-12T16:50:34.293677Z'}
+2024-01-01 18:42:43 - GET: /items
+2024-01-01 18:42:44 - GET: /items
+2024-01-01 18:42:44 - POST: /items/update - {'id': 13, 'title': 'update2', 'content': 'update2', 'date': '2002-09-03 00:00:00.000', 'source': 'src', 'category': 'cat', 'image': 'cat image here', 'timestamp': '2023-12-12 17:50:34.293677Z'}
+2024-01-01 18:43:34 - GET: /items
+2024-01-01 18:43:34 - GET: /items
+2024-01-01 18:48:46 - GET: /items
+2024-01-01 18:48:46 - GET: /items
+2024-01-01 18:48:46 - POST: /items/update - {'id': -1, 'title': 'update3', 'content': 'update3', 'date': '2002-09-03T00:00:00.000', 'source': 'src', 'category': 'cat', 'image': 'No Image', 'timestamp': '2023-12-12T18:50:34.293677Z'}
