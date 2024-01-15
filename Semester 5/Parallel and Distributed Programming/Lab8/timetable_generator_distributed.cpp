@@ -1,47 +1,61 @@
-#include "timetable_generator.h"
+#include "timetable_generator_distributed.h"
 
 #define FREE_TIME (-1)
 
-TimetableGenerator::TimetableGenerator() {
+TimetableGeneratorDistributed::TimetableGeneratorDistributed() {
+	int proc_size, rank;
+	MPI_Comm_size(MPI_COMM_WORLD, &proc_size);
+	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+
+	m_procSize = proc_size;
+	m_rank = rank;
+
+	if (rank == 0) {
+		std::cout << "Procs: " << proc_size << "\n";
+	}
+
+
 	for (int i = 0; i < SUBJECTS.size(); ++i) {
 		for (int j = 0; j < SUBJECTS[i].classes_per_week; ++j) {
 			m_subjectIndexes.push_back(i);
 		}
 	}
 
-	TimetableGenerator::geneticAlgorithm(CLASSES_PER_DAY * DAYS,
-					     GROUPS,
-					     GENETIC_POPULATION_SIZE,
-					     GENETIC_GENERATIONS);
+	TimetableGeneratorDistributed::geneticAlgorithm(CLASSES_PER_DAY * DAYS,
+							GROUPS,
+							GENETIC_POPULATION_SIZE,
+							GENETIC_GENERATIONS);
 }
 
-[[maybe_unused]] std::vector<GroupTimetable> TimetableGenerator::getTimetables() {
+std::vector<GroupTimetable> TimetableGeneratorDistributed::getTimetables() {
 	return m_timeTables;
 }
 
-void TimetableGenerator::printTimetables() {
+void TimetableGeneratorDistributed::printTimetables() {
 	for (auto table: m_timeTables) {
 		table.print_group_table();
 		std::cout << "\n";
 	}
 }
 
-void TimetableGenerator::geneticAlgorithm(int totalPeriods, int studentGroups, int populationSize,
-					  int generations) {
+void TimetableGeneratorDistributed::geneticAlgorithm(int classesPerDay, int studentGroups, int populationSize,
+						     int generations) {
 	std::vector<matrix_t> population;
 
-	// Initialize population
+	// Initialize population with randomly generated timetables
 	population.reserve(populationSize);
 	for (int i = 0; i < populationSize; ++i) {
-		population.push_back(TimetableGenerator::initializeTimetable(totalPeriods, studentGroups));
+		population.push_back(TimetableGeneratorDistributed::initializeTimetable(classesPerDay, studentGroups));
 	}
 
 	for (int generation = 0; generation < generations; ++generation) {
+		// sort the population based on the number of clashes
 		sort(population.begin(), population.end(), [](const auto &a, const auto &b) {
-			return TimetableGenerator::fitness(a) < TimetableGenerator::fitness(b);
+			return TimetableGeneratorDistributed::fitness(a) < TimetableGeneratorDistributed::fitness(b);
 		});
 
-		if (TimetableGenerator::fitness(population[0]) == 0) {
+		// when a solution is found, save it and end the algorithm
+		if (TimetableGeneratorDistributed::fitness(population[0]) == 0) {
 			std::cout << "Solution found in generation " << generation << std::endl;
 			for (int i = 0; i < population[0].size(); ++i) {
 				m_timeTables.emplace_back("Group " + std::to_string(i), population[0][i]);
@@ -59,14 +73,14 @@ void TimetableGenerator::geneticAlgorithm(int totalPeriods, int studentGroups, i
 			size_t index2 = random() % parents.size();
 			matrix_t child = crossover(parents[index1], parents[index2]);
 
-			if (random() % 100 < 20) {  // 20% chance of mutation
-				TimetableGenerator::mutate(child);
+			if (random() % 100 < 20) {  // 20% of children will be mutated
+				TimetableGeneratorDistributed::mutate(child);
 			}
 
 			offspring.push_back(child);
 		}
 
-		// Combine parents and offspring for the next generation
+		// Combine parents and offsprings for the next generation
 		population = parents;
 		population.insert(population.end(), offspring.begin(), offspring.end());
 	}
@@ -74,7 +88,7 @@ void TimetableGenerator::geneticAlgorithm(int totalPeriods, int studentGroups, i
 	std::cout << "No solution found." << std::endl;
 }
 
-int TimetableGenerator::getRandomItem(std::vector<int> &vec) {
+int TimetableGeneratorDistributed::getRandomItem(std::vector<int> &vec) {
 	if (vec.empty()) {
 		return FREE_TIME;
 	}
@@ -86,8 +100,8 @@ int TimetableGenerator::getRandomItem(std::vector<int> &vec) {
 	return value;
 }
 
-TimetableGenerator::matrix_t
-TimetableGenerator::initializeTimetable(int totalPeriods, int studentGroups) {
+TimetableGeneratorDistributed::matrix_t
+TimetableGeneratorDistributed::initializeTimetable(int totalPeriods, int studentGroups) {
 	matrix_t timetable;
 	for (int i = 0; i < studentGroups; ++i) {
 		std::vector<int> group;
@@ -112,7 +126,8 @@ TimetableGenerator::initializeTimetable(int totalPeriods, int studentGroups) {
 	return timetable;
 }
 
-int TimetableGenerator::fitness(const TimetableGenerator::matrix_t &timetable) {
+int TimetableGeneratorDistributed::fitness(const TimetableGeneratorDistributed::matrix_t &timetable) {
+	// Count the number of clashes (two classes at the same time)
 	size_t height = timetable.size();
 	size_t width = timetable[0].size();
 	int clashes = 0;
@@ -129,15 +144,18 @@ int TimetableGenerator::fitness(const TimetableGenerator::matrix_t &timetable) {
 	return clashes;
 }
 
-TimetableGenerator::matrix_t TimetableGenerator::crossover(const TimetableGenerator::matrix_t &parent1,
-							   const TimetableGenerator::matrix_t &parent2) {
+TimetableGeneratorDistributed::matrix_t
+TimetableGeneratorDistributed::crossover(const TimetableGeneratorDistributed::matrix_t &parent1,
+					 const TimetableGeneratorDistributed::matrix_t &parent2) {
 	size_t size = parent1.size();
 	size_t crossoverPoint = random() % (size - 1) + 1;
 	matrix_t result;
 
 	for (int i = 0; i < parent1.size(); ++i) {
+		// copy the contents from parent1 up until the crossover point
 		std::vector<int> child(parent1[i].begin(), parent1[i].begin() + (long) (crossoverPoint));
 
+		// copy from parent2 only the elements that aren't already in the child
 		for (int parent2_child: parent2[i]) {
 			if (std::find(child.begin(), child.end(), parent2_child) == child.end()) {
 				child.push_back(parent2_child);
@@ -149,7 +167,8 @@ TimetableGenerator::matrix_t TimetableGenerator::crossover(const TimetableGenera
 	return result;
 }
 
-void TimetableGenerator::mutate(TimetableGenerator::matrix_t &board) {
+void TimetableGeneratorDistributed::mutate(TimetableGeneratorDistributed::matrix_t &board) {
+	// pick random group and two random positions inside that group and swap them
 	size_t mutationPoint_x = random() % board.size();
 	size_t mutationPoint_y1 = random() % board[0].size();
 	size_t mutationPoint_y2 = random() % board[0].size();

@@ -9,8 +9,8 @@ public:
 	explicit GroupTimetable(std::string name, GroupTimetable_t timetable);
 	explicit GroupTimetable(std::string name, std::vector<int> linerized_timetable);
 
-	[[maybe_unused]] GroupTimetable_t getTimeTable();
-	[[maybe_unused]] void setGroupTable(GroupTimetable_t groupTimetable);
+	GroupTimetable_t getTimeTable();
+	void setGroupTable(GroupTimetable_t groupTimetable);
 
 	void print_group_table();
 
