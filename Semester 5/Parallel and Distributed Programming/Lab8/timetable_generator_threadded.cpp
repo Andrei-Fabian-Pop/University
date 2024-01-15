@@ -1,47 +1,48 @@
-#include "timetable_generator.h"
+#include "timetable_generator_threadded.h"
+#include <thread>
 
 #define FREE_TIME (-1)
 
-TimetableGenerator::TimetableGenerator() {
+TimetableGeneratorThreadded::TimetableGeneratorThreadded() {
 	for (int i = 0; i < SUBJECTS.size(); ++i) {
 		for (int j = 0; j < SUBJECTS[i].classes_per_week; ++j) {
 			m_subjectIndexes.push_back(i);
 		}
 	}
 
-	TimetableGenerator::geneticAlgorithm(CLASSES_PER_DAY * DAYS,
-					     GROUPS,
-					     GENETIC_POPULATION_SIZE,
-					     GENETIC_GENERATIONS);
+	TimetableGeneratorThreadded::geneticAlgorithm(CLASSES_PER_DAY * DAYS,
+						      GROUPS,
+						      GENETIC_POPULATION_SIZE,
+						      GENETIC_GENERATIONS);
 }
 
-[[maybe_unused]] std::vector<GroupTimetable> TimetableGenerator::getTimetables() {
+[[maybe_unused]] std::vector<GroupTimetable> TimetableGeneratorThreadded::getTimetables() {
 	return m_timeTables;
 }
 
-void TimetableGenerator::printTimetables() {
+void TimetableGeneratorThreadded::printTimetables() {
 	for (auto table: m_timeTables) {
 		table.print_group_table();
 		std::cout << "\n";
 	}
 }
 
-void TimetableGenerator::geneticAlgorithm(int totalPeriods, int studentGroups, int populationSize,
-					  int generations) {
+void TimetableGeneratorThreadded::geneticAlgorithm(int totalPeriods, int studentGroups, int populationSize,
+						   int generations) {
 	std::vector<matrix_t> population;
 
 	// Initialize population
 	population.reserve(populationSize);
 	for (int i = 0; i < populationSize; ++i) {
-		population.push_back(TimetableGenerator::initializeTimetable(totalPeriods, studentGroups));
+		population.push_back(TimetableGeneratorThreadded::initializeTimetable(totalPeriods, studentGroups));
 	}
 
 	for (int generation = 0; generation < generations; ++generation) {
 		sort(population.begin(), population.end(), [](const auto &a, const auto &b) {
-			return TimetableGenerator::fitness(a) < TimetableGenerator::fitness(b);
+			return TimetableGeneratorThreadded::fitness(a) < TimetableGeneratorThreadded::fitness(b);
 		});
 
-		if (TimetableGenerator::fitness(population[0]) == 0) {
+		if (TimetableGeneratorThreadded::fitness(population[0]) == 0) {
 			std::cout << "Solution found in generation " << generation << std::endl;
 			for (int i = 0; i < population[0].size(); ++i) {
 				m_timeTables.emplace_back("Group " + std::to_string(i), population[0][i]);
@@ -54,16 +55,31 @@ void TimetableGenerator::geneticAlgorithm(int totalPeriods, int studentGroups, i
 
 		// Create new generation through crossover and mutation
 		std::vector<matrix_t> offspring;
-		while (offspring.size() < populationSize - parents.size()) {
-			size_t index1 = random() % parents.size();
-			size_t index2 = random() % parents.size();
-			matrix_t child = crossover(parents[index1], parents[index2]);
+		std::vector<std::thread> threads;
+		size_t offspring_count = populationSize - parents.size();
+		size_t offspring_per_thread = offspring_count / m_thread_count;
+		threads.reserve(m_thread_count);
+		for (int i = 0; i < m_thread_count; ++i) {
+			std::cout << "Making thread " << i << "\n";
+			threads.emplace_back([this, &offspring, &offspring_per_thread, &parents]() {
+				while (offspring.size() < offspring_per_thread) {
+					size_t index1 = random() % parents.size();
+					size_t index2 = random() % parents.size();
+					matrix_t child = crossover(parents[index1], parents[index2]);
 
-			if (random() % 100 < 20) {  // 20% chance of mutation
-				TimetableGenerator::mutate(child);
-			}
+					if (random() % 100 < 20) {  // 20% chance of mutation
+						TimetableGeneratorThreadded::mutate(child);
+					}
 
-			offspring.push_back(child);
+					m_offspringMutex.lock();
+					offspring.push_back(child);
+					m_offspringMutex.unlock();
+				}
+			});
+		}
+
+		for (int i = 0; i < m_thread_count; ++i) {
+			threads[i].join();
 		}
 
 		// Combine parents and offspring for the next generation
@@ -74,7 +90,7 @@ void TimetableGenerator::geneticAlgorithm(int totalPeriods, int studentGroups, i
 	std::cout << "No solution found." << std::endl;
 }
 
-int TimetableGenerator::getRandomItem(std::vector<int> &vec) {
+int TimetableGeneratorThreadded::getRandomItem(std::vector<int> &vec) {
 	if (vec.empty()) {
 		return FREE_TIME;
 	}
@@ -86,8 +102,8 @@ int TimetableGenerator::getRandomItem(std::vector<int> &vec) {
 	return value;
 }
 
-TimetableGenerator::matrix_t
-TimetableGenerator::initializeTimetable(int totalPeriods, int studentGroups) {
+TimetableGeneratorThreadded::matrix_t
+TimetableGeneratorThreadded::initializeTimetable(int totalPeriods, int studentGroups) {
 	matrix_t timetable;
 	for (int i = 0; i < studentGroups; ++i) {
 		std::vector<int> group;
@@ -112,7 +128,7 @@ TimetableGenerator::initializeTimetable(int totalPeriods, int studentGroups) {
 	return timetable;
 }
 
-int TimetableGenerator::fitness(const TimetableGenerator::matrix_t &timetable) {
+int TimetableGeneratorThreadded::fitness(const TimetableGeneratorThreadded::matrix_t &timetable) {
 	size_t height = timetable.size();
 	size_t width = timetable[0].size();
 	int clashes = 0;
@@ -129,8 +145,9 @@ int TimetableGenerator::fitness(const TimetableGenerator::matrix_t &timetable) {
 	return clashes;
 }
 
-TimetableGenerator::matrix_t TimetableGenerator::crossover(const TimetableGenerator::matrix_t &parent1,
-							   const TimetableGenerator::matrix_t &parent2) {
+TimetableGeneratorThreadded::matrix_t
+TimetableGeneratorThreadded::crossover(const TimetableGeneratorThreadded::matrix_t &parent1,
+				       const TimetableGeneratorThreadded::matrix_t &parent2) {
 	size_t size = parent1.size();
 	size_t crossoverPoint = random() % (size - 1) + 1;
 	matrix_t result;
@@ -149,12 +166,10 @@ TimetableGenerator::matrix_t TimetableGenerator::crossover(const TimetableGenera
 	return result;
 }
 
-void TimetableGenerator::mutate(TimetableGenerator::matrix_t &board) {
+void TimetableGeneratorThreadded::mutate(TimetableGeneratorThreadded::matrix_t &board) {
 	size_t mutationPoint_x = random() % board.size();
 	size_t mutationPoint_y1 = random() % board[0].size();
 	size_t mutationPoint_y2 = random() % board[0].size();
 
 	std::swap(board[mutationPoint_x][mutationPoint_y1], board[mutationPoint_x][mutationPoint_y2]);
 }
-
-

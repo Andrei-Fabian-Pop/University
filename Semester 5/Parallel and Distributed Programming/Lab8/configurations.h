@@ -16,17 +16,21 @@ struct SubjectSpecs {
 };
 
 const std::vector<SubjectSpecs> SUBJECTS = {
-		{.title = "Object Oriented Programming", .classes_per_week=1},
-		{.title = "Database Management", .classes_per_week=1},
-		{.title = "Operating Systems", .classes_per_week=1},
-		{.title = "Computer System Architecture", .classes_per_week=1},
-		{.title = "Software Engineering", .classes_per_week=1},
-		{.title = "Graph Algorithms", .classes_per_week=1},
-		{.title = "Data Structures and Algorithms", .classes_per_week=1},
-		{.title = "Parallel and Distributed Systems", .classes_per_week=1},
+	{.title = "Object Oriented Programming, C", .classes_per_week=1},
+	{.title = "Object Oriented Programming, L", .classes_per_week=1},
+	{.title = "Database Management, C", .classes_per_week=1},
+	{.title = "Database Management, S", .classes_per_week=1},
+	{.title = "Database Management, L", .classes_per_week=1},
+	{.title = "Operating Systems", .classes_per_week=1},
+	{.title = "Computer System Architecture", .classes_per_week=1},
+	{.title = "Software Engineering", .classes_per_week=1},
+	{.title = "Graph Algorithms", .classes_per_week=1},
+	{.title = "Data Structures and Algorithms", .classes_per_week=1},
+	{.title = "Parallel and Distributed Systems", .classes_per_week=1},
 };
 
-const std::vector<std::string> WEEKDAYS = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+const std::vector<std::string> WEEKDAYS = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",
+					   "Sunday"};
 
 // ease of use
 using DayTimetable_t = std::vector<SubjectSpecs>;
