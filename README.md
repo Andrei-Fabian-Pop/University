@@ -32,3 +32,10 @@
 - [Software Engineering](https://github.com/Andrei-Fabian-Pop/University/tree/main/Semester%204/Software%20Engineering)
 - [Systems for Design and Implementation](https://github.com/Andrei-Fabian-Pop/University/tree/main/Semester%204/Systems%20for%20Design%20and%20Implementation)
 - [Web Programming](https://github.com/Andrei-Fabian-Pop/University/tree/main/Semester%204/Web%20Programming)
+
+### Semester 5
+- [Formal Languages and Compiler Techniques](https://github.com/Andrei-Fabian-Pop/University/tree/main/Semester%205/Formal%20Languages%20and%20Compiler%20Techniques)
+- [Mobile Applications](https://github.com/Andrei-Fabian-Pop/University/tree/main/Semester%205/Mobile%20Applications)
+- [Parallel and Distributed Programming](https://github.com/Andrei-Fabian-Pop/University/tree/main/Semester%205/Parallel%20and%20Distributed%20Programming)
+- [Public Key Cryprography](https://github.com/Andrei-Fabian-Pop/University/tree/main/Semester%205/Public%20Key%20Cryptography)
+
